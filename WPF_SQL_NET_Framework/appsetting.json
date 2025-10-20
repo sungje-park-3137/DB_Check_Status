@@ -1,0 +1,80 @@
+{
+  "serilog": {
+    "MinimumLevel": {
+      "Default": "Debug",
+      "Microsoft": "Warning"
+    },
+    "WriteTo": [
+      {
+        "Name": "File",
+        "Args": {
+          "Path": "logs/logtest.txt",
+          "rollingInterval": "Day",
+          "outputTemplate": "{Timestamp:yyyy-MM-dd HH:mm:ss.fff} [{Level:u3}] [{SourceContext}] {Message:lj}{NewLine}{Exception}"
+        }
+      },
+      {
+        "Name": "Console",
+        "Args": {
+          "rollingInterval": "Day",
+          "outputTemplate": "{Timestamp:yyyy-MM-dd HH:mm:ss.fff} [{Level:u3}] [{SourceContext}] {Message:lj}{NewLine}{Exception}"
+        }
+      }
+    ]
+  }
+
+  /*"Log": {
+    "Serilog": {
+      "Using": [ "Serilog.Sinks.Console", "Serilog.Sinks.File" ],
+
+      "MinimumLevel": "Debug",
+
+      // WriteTo: Log 출력 설정
+      "WriteTo": [
+        {
+          // Console
+          "Name": "Console",
+          // Args : Console Log에 출력할 형식을 설정
+          // outputTemplate : Log에 출력할 형식을 설정
+          // {Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} : Log가 출력된 시간 포맷을 설정
+          // {Environment} : Log가 출력된 환경을 설정
+          // {Application} : Log가 출력된 Application을 설정
+          // {MachineName} : Log가 출력된 MachineName을 설정
+          // {Level:u3} : Log Level을 설정 (u3 : UpperCase 3자리)
+          // {Message:lj} : Log Message를 설정 (lj : Left Justify)
+          // {NewLine} : 줄바꿈
+          // {Exception} : Exception을 설정
+          "Args": {
+            "outputTemplate": "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Environment}] [{Application}] [{MachineName}] [{Level:u3}] {Message:lj}{NewLine}{Exception}"
+          }
+        },
+
+        // File
+        {
+          "Name": "File",
+          "Args": {
+            "path": "Logs/log.txt",
+
+            // Minute / Hour / Day / Month / Year / Infinite
+            "rollingInterval": "Day"
+          }
+        }
+      ]
+
+      // Enrich : Log에 추가적인 정보를 넣겠다는 의미.
+      // (WriteTo => Args => outputTemplate 에서 출력할 변수를 추가할 수 있다.)
+      // - FromLogContext : LogContext에 있는 정보를 모든 Log 출력 시, 추가하겠다는 의미.
+      // - WithMachineName : 현재 MachineName을 LogContext에 추가 (추가 안하면 Properties 에서 설정한 MachineName 으로 출력)
+
+      // WithThreadId : ThreadId를 LogContext에 추가
+      "Enrich": [ "FromLogContext", "WithMachineName", "WithThreadId" ]
+
+      // Properties : Log에 입력할 추가적인 정보
+      "Properties": {
+        "Application": "Logger_Serilog",
+        "Environment": "Development",
+        "MachineName": "WPF_Logger"
+      }
+    }
+  }*/
+}

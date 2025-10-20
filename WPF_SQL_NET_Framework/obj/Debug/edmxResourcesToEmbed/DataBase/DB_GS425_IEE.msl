@@ -1,0 +1,1024 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GS425_IEE_DBModelStoreContainer" CdmEntityContainer="GS425_IEE_DBEntities">
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_ADMINISTZONE">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_ADMINISTZONE">
+        <MappingFragment StoreEntitySet="TB_ADMINISTZONE">
+          <ScalarProperty Name="ADMINISTZONE_CD" ColumnName="ADMINISTZONE_CD" />
+          <ScalarProperty Name="ADMINISTZONE_NM" ColumnName="ADMINISTZONE_NM" />
+          <ScalarProperty Name="BDRY_CORDC" ColumnName="BDRY_CORDC" />
+          <ScalarProperty Name="HGRNK_ADMINISTZONE_CD" ColumnName="HGRNK_ADMINISTZONE_CD" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_ANTT_TMPL">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_ANTT_TMPL">
+        <MappingFragment StoreEntitySet="TB_ANTT_TMPL">
+          <ScalarProperty Name="NTT_TMPL_ID" ColumnName="NTT_TMPL_ID" />
+          <ScalarProperty Name="NTT_TMPL_NM" ColumnName="NTT_TMPL_NM" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="TMPL_FILE" ColumnName="TMPL_FILE" />
+          <ScalarProperty Name="TMPL_KND_IDTFR" ColumnName="TMPL_KND_IDTFR" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_APPRV_CLPLN">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_APPRV_CLPLN">
+        <MappingFragment StoreEntitySet="TB_APPRV_CLPLN">
+          <ScalarProperty Name="APPROVAL_CLPLN_ID" ColumnName="APPROVAL_CLPLN_ID" />
+          <ScalarProperty Name="CRT_DNT" ColumnName="CRT_DNT" />
+          <ScalarProperty Name="CLPLN_START_DNT" ColumnName="CLPLN_START_DNT" />
+          <ScalarProperty Name="CLPLN_FNSH_DNT" ColumnName="CLPLN_FNSH_DNT" />
+          <ScalarProperty Name="STL_IDTFR" ColumnName="STL_IDTFR" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_APPRV_CLPLN_SCENES">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_APPRV_CLPLN_SCENES">
+        <MappingFragment StoreEntitySet="TB_APPRV_CLPLN_SCENES">
+          <ScalarProperty Name="SCENE_ID" ColumnName="SCENE_ID" />
+          <ScalarProperty Name="IMAGE_NM" ColumnName="IMAGE_NM" />
+          <ScalarProperty Name="CPLN_ID" ColumnName="CPLN_ID" />
+          <ScalarProperty Name="BDRY_CORDC" ColumnName="BDRY_CORDC" />
+          <ScalarProperty Name="SHTNG_START_DTTM" ColumnName="SHTNG_START_DTTM" />
+          <ScalarProperty Name="UGCY_SHTNG_YN" ColumnName="UGCY_SHTNG_YN" />
+          <ScalarProperty Name="SHTNG_END_DTTM" ColumnName="SHTNG_END_DTTM" />
+          <ScalarProperty Name="MSN_NM" ColumnName="MSN_NM" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_ASSIGN_WRK_PLCY">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_ASSIGN_WRK_PLCY">
+        <MappingFragment StoreEntitySet="TB_ASSIGN_WRK_PLCY">
+          <ScalarProperty Name="WRK_ALLTMT_PLCY_ID" ColumnName="WRK_ALLTMT_PLCY_ID" />
+          <ScalarProperty Name="WRK_ALLTMT_PLCY_NM" ColumnName="WRK_ALLTMT_PLCY_NM" />
+          <ScalarProperty Name="WRK_ALLTMT_PLCY_TP_IDTFR" ColumnName="WRK_ALLTMT_PLCY_TP_IDTFR" />
+          <ScalarProperty Name="IMGCLTSNKNCD" ColumnName="IMGCLTSNKNCD" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_ATHRT_GRP">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_ATHRT_GRP">
+        <MappingFragment StoreEntitySet="TB_ATHRT_GRP">
+          <ScalarProperty Name="ATHRT_GRP_ID" ColumnName="ATHRT_GRP_ID" />
+          <ScalarProperty Name="ATHRT_GRP_NM" ColumnName="ATHRT_GRP_NM" />
+          <ScalarProperty Name="ATHRT_GRP_EXPLN" ColumnName="ATHRT_GRP_EXPLN" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_BCUP_LOG">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_BCUP_LOG">
+        <MappingFragment StoreEntitySet="TB_BCUP_LOG">
+          <ScalarProperty Name="BCUP_LOG_ID" ColumnName="BCUP_LOG_ID" />
+          <ScalarProperty Name="DTA_KND_IDTFR" ColumnName="DTA_KND_IDTFR" />
+          <ScalarProperty Name="WRK_TYPE_KND_IDTFR" ColumnName="WRK_TYPE_KND_IDTFR" />
+          <ScalarProperty Name="LOG_DTTM" ColumnName="LOG_DTTM" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_CHG_DTCT_IMAGE">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_CHG_DTCT_IMAGE">
+        <MappingFragment StoreEntitySet="TB_CHG_DTCT_IMAGE">
+          <ScalarProperty Name="CHNG_DTCT_IMAGE_ID" ColumnName="CHNG_DTCT_IMAGE_ID" />
+          <ScalarProperty Name="FILE_ROUTE" ColumnName="FILE_ROUTE" />
+          <ScalarProperty Name="ORGINL_IMAGE_ID" ColumnName="ORGINL_IMAGE_ID" />
+          <ScalarProperty Name="REF_IMAGE_ID" ColumnName="REF_IMAGE_ID" />
+          <ScalarProperty Name="WRK_DTTM" ColumnName="WRK_DTTM" />
+          <ScalarProperty Name="BDRY_CORDC" ColumnName="BDRY_CORDC" />
+          <ScalarProperty Name="CENTR_CORDC" ColumnName="CENTR_CORDC" />
+          <ScalarProperty Name="AUTO_YN" ColumnName="AUTO_YN" />
+          <ScalarProperty Name="CRT_MODE_IDTFR" ColumnName="CRT_MODE_IDTFR" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_CLPLN_SCENE_PRCSS">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_CLPLN_SCENE_PRCSS">
+        <MappingFragment StoreEntitySet="TB_CLPLN_SCENE_PRCSS">
+          <ScalarProperty Name="CLPLN_SCENE_PRCSS_ID" ColumnName="CLPLN_SCENE_PRCSS_ID" />
+          <ScalarProperty Name="IMAGE_NM" ColumnName="IMAGE_NM" />
+          <ScalarProperty Name="PRCSS_IMAGE_ID" ColumnName="PRCSS_IMAGE_ID" />
+          <ScalarProperty Name="WRK_STATE" ColumnName="WRK_STATE" />
+          <ScalarProperty Name="CRT_DTTM" ColumnName="CRT_DTTM" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_CLSLVCD">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_CLSLVCD">
+        <MappingFragment StoreEntitySet="TB_CLSLVCD">
+          <ScalarProperty Name="CLSLVCD" ColumnName="CLSLVCD" />
+          <ScalarProperty Name="CLSLV_NM" ColumnName="CLSLV_NM" />
+          <ScalarProperty Name="USEDVCD" ColumnName="USEDVCD" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_CLTNSNSRKDCD">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_CLTNSNSRKDCD">
+        <MappingFragment StoreEntitySet="TB_CLTNSNSRKDCD">
+          <ScalarProperty Name="CLTNSNSRKDCD" ColumnName="CLTNSNSRKDCD" />
+          <ScalarProperty Name="CLTNSNSRKDCD_NM" ColumnName="CLTNSNSRKDCD_NM" />
+          <ScalarProperty Name="USEDVCD" ColumnName="USEDVCD" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_CMN_CD">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_CMN_CD">
+        <MappingFragment StoreEntitySet="TB_CMN_CD">
+          <ScalarProperty Name="CTGR_IDTFR" ColumnName="CTGR_IDTFR" />
+          <ScalarProperty Name="DTL_IDTFR" ColumnName="DTL_IDTFR" />
+          <ScalarProperty Name="CTGR_NM" ColumnName="CTGR_NM" />
+          <ScalarProperty Name="DTL_NM" ColumnName="DTL_NM" />
+          <ScalarProperty Name="CMN_CD_ID" ColumnName="CMN_CD_ID" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_CRCTN_IMAGE">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_CRCTN_IMAGE">
+        <MappingFragment StoreEntitySet="TB_CRCTN_IMAGE">
+          <ScalarProperty Name="CRCTN_IMAGE_ID" ColumnName="CRCTN_IMAGE_ID" />
+          <ScalarProperty Name="BDRY_CORDC" ColumnName="BDRY_CORDC" />
+          <ScalarProperty Name="CENTR_CORDC" ColumnName="CENTR_CORDC" />
+          <ScalarProperty Name="ORGINL_IMAGE_ID" ColumnName="ORGINL_IMAGE_ID" />
+          <ScalarProperty Name="WORKR_ID" ColumnName="WORKR_ID" />
+          <ScalarProperty Name="CRT_DTTM" ColumnName="CRT_DTTM" />
+          <ScalarProperty Name="CRCTN_IMAGE_TYPE_IDTFR" ColumnName="CRCTN_IMAGE_TYPE_IDTFR" />
+          <ScalarProperty Name="CRCTN_IMAGE_FILE_ROUTE" ColumnName="CRCTN_IMAGE_FILE_ROUTE" />
+          <ScalarProperty Name="CRCTN_IMAGE_NM" ColumnName="CRCTN_IMAGE_NM" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_DATA_SNCZT">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_DATA_SNCZT">
+        <MappingFragment StoreEntitySet="TB_DATA_SNCZT">
+          <ScalarProperty Name="DATA_CHG_ID" ColumnName="DATA_CHG_ID" />
+          <ScalarProperty Name="TB_NM" ColumnName="TB_NM" />
+          <ScalarProperty Name="CHG_KND" ColumnName="CHG_KND" />
+          <ScalarProperty Name="CHG_DATA_IDTFR" ColumnName="CHG_DATA_IDTFR" />
+          <ScalarProperty Name="CHG_DTTM" ColumnName="CHG_DTTM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_DCPHRIMAGE">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_DCPHRIMAGE">
+        <MappingFragment StoreEntitySet="TB_DCPHRIMAGE">
+          <ScalarProperty Name="DCPHRIMAGE_ID" ColumnName="DCPHRIMAGE_ID" />
+          <ScalarProperty Name="MSN_NM" ColumnName="MSN_NM" />
+          <ScalarProperty Name="DCPHRIMAGE_NM" ColumnName="DCPHRIMAGE_NM" />
+          <ScalarProperty Name="ORGINL_IMAGE_ID" ColumnName="ORGINL_IMAGE_ID" />
+          <ScalarProperty Name="DCPHRIMAGE_FILE" ColumnName="DCPHRIMAGE_FILE" />
+          <ScalarProperty Name="TGT_ID" ColumnName="TGT_ID" />
+          <ScalarProperty Name="WRK_STATE_IDTFR" ColumnName="WRK_STATE_IDTFR" />
+          <ScalarProperty Name="TRSMSSN_STATE_IDTFR" ColumnName="TRSMSSN_STATE_IDTFR" />
+          <ScalarProperty Name="REGSTR_ID" ColumnName="REGSTR_ID" />
+          <ScalarProperty Name="BDRY_CORDC" ColumnName="BDRY_CORDC" />
+          <ScalarProperty Name="CENTR_CORDC" ColumnName="CENTR_CORDC" />
+          <ScalarProperty Name="RTTN_ANG" ColumnName="RTTN_ANG" />
+          <ScalarProperty Name="UPDT_DTTM" ColumnName="UPDT_DTTM" />
+          <ScalarProperty Name="CRT_DTTIM" ColumnName="CRT_DTTIM" />
+          <ScalarProperty Name="ADMINISTZONE_NM" ColumnName="ADMINISTZONE_NM" />
+          <ScalarProperty Name="RSTRCT_DSMT_GRPNO" ColumnName="RSTRCT_DSMT_GRPNO" />
+          <ScalarProperty Name="APPRVR_ID" ColumnName="APPRVR_ID" />
+          <ScalarProperty Name="UNTCMD_ID" ColumnName="UNTCMD_ID" />
+          <ScalarProperty Name="NTT_FILE" ColumnName="NTT_FILE" />
+          <ScalarProperty Name="RAWDATA_ROUTE" ColumnName="RAWDATA_ROUTE" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_DCPHRIMAGE_LOCTN">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_DCPHRIMAGE_LOCTN">
+        <MappingFragment StoreEntitySet="TB_DCPHRIMAGE_LOCTN">
+          <ScalarProperty Name="DCPHRIMAGE_LOCTN_ID" ColumnName="DCPHRIMAGE_LOCTN_ID" />
+          <ScalarProperty Name="ADMINISTZONE_CD" ColumnName="ADMINISTZONE_CD" />
+          <ScalarProperty Name="DCPHRIMAGE_ID" ColumnName="DCPHRIMAGE_ID" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_DCPHRIMAGE_PER_DCPHRRPRT">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_DCPHRIMAGE_PER_DCPHRRPRT">
+        <MappingFragment StoreEntitySet="TB_DCPHRIMAGE_PER_DCPHRRPRT">
+          <ScalarProperty Name="DCPHRRPRT_ID" ColumnName="DCPHRRPRT_ID" />
+          <ScalarProperty Name="DCPHRIMAGE_ID" ColumnName="DCPHRIMAGE_ID" />
+          <ScalarProperty Name="DCPHRIMAGE_PER_DCPHRRPRT_ID" ColumnName="DCPHRIMAGE_PER_DCPHRRPRT_ID" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_DCPHRRPRT">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_DCPHRRPRT">
+        <MappingFragment StoreEntitySet="TB_DCPHRRPRT">
+          <ScalarProperty Name="DCPHRRPRT_ID" ColumnName="DCPHRRPRT_ID" />
+          <ScalarProperty Name="DCPHRRPRT_TITLE" ColumnName="DCPHRRPRT_TITLE" />
+          <ScalarProperty Name="FiLE_ROUTE" ColumnName="FiLE_ROUTE" />
+          <ScalarProperty Name="RGST_DTTM" ColumnName="RGST_DTTM" />
+          <ScalarProperty Name="CRTOR_ID" ColumnName="CRTOR_ID" />
+          <ScalarProperty Name="BCUP_STATE_IDTFR" ColumnName="BCUP_STATE_IDTFR" />
+          <ScalarProperty Name="BCUP_FILE_ROUTE" ColumnName="BCUP_FILE_ROUTE" />
+          <ScalarProperty Name="DCPHRRPRT_TYPE_IDTFR" ColumnName="DCPHRRPRT_TYPE_IDTFR" />
+          <ScalarProperty Name="TRSMSSN_STATE_IDTFR" ColumnName="TRSMSSN_STATE_IDTFR" />
+          <ScalarProperty Name="MSN_NM" ColumnName="MSN_NM" />
+          <ScalarProperty Name="DN" ColumnName="DN" />
+          <ScalarProperty Name="APPRVR_ID" ColumnName="APPRVR_ID" />
+          <ScalarProperty Name="UNTCMD_ID" ColumnName="UNTCMD_ID" />
+          <ScalarProperty Name="MIFS_ID" ColumnName="MIFS_ID" />
+          <ScalarProperty Name="RSTRCT_DSMT_GRPNO" ColumnName="RSTRCT_DSMT_GRPNO" />
+          <ScalarProperty Name="SNCNZ_IDTFR" ColumnName="SNCNZ_IDTFR" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_DCPHRRPRT_TYPE">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_DCPHRRPRT_TYPE">
+        <MappingFragment StoreEntitySet="TB_DCPHRRPRT_TYPE">
+          <ScalarProperty Name="DCPHRRPRT_TYPE_IDTFR" ColumnName="DCPHRRPRT_TYPE_IDTFR" />
+          <ScalarProperty Name="DCPHRRPRT_TYPE_NM" ColumnName="DCPHRRPRT_TYPE_NM" />
+          <ScalarProperty Name="USEDVCD" ColumnName="USEDVCD" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_ENGLSH_WORD">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_ENGLSH_WORD">
+        <MappingFragment StoreEntitySet="TB_ENGLSH_WORD">
+          <ScalarProperty Name="WORD_NM" ColumnName="WORD_NM" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="WORD_TYPE" ColumnName="WORD_TYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_ENMEQP">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_ENMEQP">
+        <MappingFragment StoreEntitySet="TB_ENMEQP">
+          <ScalarProperty Name="ENMYFAMC" ColumnName="ENMYFAMC" />
+          <ScalarProperty Name="ENMEQP_NM" ColumnName="ENMEQP_NM" />
+          <ScalarProperty Name="ENMEQP_EXPLN" ColumnName="ENMEQP_EXPLN" />
+          <ScalarProperty Name="ENMEQP_ALIAS" ColumnName="ENMEQP_ALIAS" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_ENMEQP_BASIC_IMAGE">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_ENMEQP_BASIC_IMAGE">
+        <MappingFragment StoreEntitySet="TB_ENMEQP_BASIC_IMAGE">
+          <ScalarProperty Name="ENMEQP_BASIC_IMAGE_ID" ColumnName="ENMEQP_BASIC_IMAGE_ID" />
+          <ScalarProperty Name="SIDVW_FILE" ColumnName="SIDVW_FILE" />
+          <ScalarProperty Name="PLNVW_FILE" ColumnName="PLNVW_FILE" />
+          <ScalarProperty Name="ENMYFAMC" ColumnName="ENMYFAMC" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_ENMEQP_IMAGE">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_ENMEQP_IMAGE">
+        <MappingFragment StoreEntitySet="TB_ENMEQP_IMAGE">
+          <ScalarProperty Name="ENMYFAMC" ColumnName="ENMYFAMC" />
+          <ScalarProperty Name="ENMEQP_IMAGE_ID" ColumnName="ENMEQP_IMAGE_ID" />
+          <ScalarProperty Name="ENMEQP_IMAGE_NM" ColumnName="ENMEQP_IMAGE_NM" />
+          <ScalarProperty Name="IMAGE_FILE" ColumnName="IMAGE_FILE" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_ENMEQP_SPEC">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_ENMEQP_SPEC">
+        <MappingFragment StoreEntitySet="TB_ENMEQP_SPEC">
+          <ScalarProperty Name="ENMEQP_SPEC_ID" ColumnName="ENMEQP_SPEC_ID" />
+          <ScalarProperty Name="ENMYFAMC" ColumnName="ENMYFAMC" />
+          <ScalarProperty Name="ENMEQP_SPEC_NM" ColumnName="ENMEQP_SPEC_NM" />
+          <ScalarProperty Name="VAL" ColumnName="VAL" />
+          <ScalarProperty Name="UICD" ColumnName="UICD" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_ETASPCD">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_ETASPCD">
+        <MappingFragment StoreEntitySet="TB_ETASPCD">
+          <ScalarProperty Name="ETASPCD" ColumnName="ETASPCD" />
+          <ScalarProperty Name="ETASPCD_NM" ColumnName="ETASPCD_NM" />
+          <ScalarProperty Name="USEDVCD" ColumnName="USEDVCD" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_FFDB">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_FFDB">
+        <MappingFragment StoreEntitySet="TB_FFDB">
+          <ScalarProperty Name="BENO" ColumnName="BENO" />
+          <ScalarProperty Name="SUFNO" ColumnName="SUFNO" />
+          <ScalarProperty Name="FKSGNCD" ColumnName="FKSGNCD" />
+          <ScalarProperty Name="GOTLRCLSCD" ColumnName="GOTLRCLSCD" />
+          <ScalarProperty Name="GOTGMDCLSCD" ColumnName="GOTGMDCLSCD" />
+          <ScalarProperty Name="GOTGSMCLSCD" ColumnName="GOTGSMCLSCD" />
+          <ScalarProperty Name="HANGL_NM" ColumnName="HANGL_NM" />
+          <ScalarProperty Name="ENGLSH_NM" ColumnName="ENGLSH_NM" />
+          <ScalarProperty Name="CORDC" ColumnName="CORDC" />
+          <ScalarProperty Name="HAE_ALT" ColumnName="HAE_ALT" />
+          <ScalarProperty Name="MSL_ALT" ColumnName="MSL_ALT" />
+          <ScalarProperty Name="INSTLTN_STATE_IDTFR" ColumnName="INSTLTN_STATE_IDTFR" />
+          <ScalarProperty Name="INSTLTN_STATE_EXPLN" ColumnName="INSTLTN_STATE_EXPLN" />
+          <ScalarProperty Name="OPRSTCD" ColumnName="OPRSTCD" />
+          <ScalarProperty Name="JDPINO" ColumnName="JDPINO" />
+          <ScalarProperty Name="JTL_YN" ColumnName="JTL_YN" />
+          <ScalarProperty Name="RTL_YN" ColumnName="RTL_YN" />
+          <ScalarProperty Name="NSL_YN" ColumnName="NSL_YN" />
+          <ScalarProperty Name="CTL_YN" ColumnName="CTL_YN" />
+          <ScalarProperty Name="TGT_PRDCN_DATE" ColumnName="TGT_PRDCN_DATE" />
+          <ScalarProperty Name="TGT_MDFC_DATE" ColumnName="TGT_MDFC_DATE" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_IMAGE_PRCSS_KND">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_IMAGE_PRCSS_KND">
+        <MappingFragment StoreEntitySet="TB_IMAGE_PRCSS_KND">
+          <ScalarProperty Name="IMAGE_PRCSS_KND_IDTFR" ColumnName="IMAGE_PRCSS_KND_IDTFR" />
+          <ScalarProperty Name="IMAGE_PRCSS_KND_NM" ColumnName="IMAGE_PRCSS_KND_NM" />
+          <ScalarProperty Name="USEDVCD" ColumnName="USEDVCD" />
+          <ScalarProperty Name="CLTNSNSRKDCD" ColumnName="CLTNSNSRKDCD" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_IMGCLTSNKNCD">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_IMGCLTSNKNCD">
+        <MappingFragment StoreEntitySet="TB_IMGCLTSNKNCD">
+          <ScalarProperty Name="IMGCLTSNKNCD" ColumnName="IMGCLTSNKNCD" />
+          <ScalarProperty Name="IMGCLTSNKNCD_NM" ColumnName="IMGCLTSNKNCD_NM" />
+          <ScalarProperty Name="USEDVCD" ColumnName="USEDVCD" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_INCLUNTDVCD">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_INCLUNTDVCD">
+        <MappingFragment StoreEntitySet="TB_INCLUNTDVCD">
+          <ScalarProperty Name="INCLUNTDVCD" ColumnName="INCLUNTDVCD" />
+          <ScalarProperty Name="INCLUNTDVCD_NM" ColumnName="INCLUNTDVCD_NM" />
+          <ScalarProperty Name="USEDVCD" ColumnName="USEDVCD" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_INFMTN_CLTN_EMPH_MATR">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_INFMTN_CLTN_EMPH_MATR">
+        <MappingFragment StoreEntitySet="TB_INFMTN_CLTN_EMPH_MATR">
+          <ScalarProperty Name="INFMTN_CLTN_EMPH_MATR_SN" ColumnName="INFMTN_CLTN_EMPH_MATR_SN" />
+          <ScalarProperty Name="INFMTN_CLTN_EMPH_MATR_CTNT" ColumnName="INFMTN_CLTN_EMPH_MATR_CTNT" />
+          <ScalarProperty Name="CLTN_EMPH_START_DTTM" ColumnName="CLTN_EMPH_START_DTTM" />
+          <ScalarProperty Name="CLTN_EMPH_FNSH_DTTM" ColumnName="CLTN_EMPH_FNSH_DTTM" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_INFMTN_CLTN_EMPH_MATR_PER_TGT">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_INFMTN_CLTN_EMPH_MATR_PER_TGT">
+        <MappingFragment StoreEntitySet="TB_INFMTN_CLTN_EMPH_MATR_PER_TGT">
+          <ScalarProperty Name="INFMTN_CLTN_EMPH_SN" ColumnName="INFMTN_CLTN_EMPH_SN" />
+          <ScalarProperty Name="TGT_ID" ColumnName="TGT_ID" />
+          <ScalarProperty Name="INFMTN_CLTN_EMPH_MATR_PER_TGT_ID" ColumnName="INFMTN_CLTN_EMPH_MATR_PER_TGT_ID" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_INFMTN_IDTF_CTNT">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_INFMTN_IDTF_CTNT">
+        <MappingFragment StoreEntitySet="TB_INFMTN_IDTF_CTNT">
+          <ScalarProperty Name="INFMTN_IDTF_CTNT_ID" ColumnName="INFMTN_IDTF_CTNT_ID" />
+          <ScalarProperty Name="MSN_NM" ColumnName="MSN_NM" />
+          <ScalarProperty Name="TGT_ID" ColumnName="TGT_ID" />
+          <ScalarProperty Name="CTNT" ColumnName="CTNT" />
+          <ScalarProperty Name="REGSTR_ID" ColumnName="REGSTR_ID" />
+          <ScalarProperty Name="UPDT_DTTM" ColumnName="UPDT_DTTM" />
+          <ScalarProperty Name="TRSMSSN_STATE_IDTFR" ColumnName="TRSMSSN_STATE_IDTFR" />
+          <ScalarProperty Name="ORGINL_IMAGE_ID" ColumnName="ORGINL_IMAGE_ID" />
+          <ScalarProperty Name="WRK_STATE_IDTFR" ColumnName="WRK_STATE_IDTFR" />
+          <ScalarProperty Name="REGSTR_NM" ColumnName="REGSTR_NM" />
+          <ScalarProperty Name="MIFS_ID" ColumnName="MIFS_ID" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="DCPHRIMAGE_ID" ColumnName="DCPHRIMAGE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_INFMTN_IDTF_CTNT_CHNG_LOG">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_INFMTN_IDTF_CTNT_CHNG_LOG">
+        <MappingFragment StoreEntitySet="TB_INFMTN_IDTF_CTNT_CHNG_LOG">
+          <ScalarProperty Name="INFMTN_IDTF_CTNT_CHNG_LOG_ID" ColumnName="INFMTN_IDTF_CTNT_CHNG_LOG_ID" />
+          <ScalarProperty Name="ORGINL_INFMTN_IDTF_CTNT_ID" ColumnName="ORGINL_INFMTN_IDTF_CTNT_ID" />
+          <ScalarProperty Name="BF_INFMTN_IDTF_CTNT" ColumnName="BF_INFMTN_IDTF_CTNT" />
+          <ScalarProperty Name="CHGMN_ID" ColumnName="CHGMN_ID" />
+          <ScalarProperty Name="CHNG_DTTM" ColumnName="CHNG_DTTM" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT">
+        <MappingFragment StoreEntitySet="TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT">
+          <ScalarProperty Name="INFMTN_IDTF_CTNT_ID" ColumnName="INFMTN_IDTF_CTNT_ID" />
+          <ScalarProperty Name="DCPHRRPRT_ID" ColumnName="DCPHRRPRT_ID" />
+          <ScalarProperty Name="MN_INFMTN_IDTF_CTNT_YN" ColumnName="MN_INFMTN_IDTF_CTNT_YN" />
+          <ScalarProperty Name="INFMTN_IDTF_CTNT_PER_DCPHRRPRT_ID" ColumnName="INFMTN_IDTF_CTNT_PER_DCPHRRPRT_ID" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_INFMTN_IDTF_CTNT_TMPL">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_INFMTN_IDTF_CTNT_TMPL">
+        <MappingFragment StoreEntitySet="TB_INFMTN_IDTF_CTNT_TMPL">
+          <ScalarProperty Name="INFMTN_IDTF_CTNT_TMPL_ID" ColumnName="INFMTN_IDTF_CTNT_TMPL_ID" />
+          <ScalarProperty Name="REGSTR_ID" ColumnName="REGSTR_ID" />
+          <ScalarProperty Name="CTNT" ColumnName="CTNT" />
+          <ScalarProperty Name="UPDT_DTTM" ColumnName="UPDT_DTTM" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_INFO_DB_PRINT_DIARY">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_INFO_DB_PRINT_DIARY">
+        <MappingFragment StoreEntitySet="TB_INFO_DB_PRINT_DIARY">
+          <ScalarProperty Name="INFO_DB_PRINT_DIARY_ID" ColumnName="INFO_DB_PRINT_DIARY_ID" />
+          <ScalarProperty Name="PRINT_DTTM" ColumnName="PRINT_DTTM" />
+          <ScalarProperty Name="DATA_KND_IDTFR" ColumnName="DATA_KND_IDTFR" />
+          <ScalarProperty Name="DATA_ID" ColumnName="DATA_ID" />
+          <ScalarProperty Name="PRINT_USER_ID" ColumnName="PRINT_USER_ID" />
+          <ScalarProperty Name="PRINT_RSN" ColumnName="PRINT_RSN" />
+          <ScalarProperty Name="DESTRTN_DTTM" ColumnName="DESTRTN_DTTM" />
+          <ScalarProperty Name="DESTRTN_RSN" ColumnName="DESTRTN_RSN" />
+          <ScalarProperty Name="DATA_TITLE" ColumnName="DATA_TITLE" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_JCS_TGT">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_JCS_TGT">
+        <MappingFragment StoreEntitySet="TB_JCS_TGT">
+          <ScalarProperty Name="TGT_ID" ColumnName="TGT_ID" />
+          <ScalarProperty Name="BENO" ColumnName="BENO" />
+          <ScalarProperty Name="SUFNO" ColumnName="SUFNO" />
+          <ScalarProperty Name="TGT_NM" ColumnName="TGT_NM" />
+          <ScalarProperty Name="TGTRCMDPRICD" ColumnName="TGTRCMDPRICD" />
+          <ScalarProperty Name="OB_NM" ColumnName="OB_NM" />
+          <ScalarProperty Name="ETASPCD" ColumnName="ETASPCD" />
+          <ScalarProperty Name="CORDC" ColumnName="CORDC" />
+          <ScalarProperty Name="WARSBL_CD" ColumnName="WARSBL_CD" />
+          <ScalarProperty Name="RSTRCT_DSMT_GRPNO" ColumnName="RSTRCT_DSMT_GRPNO" />
+          <ScalarProperty Name="MS2525CCMSCD" ColumnName="MS2525CCMSCD" />
+          <ScalarProperty Name="RGST_DTTM" ColumnName="RGST_DTTM" />
+          <ScalarProperty Name="REGSTR_ID" ColumnName="REGSTR_ID" />
+          <ScalarProperty Name="FRNFC_DB_NM" ColumnName="FRNFC_DB_NM" />
+          <ScalarProperty Name="IDTF_USER_ID" ColumnName="IDTF_USER_ID" />
+          <ScalarProperty Name="RGST_UNIT_NM" ColumnName="RGST_UNIT_NM" />
+          <ScalarProperty Name="WRK_GRP_ID" ColumnName="WRK_GRP_ID" />
+          <ScalarProperty Name="REGSTR_NM" ColumnName="REGSTR_NM" />
+          <ScalarProperty Name="MDFC_DTTM" ColumnName="MDFC_DTTM" />
+          <ScalarProperty Name="MDFR_NM" ColumnName="MDFR_NM" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_LKSTCD">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_LKSTCD">
+        <MappingFragment StoreEntitySet="TB_LKSTCD">
+          <ScalarProperty Name="LKSTCD" ColumnName="LKSTCD" />
+          <ScalarProperty Name="LKSTCD_NM" ColumnName="LKSTCD_NM" />
+          <ScalarProperty Name="USEDVCD" ColumnName="USEDVCD" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_LOG">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_LOG">
+        <MappingFragment StoreEntitySet="TB_LOG">
+          <ScalarProperty Name="LOG_ID" ColumnName="LOG_ID" />
+          <ScalarProperty Name="WORKR_ID" ColumnName="WORKR_ID" />
+          <ScalarProperty Name="EXPLN" ColumnName="EXPLN" />
+          <ScalarProperty Name="LOG_DTTM" ColumnName="LOG_DTTM" />
+          <ScalarProperty Name="DTA_KND_IDTFR" ColumnName="DTA_KND_IDTFR" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="DATA_ID" ColumnName="DATA_ID" />
+          <ScalarProperty Name="WRK_KND_IDTFR" ColumnName="WRK_KND_IDTFR" />
+          <ScalarProperty Name="WRK_RSLT_IDTFR" ColumnName="WRK_RSLT_IDTFR" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_MS2525CCMSCD">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_MS2525CCMSCD">
+        <MappingFragment StoreEntitySet="TB_MS2525CCMSCD">
+          <ScalarProperty Name="MS2525CCMSCD" ColumnName="MS2525CCMSCD" />
+          <ScalarProperty Name="MS2525CCMSCD_NM" ColumnName="MS2525CCMSCD_NM" />
+          <ScalarProperty Name="USEDVCD" ColumnName="USEDVCD" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_MS2525CUSCD">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_MS2525CUSCD">
+        <MappingFragment StoreEntitySet="TB_MS2525CUSCD">
+          <ScalarProperty Name="MS2525CUSCD" ColumnName="MS2525CUSCD" />
+          <ScalarProperty Name="MS2525CUSCD_NM" ColumnName="MS2525CUSCD_NM" />
+          <ScalarProperty Name="USEDVCD" ColumnName="USEDVCD" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_MSGTXT_MGT_RCDBK">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_MSGTXT_MGT_RCDBK">
+        <MappingFragment StoreEntitySet="TB_MSGTXT_MGT_RCDBK">
+          <ScalarProperty Name="MSGTXT_MGT_RCDBK_ID" ColumnName="MSGTXT_MGT_RCDBK_ID" />
+          <ScalarProperty Name="SNDNGNO" ColumnName="SNDNGNO" />
+          <ScalarProperty Name="SNDNG_DTTM" ColumnName="SNDNG_DTTM" />
+          <ScalarProperty Name="LKSTCD" ColumnName="LKSTCD" />
+          <ScalarProperty Name="DCPHRIMAGE_ID" ColumnName="DCPHRIMAGE_ID" />
+          <ScalarProperty Name="CLSLVCD" ColumnName="CLSLVCD" />
+          <ScalarProperty Name="DOC_TITLE" ColumnName="DOC_TITLE" />
+          <ScalarProperty Name="PRSVT_PRD" ColumnName="PRSVT_PRD" />
+          <ScalarProperty Name="RMRK" ColumnName="RMRK" />
+          <ScalarProperty Name="CRTOR_ID" ColumnName="CRTOR_ID" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_MSN">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_MSN">
+        <MappingFragment StoreEntitySet="TB_MSN">
+          <ScalarProperty Name="MSN_NM" ColumnName="MSN_NM" />
+          <ScalarProperty Name="MSN_KND_IDTFR" ColumnName="MSN_KND_IDTFR" />
+          <ScalarProperty Name="MSN_DTTM" ColumnName="MSN_DTTM" />
+          <ScalarProperty Name="DEL_YN" ColumnName="DEL_YN" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_NCB">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_NCB">
+        <MappingFragment StoreEntitySet="TB_NCB">
+          <ScalarProperty Name="NCB" ColumnName="NCB" />
+          <ScalarProperty Name="NATN_NM" ColumnName="NATN_NM" />
+          <ScalarProperty Name="USEDVCD" ColumnName="USEDVCD" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_NTT_TMPL">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_NTT_TMPL">
+        <MappingFragment StoreEntitySet="TB_NTT_TMPL">
+          <ScalarProperty Name="NTT_TMPL_ID" ColumnName="NTT_TMPL_ID" />
+          <ScalarProperty Name="NTT_TMPL_NM" ColumnName="NTT_TMPL_NM" />
+          <ScalarProperty Name="REGSTR_ID" ColumnName="REGSTR_ID" />
+          <ScalarProperty Name="TMPL_FILE" ColumnName="TMPL_FILE" />
+          <ScalarProperty Name="TMPL_KND_IDTFR" ColumnName="TMPL_KND_IDTFR" />
+          <ScalarProperty Name="TMPL_THMNAIL_FILE" ColumnName="TMPL_THMNAIL_FILE" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_OB">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_OB">
+        <MappingFragment StoreEntitySet="TB_OB">
+          <ScalarProperty Name="OB_ID" ColumnName="OB_ID" />
+          <ScalarProperty Name="OB_NM" ColumnName="OB_NM" />
+          <ScalarProperty Name="SMPLCT_OB_NM" ColumnName="SMPLCT_OB_NM" />
+          <ScalarProperty Name="CORDC" ColumnName="CORDC" />
+          <ScalarProperty Name="APPRV_DATE" ColumnName="APPRV_DATE" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_ORD_LEVEL_IMG_PROCES">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_ORD_LEVEL_IMG_PROCES">
+        <MappingFragment StoreEntitySet="TB_ORD_LEVEL_IMG_PROCES">
+          <ScalarProperty Name="ORD_LEVEL_IMG_PROCES_ID" ColumnName="ORD_LEVEL_IMG_PROCES_ID" />
+          <ScalarProperty Name="ORD_ID" ColumnName="ORD_ID" />
+          <ScalarProperty Name="CATALOG_ID" ColumnName="CATALOG_ID" />
+          <ScalarProperty Name="LEVEL_IMG_IDTFR" ColumnName="LEVEL_IMG_IDTFR" />
+          <ScalarProperty Name="DTL_STATE" ColumnName="DTL_STATE" />
+          <ScalarProperty Name="UPDT_DTTM" ColumnName="UPDT_DTTM" />
+          <ScalarProperty Name="RQST_USER_ID" ColumnName="RQST_USER_ID" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_ORGINL_IMAGE">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_ORGINL_IMAGE">
+        <MappingFragment StoreEntitySet="TB_ORGINL_IMAGE">
+          <ScalarProperty Name="ORGINL_IMAGE_ID" ColumnName="ORGINL_IMAGE_ID" />
+          <ScalarProperty Name="MSN_NM" ColumnName="MSN_NM" />
+          <ScalarProperty Name="PRDCN_ID_NM" ColumnName="PRDCN_ID_NM" />
+          <ScalarProperty Name="PRDCN_LEVEL_IDTFR" ColumnName="PRDCN_LEVEL_IDTFR" />
+          <ScalarProperty Name="CLTNSNSRKDCD" ColumnName="CLTNSNSRKDCD" />
+          <ScalarProperty Name="IMGCLTSNKNCD" ColumnName="IMGCLTSNKNCD" />
+          <ScalarProperty Name="INCLUNTDVCD" ColumnName="INCLUNTDVCD" />
+          <ScalarProperty Name="CLSLVCD" ColumnName="CLSLVCD" />
+          <ScalarProperty Name="ORGINL_IMAGE_FILE_ROUTE" ColumnName="ORGINL_IMAGE_FILE_ROUTE" />
+          <ScalarProperty Name="ECRYPT_IMAGE_FILE_ROUTE" ColumnName="ECRYPT_IMAGE_FILE_ROUTE" />
+          <ScalarProperty Name="TRSMSSN_IMAGE_FILE_ROUTE" ColumnName="TRSMSSN_IMAGE_FILE_ROUTE" />
+          <ScalarProperty Name="SHTNG_DTTM" ColumnName="SHTNG_DTTM" />
+          <ScalarProperty Name="BDRY_CORDC" ColumnName="BDRY_CORDC" />
+          <ScalarProperty Name="CENTR_CORDC" ColumnName="CENTR_CORDC" />
+          <ScalarProperty Name="PAIR_IMAGE_ID" ColumnName="PAIR_IMAGE_ID" />
+          <ScalarProperty Name="SU_ANG" ColumnName="SU_ANG" />
+          <ScalarProperty Name="SHTNG_MODE_IDTFR" ColumnName="SHTNG_MODE_IDTFR" />
+          <ScalarProperty Name="SAR_SGNL_NM" ColumnName="SAR_SGNL_NM" />
+          <ScalarProperty Name="CRT_DTTM" ColumnName="CRT_DTTM" />
+          <ScalarProperty Name="STATE_IDTFR" ColumnName="STATE_IDTFR" />
+          <ScalarProperty Name="STLNO" ColumnName="STLNO" />
+          <ScalarProperty Name="SCAN_ANG" ColumnName="SCAN_ANG" />
+          <ScalarProperty Name="PNTRTN_ANG" ColumnName="PNTRTN_ANG" />
+          <ScalarProperty Name="IMAGE_PRCSS_KND_IDTFR" ColumnName="IMAGE_PRCSS_KND_IDTFR" />
+          <ScalarProperty Name="TRSMSSN_STATE_IDTFR" ColumnName="TRSMSSN_STATE_IDTFR" />
+          <ScalarProperty Name="MIFS_ID" ColumnName="MIFS_ID" />
+          <ScalarProperty Name="PTC_VAL" ColumnName="PTC_VAL" />
+          <ScalarProperty Name="ROLL_VAL" ColumnName="ROLL_VAL" />
+          <ScalarProperty Name="RSTRCT_DSMT_GRPNO" ColumnName="RSTRCT_DSMT_GRPNO" />
+          <ScalarProperty Name="ORGINL_IMAGE_NM" ColumnName="ORGINL_IMAGE_NM" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="NCB" ColumnName="NCB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_PRGM">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_PRGM">
+        <MappingFragment StoreEntitySet="TB_PRGM">
+          <ScalarProperty Name="PRGM_PER_ATHRT_ID" ColumnName="PRGM_PER_ATHRT_ID" />
+          <ScalarProperty Name="PRGM_ID" ColumnName="PRGM_ID" />
+          <ScalarProperty Name="ATHRT_GRP_ID" ColumnName="ATHRT_GRP_ID" />
+          <ScalarProperty Name="PRGM_ATHRT_IDTFR" ColumnName="PRGM_ATHRT_IDTFR" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_RANK">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_RANK">
+        <MappingFragment StoreEntitySet="TB_RANK">
+          <ScalarProperty Name="RNKCD" ColumnName="RNKCD" />
+          <ScalarProperty Name="RANK_NM" ColumnName="RANK_NM" />
+          <ScalarProperty Name="USEDVCD" ColumnName="USEDVCD" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_RCP_SCRT_MGT_RCDBK">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_RCP_SCRT_MGT_RCDBK">
+        <MappingFragment StoreEntitySet="TB_RCP_SCRT_MGT_RCDBK">
+          <ScalarProperty Name="SCRT_MGT_RCDBK_ID" ColumnName="SCRT_MGT_RCDBK_ID" />
+          <ScalarProperty Name="MGTNO" ColumnName="MGTNO" />
+          <ScalarProperty Name="DN" ColumnName="DN" />
+          <ScalarProperty Name="COPYNO" ColumnName="COPYNO" />
+          <ScalarProperty Name="CLSLVCD" ColumnName="CLSLVCD" />
+          <ScalarProperty Name="DOC_TITLE" ColumnName="DOC_TITLE" />
+          <ScalarProperty Name="AVNTS_PRTCTN_YN" ColumnName="AVNTS_PRTCTN_YN" />
+          <ScalarProperty Name="AVNTS_PRSVT_YN" ColumnName="AVNTS_PRSVT_YN" />
+          <ScalarProperty Name="ORGINL_ID" ColumnName="ORGINL_ID" />
+          <ScalarProperty Name="ADMIN_ID" ColumnName="ADMIN_ID" />
+          <ScalarProperty Name="RCP_DTTM" ColumnName="RCP_DTTM" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_RDSCD">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_RDSCD">
+        <MappingFragment StoreEntitySet="TB_RDSCD">
+          <ScalarProperty Name="RDSCD" ColumnName="RDSCD" />
+          <ScalarProperty Name="RPFRT" ColumnName="RPFRT" />
+          <ScalarProperty Name="USEDVCD" ColumnName="USEDVCD" />
+          <ScalarProperty Name="RDSCD_IDTFR" ColumnName="RDSCD_IDTFR" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_RECVRY_DATA">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_RECVRY_DATA">
+        <MappingFragment StoreEntitySet="TB_RECVRY_DATA">
+          <ScalarProperty Name="RECVRY_ID" ColumnName="RECVRY_ID" />
+          <ScalarProperty Name="DATA_ID" ColumnName="DATA_ID" />
+          <ScalarProperty Name="RQSTR_ID" ColumnName="RQSTR_ID" />
+          <ScalarProperty Name="STATE_IDTFR" ColumnName="STATE_IDTFR" />
+          <ScalarProperty Name="UPDT_DTTM" ColumnName="UPDT_DTTM" />
+          <ScalarProperty Name="DATA_TYPE" ColumnName="DATA_TYPE" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_RSTRCT_DSMT">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_RSTRCT_DSMT">
+        <MappingFragment StoreEntitySet="TB_RSTRCT_DSMT">
+          <ScalarProperty Name="RSTRCT_DSMT_GRPNO" ColumnName="RSTRCT_DSMT_GRPNO" />
+          <ScalarProperty Name="RSTRCT_DSMT_EXPLN" ColumnName="RSTRCT_DSMT_EXPLN" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_SCRT_HISTRY_CARD">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_SCRT_HISTRY_CARD">
+        <MappingFragment StoreEntitySet="TB_SCRT_HISTRY_CARD">
+          <ScalarProperty Name="SCRT_HISTRY_CARD_ID" ColumnName="SCRT_HISTRY_CARD_ID" />
+          <ScalarProperty Name="SCRT_MGT_RCDBK_ID" ColumnName="SCRT_MGT_RCDBK_ID" />
+          <ScalarProperty Name="CRT_DTTM" ColumnName="CRT_DTTM" />
+          <ScalarProperty Name="USE_PRPS_EXPLN" ColumnName="USE_PRPS_EXPLN" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="HISTRY_KND_IDTFR" ColumnName="HISTRY_KND_IDTFR" />
+          <ScalarProperty Name="HISTRY_EXPLN" ColumnName="HISTRY_EXPLN" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="SAVE_FILE_ROUTE" ColumnName="SAVE_FILE_ROUTE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_SHTNG_MODE_KND">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_SHTNG_MODE_KND">
+        <MappingFragment StoreEntitySet="TB_SHTNG_MODE_KND">
+          <ScalarProperty Name="SHTNG_MODE_KND_IDTFR" ColumnName="SHTNG_MODE_KND_IDTFR" />
+          <ScalarProperty Name="SHTNG_MODE_KND_NM" ColumnName="SHTNG_MODE_KND_NM" />
+          <ScalarProperty Name="USEDVCD" ColumnName="USEDVCD" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_SNDNG_SCRT_MGT_RCDBK">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_SNDNG_SCRT_MGT_RCDBK">
+        <MappingFragment StoreEntitySet="TB_SNDNG_SCRT_MGT_RCDBK">
+          <ScalarProperty Name="SNDNG_SCRT_MGT_RCDBK_ID" ColumnName="SNDNG_SCRT_MGT_RCDBK_ID" />
+          <ScalarProperty Name="MGTNO" ColumnName="MGTNO" />
+          <ScalarProperty Name="SNDNG_DTTM" ColumnName="SNDNG_DTTM" />
+          <ScalarProperty Name="LKSTCD" ColumnName="LKSTCD" />
+          <ScalarProperty Name="DN" ColumnName="DN" />
+          <ScalarProperty Name="DOC_TITLE" ColumnName="DOC_TITLE" />
+          <ScalarProperty Name="AVNTS_PRSVT_YN" ColumnName="AVNTS_PRSVT_YN" />
+          <ScalarProperty Name="RMRK" ColumnName="RMRK" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="COPYNO" ColumnName="COPYNO" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_TGT">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_TGT">
+        <MappingFragment StoreEntitySet="TB_TGT">
+          <ScalarProperty Name="TGT_ID" ColumnName="TGT_ID" />
+          <ScalarProperty Name="BENO" ColumnName="BENO" />
+          <ScalarProperty Name="SUFNO" ColumnName="SUFNO" />
+          <ScalarProperty Name="TGT_NM" ColumnName="TGT_NM" />
+          <ScalarProperty Name="TGTRCMDPRICD" ColumnName="TGTRCMDPRICD" />
+          <ScalarProperty Name="OB_NM" ColumnName="OB_NM" />
+          <ScalarProperty Name="ETASPCD" ColumnName="ETASPCD" />
+          <ScalarProperty Name="CORDC" ColumnName="CORDC" />
+          <ScalarProperty Name="WARSBL_CD" ColumnName="WARSBL_CD" />
+          <ScalarProperty Name="RSTRCT_DSMT_GRPNO" ColumnName="RSTRCT_DSMT_GRPNO" />
+          <ScalarProperty Name="MS2525CCMSCD" ColumnName="MS2525CCMSCD" />
+          <ScalarProperty Name="RGST_DTTM" ColumnName="RGST_DTTM" />
+          <ScalarProperty Name="REGSTR_ID" ColumnName="REGSTR_ID" />
+          <ScalarProperty Name="FRNFC_DB_NM" ColumnName="FRNFC_DB_NM" />
+          <ScalarProperty Name="IDTF_USER_ID" ColumnName="IDTF_USER_ID" />
+          <ScalarProperty Name="RGST_UNIT_NM" ColumnName="RGST_UNIT_NM" />
+          <ScalarProperty Name="WRK_GRP_ID" ColumnName="WRK_GRP_ID" />
+          <ScalarProperty Name="REGSTR_NM" ColumnName="REGSTR_NM" />
+          <ScalarProperty Name="MDFC_DTTM" ColumnName="MDFC_DTTM" />
+          <ScalarProperty Name="MDFR_NM" ColumnName="MDFR_NM" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_TGT_PER_WRK_GRP">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_TGT_PER_WRK_GRP">
+        <MappingFragment StoreEntitySet="TB_TGT_PER_WRK_GRP">
+          <ScalarProperty Name="TGT_ID" ColumnName="TGT_ID" />
+          <ScalarProperty Name="WRK_GRP_ID" ColumnName="WRK_GRP_ID" />
+          <ScalarProperty Name="TGT_PER_WRK_ID" ColumnName="TGT_PER_WRK_ID" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_TRSMSSN_LOG">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_TRSMSSN_LOG">
+        <MappingFragment StoreEntitySet="TB_TRSMSSN_LOG">
+          <ScalarProperty Name="TRSMSSN_LOG_ID" ColumnName="TRSMSSN_LOG_ID" />
+          <ScalarProperty Name="DATA_KND_IDTFR" ColumnName="DATA_KND_IDTFR" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="WRK_RSLT_IDTFR" ColumnName="WRK_RSLT_IDTFR" />
+          <ScalarProperty Name="ORGINL_ID" ColumnName="ORGINL_ID" />
+          <ScalarProperty Name="LOG_DTTM" ColumnName="LOG_DTTM" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_UC">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_UC">
+        <MappingFragment StoreEntitySet="TB_UC">
+          <ScalarProperty Name="UC" ColumnName="UC" />
+          <ScalarProperty Name="U_NM" ColumnName="U_NM" />
+          <ScalarProperty Name="USEDVCD" ColumnName="USEDVCD" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_UICD">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_UICD">
+        <MappingFragment StoreEntitySet="TB_UICD">
+          <ScalarProperty Name="UICD" ColumnName="UICD" />
+          <ScalarProperty Name="UI_NM" ColumnName="UI_NM" />
+          <ScalarProperty Name="UIDVCD" ColumnName="UIDVCD" />
+          <ScalarProperty Name="USEDVCD" ColumnName="USEDVCD" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_UIDVCD">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_UIDVCD">
+        <MappingFragment StoreEntitySet="TB_UIDVCD">
+          <ScalarProperty Name="UIDVCD" ColumnName="UIDVCD" />
+          <ScalarProperty Name="UI_DVS_NM" ColumnName="UI_DVS_NM" />
+          <ScalarProperty Name="USEDVCD" ColumnName="USEDVCD" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_USER">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_USER">
+        <MappingFragment StoreEntitySet="TB_USER">
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="LOGINID" ColumnName="LOGINID" />
+          <ScalarProperty Name="USER_PW_CTNT" ColumnName="USER_PW_CTNT" />
+          <ScalarProperty Name="USER_FULNM" ColumnName="USER_FULNM" />
+          <ScalarProperty Name="RNKCD" ColumnName="RNKCD" />
+          <ScalarProperty Name="SRVNO" ColumnName="SRVNO" />
+          <ScalarProperty Name="SIGNTR_FILE" ColumnName="SIGNTR_FILE" />
+          <ScalarProperty Name="ASGMT_UC" ColumnName="ASGMT_UC" />
+          <ScalarProperty Name="USER_LOGIN_PSBLT_YN" ColumnName="USER_LOGIN_PSBLT_YN" />
+          <ScalarProperty Name="SCRTMGTNO" ColumnName="SCRTMGTNO" />
+          <ScalarProperty Name="USER_DEL_YN" ColumnName="USER_DEL_YN" />
+          <ScalarProperty Name="ATHRT_GRP_ID" ColumnName="ATHRT_GRP_ID" />
+          <ScalarProperty Name="WRK_GRP_ID" ColumnName="WRK_GRP_ID" />
+          <ScalarProperty Name="USER_DEPT_TTL" ColumnName="USER_DEPT_TTL" />
+          <ScalarProperty Name="USER_EXPLN" ColumnName="USER_EXPLN" />
+          <ScalarProperty Name="USER_PW_ERR_NUMTM" ColumnName="USER_PW_ERR_NUMTM" />
+          <ScalarProperty Name="LOGIN_DT" ColumnName="LOGIN_DT" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_USER_BF_PW">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_USER_BF_PW">
+        <MappingFragment StoreEntitySet="TB_USER_BF_PW">
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="OLD_ECRYPTPW" ColumnName="OLD_ECRYPTPW" />
+          <ScalarProperty Name="MDFC_DTTM" ColumnName="MDFC_DTTM" />
+          <ScalarProperty Name="BF_PW_ID" ColumnName="BF_PW_ID" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_USER_POI">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_USER_POI">
+        <MappingFragment StoreEntitySet="TB_USER_POI">
+          <ScalarProperty Name="POI_NM" ColumnName="POI_NM" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="CORDC" ColumnName="CORDC" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="USER_POI_ID" ColumnName="USER_POI_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_USER_SMBL">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_USER_SMBL">
+        <MappingFragment StoreEntitySet="TB_USER_SMBL">
+          <ScalarProperty Name="SMBL_ID" ColumnName="SMBL_ID" />
+          <ScalarProperty Name="SMBL_NM" ColumnName="SMBL_NM" />
+          <ScalarProperty Name="SMBL_IMAGE" ColumnName="SMBL_IMAGE" />
+          <ScalarProperty Name="REGSTR_ID" ColumnName="REGSTR_ID" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_USER_TGT_CTGR">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_USER_TGT_CTGR">
+        <MappingFragment StoreEntitySet="TB_USER_TGT_CTGR">
+          <ScalarProperty Name="TGT_CTGR_ID" ColumnName="TGT_CTGR_ID" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="TGT_CTGR_NM" ColumnName="TGT_CTGR_NM" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_WRK">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_WRK">
+        <MappingFragment StoreEntitySet="TB_WRK">
+          <ScalarProperty Name="WRK_ID" ColumnName="WRK_ID" />
+          <ScalarProperty Name="WRK_NM" ColumnName="WRK_NM" />
+          <ScalarProperty Name="ORGINL_IMAGE_ID" ColumnName="ORGINL_IMAGE_ID" />
+          <ScalarProperty Name="WRK_GROUP_ID" ColumnName="WRK_GROUP_ID" />
+          <ScalarProperty Name="WORKR_ID" ColumnName="WORKR_ID" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_WRK_ALLTMT_PLCY">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_WRK_ALLTMT_PLCY">
+        <MappingFragment StoreEntitySet="TB_WRK_ALLTMT_PLCY">
+          <ScalarProperty Name="WRK_ALLTMT_PLCY_ID" ColumnName="WRK_ALLTMT_PLCY_ID" />
+          <ScalarProperty Name="WRK_ALLTMT_PLCY_NM" ColumnName="WRK_ALLTMT_PLCY_NM" />
+          <ScalarProperty Name="WRK_ALLTMT_PLCY_KND_IDTFR" ColumnName="WRK_ALLTMT_PLCY_KND_IDTFR" />
+          <ScalarProperty Name="IMGCLTSNKNCD" ColumnName="IMGCLTSNKNCD" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_WRK_GRP">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_WRK_GRP">
+        <MappingFragment StoreEntitySet="TB_WRK_GRP">
+          <ScalarProperty Name="WRK_GRP_ID" ColumnName="WRK_GRP_ID" />
+          <ScalarProperty Name="WRK_GRP_NM" ColumnName="WRK_GRP_NM" />
+          <ScalarProperty Name="WRK_GRP_EXPLN_CTNT" ColumnName="WRK_GRP_EXPLN_CTNT" />
+          <ScalarProperty Name="WRK_GRP_KND_IDTFR" ColumnName="WRK_GRP_KND_IDTFR" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_WRK_ORD">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_WRK_ORD">
+        <MappingFragment StoreEntitySet="TB_WRK_ORD">
+          <ScalarProperty Name="ORD_ID" ColumnName="ORD_ID" />
+          <ScalarProperty Name="ORD_TYPE_IDTFR" ColumnName="ORD_TYPE_IDTFR" />
+          <ScalarProperty Name="WRK_STATE_IDTFR" ColumnName="WRK_STATE_IDTFR" />
+          <ScalarProperty Name="RQST_DTTM" ColumnName="RQST_DTTM" />
+          <ScalarProperty Name="QUE_DTTM" ColumnName="QUE_DTTM" />
+          <ScalarProperty Name="FNSH_DTTM" ColumnName="FNSH_DTTM" />
+          <ScalarProperty Name="WRK_TIME" ColumnName="WRK_TIME" />
+          <ScalarProperty Name="REQ_WORKRK_ID" ColumnName="REQ_WORKRK_ID" />
+          <ScalarProperty Name="WRK_CTNT" ColumnName="WRK_CTNT" />
+          <ScalarProperty Name="SVR_IDTFR" ColumnName="SVR_IDTFR" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_DCPHRRPRT_TMPL">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_DCPHRRPRT_TMPL">
+        <MappingFragment StoreEntitySet="TB_DCPHRRPRT_TMPL">
+          <ScalarProperty Name="DCPHRRPRT_TMPL_ID" ColumnName="DCPHRRPRT_TMPL_ID" />
+          <ScalarProperty Name="FORM_NM" ColumnName="FORM_NM" />
+          <ScalarProperty Name="HGRNK_ITM_ID" ColumnName="HGRNK_ITM_ID" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_SYST_OPT">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_SYST_OPT">
+        <MappingFragment StoreEntitySet="TB_SYST_OPT">
+          <ScalarProperty Name="LCL_DTTM" ColumnName="LCL_DTTM" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_TGT_PER_ORGINL_IMAGE">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_TGT_PER_ORGINL_IMAGE">
+        <MappingFragment StoreEntitySet="TB_TGT_PER_ORGINL_IMAGE">
+          <ScalarProperty Name="TGT_ID" ColumnName="TGT_ID" />
+          <ScalarProperty Name="ORGINL_IMAGE_ID" ColumnName="ORGINL_IMAGE_ID" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_TGT_PER_PLCY">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_TGT_PER_PLCY">
+        <MappingFragment StoreEntitySet="TB_TGT_PER_PLCY">
+          <ScalarProperty Name="WRK_ALLTMT_PLCY_ID" ColumnName="WRK_ALLTMT_PLCY_ID" />
+          <ScalarProperty Name="TGT_ID" ColumnName="TGT_ID" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_USER_TGT_CTGR_PER_TGT">
+      <EntityTypeMapping TypeName="GS425_IEE_DBModel.TB_USER_TGT_CTGR_PER_TGT">
+        <MappingFragment StoreEntitySet="TB_USER_TGT_CTGR_PER_TGT">
+          <ScalarProperty Name="TGT_CTGR_ID" ColumnName="TGT_CTGR_ID" />
+          <ScalarProperty Name="TGT_ID" ColumnName="TGT_ID" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

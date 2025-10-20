@@ -1,0 +1,2245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GS425_IEE_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TB_ADMINISTZONE">
+    <Key>
+      <PropertyRef Name="ADMINISTZONE_CD" />
+    </Key>
+    <Property Name="ADMINISTZONE_CD" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="ADMINISTZONE_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="BDRY_CORDC" Type="geometry" Nullable="false" />
+    <Property Name="HGRNK_ADMINISTZONE_CD" Type="char" MaxLength="8" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_ANTT_TMPL">
+    <Key>
+      <PropertyRef Name="NTT_TMPL_ID" />
+    </Key>
+    <Property Name="NTT_TMPL_ID" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="NTT_TMPL_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="USER_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TMPL_FILE" Type="image" Nullable="false" />
+    <Property Name="TMPL_KND_IDTFR" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_APPRV_CLPLN">
+    <Key>
+      <PropertyRef Name="APPROVAL_CLPLN_ID" />
+    </Key>
+    <Property Name="APPROVAL_CLPLN_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CRT_DNT" Type="datetime" Nullable="false" />
+    <Property Name="CLPLN_START_DNT" Type="datetime" Nullable="false" />
+    <Property Name="CLPLN_FNSH_DNT" Type="datetime" Nullable="false" />
+    <Property Name="STL_IDTFR" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_APPRV_CLPLN_SCENES">
+    <Key>
+      <PropertyRef Name="SCENE_ID" />
+    </Key>
+    <Property Name="SCENE_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="IMAGE_NM" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="CPLN_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BDRY_CORDC" Type="geometry" Nullable="false" />
+    <Property Name="SHTNG_START_DTTM" Type="datetime" Nullable="false" />
+    <Property Name="UGCY_SHTNG_YN" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="SHTNG_END_DTTM" Type="datetime" />
+    <Property Name="MSN_NM" Type="varchar" MaxLength="50" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_ASSIGN_WRK_PLCY">
+    <Key>
+      <PropertyRef Name="WRK_ALLTMT_PLCY_ID" />
+    </Key>
+    <Property Name="WRK_ALLTMT_PLCY_ID" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="WRK_ALLTMT_PLCY_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="WRK_ALLTMT_PLCY_TP_IDTFR" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="IMGCLTSNKNCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_ATHRT_GRP">
+    <Key>
+      <PropertyRef Name="ATHRT_GRP_ID" />
+    </Key>
+    <Property Name="ATHRT_GRP_ID" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="ATHRT_GRP_NM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ATHRT_GRP_EXPLN" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_BCUP_LOG">
+    <Key>
+      <PropertyRef Name="BCUP_LOG_ID" />
+    </Key>
+    <Property Name="BCUP_LOG_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="DTA_KND_IDTFR" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="WRK_TYPE_KND_IDTFR" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="LOG_DTTM" Type="datetime" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_CHG_DTCT_IMAGE">
+    <Key>
+      <PropertyRef Name="CHNG_DTCT_IMAGE_ID" />
+    </Key>
+    <Property Name="CHNG_DTCT_IMAGE_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="FILE_ROUTE" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="ORGINL_IMAGE_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="REF_IMAGE_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="WRK_DTTM" Type="datetime" Nullable="false" />
+    <Property Name="BDRY_CORDC" Type="geometry" Nullable="false" />
+    <Property Name="CENTR_CORDC" Type="geometry" Nullable="false" />
+    <Property Name="AUTO_YN" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CRT_MODE_IDTFR" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_CLPLN_SCENE_PRCSS">
+    <Key>
+      <PropertyRef Name="CLPLN_SCENE_PRCSS_ID" />
+    </Key>
+    <Property Name="CLPLN_SCENE_PRCSS_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="IMAGE_NM" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="PRCSS_IMAGE_ID" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="WRK_STATE" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="CRT_DTTM" Type="datetime" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_CLSLVCD">
+    <Key>
+      <PropertyRef Name="CLSLVCD" />
+    </Key>
+    <Property Name="CLSLVCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="CLSLV_NM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="USEDVCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_CLTNSNSRKDCD">
+    <Key>
+      <PropertyRef Name="CLTNSNSRKDCD" />
+    </Key>
+    <Property Name="CLTNSNSRKDCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="CLTNSNSRKDCD_NM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="USEDVCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_CMN_CD">
+    <Key>
+      <PropertyRef Name="CTGR_IDTFR" />
+      <PropertyRef Name="DTL_IDTFR" />
+    </Key>
+    <Property Name="CTGR_IDTFR" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="DTL_IDTFR" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CTGR_NM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DTL_NM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CMN_CD_ID" Type="varchar" MaxLength="8" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_CRCTN_IMAGE">
+    <Key>
+      <PropertyRef Name="CRCTN_IMAGE_ID" />
+    </Key>
+    <Property Name="CRCTN_IMAGE_ID" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="BDRY_CORDC" Type="geometry" />
+    <Property Name="CENTR_CORDC" Type="geometry" />
+    <Property Name="ORGINL_IMAGE_ID" Type="varchar" MaxLength="20" />
+    <Property Name="WORKR_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CRT_DTTM" Type="datetime" Nullable="false" />
+    <Property Name="CRCTN_IMAGE_TYPE_IDTFR" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CRCTN_IMAGE_FILE_ROUTE" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="CRCTN_IMAGE_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_DATA_SNCZT">
+    <Key>
+      <PropertyRef Name="DATA_CHG_ID" />
+    </Key>
+    <Property Name="DATA_CHG_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TB_NM" Type="varchar" MaxLength="100" />
+    <Property Name="CHG_KND" Type="varchar" MaxLength="10" />
+    <Property Name="CHG_DATA_IDTFR" Type="varchar" MaxLength="500" />
+    <Property Name="CHG_DTTM" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TB_DCPHRIMAGE">
+    <Key>
+      <PropertyRef Name="DCPHRIMAGE_ID" />
+    </Key>
+    <Property Name="DCPHRIMAGE_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MSN_NM" Type="varchar" MaxLength="50" />
+    <Property Name="DCPHRIMAGE_NM" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="ORGINL_IMAGE_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="DCPHRIMAGE_FILE" Type="image" Nullable="false" />
+    <Property Name="TGT_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="WRK_STATE_IDTFR" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="TRSMSSN_STATE_IDTFR" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="REGSTR_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BDRY_CORDC" Type="geometry" Nullable="false" />
+    <Property Name="CENTR_CORDC" Type="geometry" Nullable="false" />
+    <Property Name="RTTN_ANG" Type="float" Nullable="false" />
+    <Property Name="UPDT_DTTM" Type="datetime" Nullable="false" />
+    <Property Name="CRT_DTTIM" Type="datetime" Nullable="false" />
+    <Property Name="ADMINISTZONE_NM" Type="varchar" MaxLength="200" />
+    <Property Name="RSTRCT_DSMT_GRPNO" Type="varchar" MaxLength="15" />
+    <Property Name="APPRVR_ID" Type="varchar" MaxLength="50" />
+    <Property Name="UNTCMD_ID" Type="varchar" MaxLength="50" />
+    <Property Name="NTT_FILE" Type="image" />
+    <Property Name="RAWDATA_ROUTE" Type="varchar" MaxLength="1000" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_DCPHRIMAGE_LOCTN">
+    <Key>
+      <PropertyRef Name="DCPHRIMAGE_LOCTN_ID" />
+    </Key>
+    <Property Name="DCPHRIMAGE_LOCTN_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ADMINISTZONE_CD" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="DCPHRIMAGE_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_DCPHRIMAGE_PER_DCPHRRPRT">
+    <Key>
+      <PropertyRef Name="DCPHRIMAGE_PER_DCPHRRPRT_ID" />
+    </Key>
+    <Property Name="DCPHRRPRT_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="DCPHRIMAGE_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="DCPHRIMAGE_PER_DCPHRRPRT_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_DCPHRRPRT">
+    <Key>
+      <PropertyRef Name="DCPHRRPRT_ID" />
+    </Key>
+    <Property Name="DCPHRRPRT_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="DCPHRRPRT_TITLE" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="FiLE_ROUTE" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="RGST_DTTM" Type="datetime" Nullable="false" />
+    <Property Name="CRTOR_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BCUP_STATE_IDTFR" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="BCUP_FILE_ROUTE" Type="varchar" MaxLength="1000" />
+    <Property Name="DCPHRRPRT_TYPE_IDTFR" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="TRSMSSN_STATE_IDTFR" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="MSN_NM" Type="varchar" MaxLength="50" />
+    <Property Name="DN" Type="varchar" MaxLength="50" />
+    <Property Name="APPRVR_ID" Type="varchar" MaxLength="50" />
+    <Property Name="UNTCMD_ID" Type="varchar" MaxLength="50" />
+    <Property Name="MIFS_ID" Type="varchar" MaxLength="50" />
+    <Property Name="RSTRCT_DSMT_GRPNO" Type="varchar" MaxLength="15" />
+    <Property Name="SNCNZ_IDTFR" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <!--생성 중 오류 발생:
+경고 6002: 테이블/뷰 'GS425_IEE_DB.dbo.TB_DCPHRRPRT_TMPL'에 기본 키가 정의되지 않았습니다. 키가 유추되었고 읽기 전용 테이블/뷰로 정의되었습니다.-->
+  <EntityType Name="TB_DCPHRRPRT_TMPL">
+    <Key>
+      <PropertyRef Name="DCPHRRPRT_TMPL_ID" />
+      <PropertyRef Name="FORM_NM" />
+      <PropertyRef Name="HGRNK_ITM_ID" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="DCPHRRPRT_TMPL_ID" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="FORM_NM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="HGRNK_ITM_ID" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_DCPHRRPRT_TYPE">
+    <Key>
+      <PropertyRef Name="DCPHRRPRT_TYPE_IDTFR" />
+    </Key>
+    <Property Name="DCPHRRPRT_TYPE_IDTFR" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="DCPHRRPRT_TYPE_NM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="USEDVCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_ENGLSH_WORD">
+    <Key>
+      <PropertyRef Name="WORD_NM" />
+      <PropertyRef Name="WORD_TYPE" />
+    </Key>
+    <Property Name="WORD_NM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="WORD_TYPE" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_ENMEQP">
+    <Key>
+      <PropertyRef Name="ENMYFAMC" />
+    </Key>
+    <Property Name="ENMYFAMC" Type="char" MaxLength="8" Nullable="false" />
+    <Property Name="ENMEQP_NM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ENMEQP_EXPLN" Type="varchar" MaxLength="4000" />
+    <Property Name="ENMEQP_ALIAS" Type="varchar" MaxLength="50" />
+    <Property Name="rowguid" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="TB_ENMEQP_BASIC_IMAGE">
+    <Key>
+      <PropertyRef Name="ENMEQP_BASIC_IMAGE_ID" />
+    </Key>
+    <Property Name="ENMEQP_BASIC_IMAGE_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="SIDVW_FILE" Type="varbinary(max)" Nullable="false" />
+    <Property Name="PLNVW_FILE" Type="varbinary(max)" Nullable="false" />
+    <Property Name="ENMYFAMC" Type="char" MaxLength="8" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_ENMEQP_IMAGE">
+    <Key>
+      <PropertyRef Name="ENMEQP_IMAGE_ID" />
+    </Key>
+    <Property Name="ENMYFAMC" Type="char" MaxLength="8" Nullable="false" />
+    <Property Name="ENMEQP_IMAGE_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ENMEQP_IMAGE_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="IMAGE_FILE" Type="image" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_ENMEQP_SPEC">
+    <Key>
+      <PropertyRef Name="ENMEQP_SPEC_ID" />
+    </Key>
+    <Property Name="ENMEQP_SPEC_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ENMYFAMC" Type="char" MaxLength="8" Nullable="false" />
+    <Property Name="ENMEQP_SPEC_NM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="VAL" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="UICD" Type="char" MaxLength="3" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_ETASPCD">
+    <Key>
+      <PropertyRef Name="ETASPCD" />
+    </Key>
+    <Property Name="ETASPCD" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ETASPCD_NM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="USEDVCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_FFDB">
+    <Key>
+      <PropertyRef Name="BENO" />
+      <PropertyRef Name="SUFNO" />
+    </Key>
+    <Property Name="BENO" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="SUFNO" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="FKSGNCD" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="GOTLRCLSCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="GOTGMDCLSCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="GOTGSMCLSCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="HANGL_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ENGLSH_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CORDC" Type="geometry" Nullable="false" />
+    <Property Name="HAE_ALT" Type="float" Nullable="false" />
+    <Property Name="MSL_ALT" Type="float" Nullable="false" />
+    <Property Name="INSTLTN_STATE_IDTFR" Type="varchar" MaxLength="10" />
+    <Property Name="INSTLTN_STATE_EXPLN" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="OPRSTCD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="JDPINO" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="JTL_YN" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RTL_YN" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="NSL_YN" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CTL_YN" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="TGT_PRDCN_DATE" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="TGT_MDFC_DATE" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_IMAGE_PRCSS_KND">
+    <Key>
+      <PropertyRef Name="IMAGE_PRCSS_KND_IDTFR" />
+    </Key>
+    <Property Name="IMAGE_PRCSS_KND_IDTFR" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="IMAGE_PRCSS_KND_NM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="USEDVCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="CLTNSNSRKDCD" Type="char" MaxLength="2" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_IMGCLTSNKNCD">
+    <Key>
+      <PropertyRef Name="IMGCLTSNKNCD" />
+    </Key>
+    <Property Name="IMGCLTSNKNCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="IMGCLTSNKNCD_NM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="USEDVCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_INCLUNTDVCD">
+    <Key>
+      <PropertyRef Name="INCLUNTDVCD" />
+    </Key>
+    <Property Name="INCLUNTDVCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="INCLUNTDVCD_NM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="USEDVCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_INFMTN_CLTN_EMPH_MATR">
+    <Key>
+      <PropertyRef Name="INFMTN_CLTN_EMPH_MATR_SN" />
+    </Key>
+    <Property Name="INFMTN_CLTN_EMPH_MATR_SN" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="INFMTN_CLTN_EMPH_MATR_CTNT" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="CLTN_EMPH_START_DTTM" Type="datetime" Nullable="false" />
+    <Property Name="CLTN_EMPH_FNSH_DTTM" Type="datetime" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_INFMTN_CLTN_EMPH_MATR_PER_TGT">
+    <Key>
+      <PropertyRef Name="INFMTN_CLTN_EMPH_MATR_PER_TGT_ID" />
+    </Key>
+    <Property Name="INFMTN_CLTN_EMPH_SN" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="TGT_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="INFMTN_CLTN_EMPH_MATR_PER_TGT_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_INFMTN_IDTF_CTNT">
+    <Key>
+      <PropertyRef Name="INFMTN_IDTF_CTNT_ID" />
+    </Key>
+    <Property Name="INFMTN_IDTF_CTNT_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MSN_NM" Type="varchar" MaxLength="50" />
+    <Property Name="TGT_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CTNT" Type="varchar" MaxLength="4000" Nullable="false" />
+    <Property Name="REGSTR_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UPDT_DTTM" Type="datetime" Nullable="false" />
+    <Property Name="TRSMSSN_STATE_IDTFR" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="ORGINL_IMAGE_ID" Type="varchar" MaxLength="20" />
+    <Property Name="WRK_STATE_IDTFR" Type="varchar" MaxLength="10" />
+    <Property Name="REGSTR_NM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MIFS_ID" Type="varchar" MaxLength="50" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DCPHRIMAGE_ID" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="TB_INFMTN_IDTF_CTNT_CHNG_LOG">
+    <Key>
+      <PropertyRef Name="INFMTN_IDTF_CTNT_CHNG_LOG_ID" />
+    </Key>
+    <Property Name="INFMTN_IDTF_CTNT_CHNG_LOG_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ORGINL_INFMTN_IDTF_CTNT_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="BF_INFMTN_IDTF_CTNT" Type="varchar" MaxLength="4000" Nullable="false" />
+    <Property Name="CHGMN_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CHNG_DTTM" Type="datetime" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT">
+    <Key>
+      <PropertyRef Name="INFMTN_IDTF_CTNT_PER_DCPHRRPRT_ID" />
+    </Key>
+    <Property Name="INFMTN_IDTF_CTNT_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="DCPHRRPRT_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MN_INFMTN_IDTF_CTNT_YN" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="INFMTN_IDTF_CTNT_PER_DCPHRRPRT_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_INFMTN_IDTF_CTNT_TMPL">
+    <Key>
+      <PropertyRef Name="INFMTN_IDTF_CTNT_TMPL_ID" />
+    </Key>
+    <Property Name="INFMTN_IDTF_CTNT_TMPL_ID" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="REGSTR_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CTNT" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UPDT_DTTM" Type="datetime" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_INFO_DB_PRINT_DIARY">
+    <Key>
+      <PropertyRef Name="INFO_DB_PRINT_DIARY_ID" />
+    </Key>
+    <Property Name="INFO_DB_PRINT_DIARY_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="PRINT_DTTM" Type="datetime" Nullable="false" />
+    <Property Name="DATA_KND_IDTFR" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="DATA_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="PRINT_USER_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="PRINT_RSN" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="DESTRTN_DTTM" Type="datetime" Nullable="false" />
+    <Property Name="DESTRTN_RSN" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="DATA_TITLE" Type="varchar" MaxLength="200" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_JCS_TGT">
+    <Key>
+      <PropertyRef Name="TGT_ID" />
+    </Key>
+    <Property Name="TGT_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BENO" Type="varchar" MaxLength="10" />
+    <Property Name="SUFNO" Type="varchar" MaxLength="5" />
+    <Property Name="TGT_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="TGTRCMDPRICD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="OB_NM" Type="varchar" MaxLength="50" />
+    <Property Name="ETASPCD" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CORDC" Type="geometry" Nullable="false" />
+    <Property Name="WARSBL_CD" Type="char" MaxLength="15" />
+    <Property Name="RSTRCT_DSMT_GRPNO" Type="varchar" MaxLength="15" />
+    <Property Name="MS2525CCMSCD" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RGST_DTTM" Type="datetime" Nullable="false" />
+    <Property Name="REGSTR_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FRNFC_DB_NM" Type="varchar" MaxLength="50" />
+    <Property Name="IDTF_USER_ID" Type="varchar" MaxLength="50" />
+    <Property Name="RGST_UNIT_NM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="WRK_GRP_ID" Type="varchar" MaxLength="8" />
+    <Property Name="REGSTR_NM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MDFC_DTTM" Type="datetime" />
+    <Property Name="MDFR_NM" Type="varchar" MaxLength="50" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_LKSTCD">
+    <Key>
+      <PropertyRef Name="LKSTCD" />
+    </Key>
+    <Property Name="LKSTCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="LKSTCD_NM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="USEDVCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_LOG">
+    <Key>
+      <PropertyRef Name="LOG_ID" />
+    </Key>
+    <Property Name="LOG_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="WORKR_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EXPLN" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="LOG_DTTM" Type="datetime" Nullable="false" />
+    <Property Name="DTA_KND_IDTFR" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="IP" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="DATA_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="WRK_KND_IDTFR" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="WRK_RSLT_IDTFR" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_MS2525CCMSCD">
+    <Key>
+      <PropertyRef Name="MS2525CCMSCD" />
+    </Key>
+    <Property Name="MS2525CCMSCD" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MS2525CCMSCD_NM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="USEDVCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_MS2525CUSCD">
+    <Key>
+      <PropertyRef Name="MS2525CUSCD" />
+    </Key>
+    <Property Name="MS2525CUSCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="MS2525CUSCD_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="USEDVCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_MSGTXT_MGT_RCDBK">
+    <Key>
+      <PropertyRef Name="MSGTXT_MGT_RCDBK_ID" />
+    </Key>
+    <Property Name="MSGTXT_MGT_RCDBK_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="SNDNGNO" Type="varchar" MaxLength="22" Nullable="false" />
+    <Property Name="SNDNG_DTTM" Type="datetime" Nullable="false" />
+    <Property Name="LKSTCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="DCPHRIMAGE_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CLSLVCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="DOC_TITLE" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="PRSVT_PRD" Type="float" Nullable="false" />
+    <Property Name="RMRK" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="CRTOR_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_MSN">
+    <Key>
+      <PropertyRef Name="MSN_NM" />
+    </Key>
+    <Property Name="MSN_NM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MSN_KND_IDTFR" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="MSN_DTTM" Type="datetime" Nullable="false" />
+    <Property Name="DEL_YN" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_NCB">
+    <Key>
+      <PropertyRef Name="NCB" />
+    </Key>
+    <Property Name="NCB" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="NATN_NM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="USEDVCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_NTT_TMPL">
+    <Key>
+      <PropertyRef Name="NTT_TMPL_ID" />
+    </Key>
+    <Property Name="NTT_TMPL_ID" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="NTT_TMPL_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="REGSTR_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TMPL_FILE" Type="image" Nullable="false" />
+    <Property Name="TMPL_KND_IDTFR" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="TMPL_THMNAIL_FILE" Type="image" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_OB">
+    <Key>
+      <PropertyRef Name="OB_ID" />
+    </Key>
+    <Property Name="OB_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="OB_NM" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="SMPLCT_OB_NM" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="CORDC" Type="geometry" Nullable="false" />
+    <Property Name="APPRV_DATE" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_ORD_LEVEL_IMG_PROCES">
+    <Key>
+      <PropertyRef Name="ORD_LEVEL_IMG_PROCES_ID" />
+    </Key>
+    <Property Name="ORD_LEVEL_IMG_PROCES_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ORD_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CATALOG_ID" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="LEVEL_IMG_IDTFR" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="DTL_STATE" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UPDT_DTTM" Type="datetime" Nullable="false" />
+    <Property Name="RQST_USER_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_ORGINL_IMAGE">
+    <Key>
+      <PropertyRef Name="ORGINL_IMAGE_ID" />
+    </Key>
+    <Property Name="ORGINL_IMAGE_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MSN_NM" Type="varchar" MaxLength="50" />
+    <Property Name="PRDCN_ID_NM" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="PRDCN_LEVEL_IDTFR" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CLTNSNSRKDCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="IMGCLTSNKNCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="INCLUNTDVCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="CLSLVCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="ORGINL_IMAGE_FILE_ROUTE" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="ECRYPT_IMAGE_FILE_ROUTE" Type="varchar" MaxLength="1000" />
+    <Property Name="TRSMSSN_IMAGE_FILE_ROUTE" Type="varchar" MaxLength="1000" />
+    <Property Name="SHTNG_DTTM" Type="datetime" Nullable="false" />
+    <Property Name="BDRY_CORDC" Type="geometry" Nullable="false" />
+    <Property Name="CENTR_CORDC" Type="geometry" Nullable="false" />
+    <Property Name="PAIR_IMAGE_ID" Type="varchar" MaxLength="20" />
+    <Property Name="SU_ANG" Type="float" Nullable="false" />
+    <Property Name="SHTNG_MODE_IDTFR" Type="varchar" MaxLength="10" />
+    <Property Name="SAR_SGNL_NM" Type="varchar" MaxLength="50" />
+    <Property Name="CRT_DTTM" Type="datetime" Nullable="false" />
+    <Property Name="STATE_IDTFR" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="STLNO" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="SCAN_ANG" Type="float" />
+    <Property Name="PNTRTN_ANG" Type="float" />
+    <Property Name="IMAGE_PRCSS_KND_IDTFR" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="TRSMSSN_STATE_IDTFR" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="MIFS_ID" Type="varchar" MaxLength="50" />
+    <Property Name="PTC_VAL" Type="float" />
+    <Property Name="ROLL_VAL" Type="float" />
+    <Property Name="RSTRCT_DSMT_GRPNO" Type="varchar" MaxLength="15" />
+    <Property Name="ORGINL_IMAGE_NM" Type="varchar" MaxLength="200" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="NCB" Type="char" MaxLength="2" />
+  </EntityType>
+  <EntityType Name="TB_PRGM">
+    <Key>
+      <PropertyRef Name="PRGM_PER_ATHRT_ID" />
+    </Key>
+    <Property Name="PRGM_PER_ATHRT_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="PRGM_ID" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="ATHRT_GRP_ID" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="PRGM_ATHRT_IDTFR" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_RANK">
+    <Key>
+      <PropertyRef Name="RNKCD" />
+    </Key>
+    <Property Name="RNKCD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="RANK_NM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="USEDVCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_RCP_SCRT_MGT_RCDBK">
+    <Key>
+      <PropertyRef Name="SCRT_MGT_RCDBK_ID" />
+    </Key>
+    <Property Name="SCRT_MGT_RCDBK_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MGTNO" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="DN" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="COPYNO" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CLSLVCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="DOC_TITLE" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="AVNTS_PRTCTN_YN" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="AVNTS_PRSVT_YN" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="ORGINL_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ADMIN_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RCP_DTTM" Type="datetime" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_RDSCD">
+    <Key>
+      <PropertyRef Name="RDSCD" />
+    </Key>
+    <Property Name="RDSCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="RPFRT" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="USEDVCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="RDSCD_IDTFR" Type="varchar" MaxLength="5" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_RECVRY_DATA">
+    <Key>
+      <PropertyRef Name="RECVRY_ID" />
+    </Key>
+    <Property Name="RECVRY_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="DATA_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="RQSTR_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="STATE_IDTFR" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="UPDT_DTTM" Type="datetime" Nullable="false" />
+    <Property Name="DATA_TYPE" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_RSTRCT_DSMT">
+    <Key>
+      <PropertyRef Name="RSTRCT_DSMT_GRPNO" />
+    </Key>
+    <Property Name="RSTRCT_DSMT_GRPNO" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="RSTRCT_DSMT_EXPLN" Type="varchar" MaxLength="4000" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_SCRT_HISTRY_CARD">
+    <Key>
+      <PropertyRef Name="SCRT_HISTRY_CARD_ID" />
+    </Key>
+    <Property Name="SCRT_HISTRY_CARD_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="SCRT_MGT_RCDBK_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CRT_DTTM" Type="datetime" Nullable="false" />
+    <Property Name="USE_PRPS_EXPLN" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="USER_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="HISTRY_KND_IDTFR" Type="varchar" MaxLength="10" />
+    <Property Name="HISTRY_EXPLN" Type="varchar" MaxLength="200" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SAVE_FILE_ROUTE" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="TB_SHTNG_MODE_KND">
+    <Key>
+      <PropertyRef Name="SHTNG_MODE_KND_IDTFR" />
+    </Key>
+    <Property Name="SHTNG_MODE_KND_IDTFR" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="SHTNG_MODE_KND_NM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="USEDVCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_SNDNG_SCRT_MGT_RCDBK">
+    <Key>
+      <PropertyRef Name="SNDNG_SCRT_MGT_RCDBK_ID" />
+    </Key>
+    <Property Name="SNDNG_SCRT_MGT_RCDBK_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MGTNO" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="SNDNG_DTTM" Type="datetime" Nullable="false" />
+    <Property Name="LKSTCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="DN" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DOC_TITLE" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="AVNTS_PRSVT_YN" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="RMRK" Type="varchar" MaxLength="4000" />
+    <Property Name="USER_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="COPYNO" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <!--생성 중 오류 발생:
+경고 6002: 테이블/뷰 'GS425_IEE_DB.dbo.TB_SYST_OPT'에 기본 키가 정의되지 않았습니다. 키가 유추되었고 읽기 전용 테이블/뷰로 정의되었습니다.-->
+  <EntityType Name="TB_SYST_OPT">
+    <Key>
+      <PropertyRef Name="LCL_DTTM" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="LCL_DTTM" Type="datetime" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_TGT">
+    <Key>
+      <PropertyRef Name="TGT_ID" />
+    </Key>
+    <Property Name="TGT_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BENO" Type="varchar" MaxLength="10" />
+    <Property Name="SUFNO" Type="varchar" MaxLength="5" />
+    <Property Name="TGT_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="TGTRCMDPRICD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="OB_NM" Type="varchar" MaxLength="50" />
+    <Property Name="ETASPCD" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CORDC" Type="geometry" Nullable="false" />
+    <Property Name="WARSBL_CD" Type="char" MaxLength="15" />
+    <Property Name="RSTRCT_DSMT_GRPNO" Type="varchar" MaxLength="15" />
+    <Property Name="MS2525CCMSCD" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RGST_DTTM" Type="datetime" Nullable="false" />
+    <Property Name="REGSTR_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FRNFC_DB_NM" Type="varchar" MaxLength="50" />
+    <Property Name="IDTF_USER_ID" Type="varchar" MaxLength="50" />
+    <Property Name="RGST_UNIT_NM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="WRK_GRP_ID" Type="varchar" MaxLength="8" />
+    <Property Name="REGSTR_NM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MDFC_DTTM" Type="datetime" />
+    <Property Name="MDFR_NM" Type="varchar" MaxLength="50" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <!--생성 중 오류 발생:
+경고 6002: 테이블/뷰 'GS425_IEE_DB.dbo.TB_TGT_PER_ORGINL_IMAGE'에 기본 키가 정의되지 않았습니다. 키가 유추되었고 읽기 전용 테이블/뷰로 정의되었습니다.-->
+  <EntityType Name="TB_TGT_PER_ORGINL_IMAGE">
+    <Key>
+      <PropertyRef Name="TGT_ID" />
+      <PropertyRef Name="ORGINL_IMAGE_ID" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="TGT_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ORGINL_IMAGE_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <!--생성 중 오류 발생:
+경고 6002: 테이블/뷰 'GS425_IEE_DB.dbo.TB_TGT_PER_PLCY'에 기본 키가 정의되지 않았습니다. 키가 유추되었고 읽기 전용 테이블/뷰로 정의되었습니다.-->
+  <EntityType Name="TB_TGT_PER_PLCY">
+    <Key>
+      <PropertyRef Name="WRK_ALLTMT_PLCY_ID" />
+      <PropertyRef Name="TGT_ID" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="WRK_ALLTMT_PLCY_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TGT_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_TGT_PER_WRK_GRP">
+    <Key>
+      <PropertyRef Name="TGT_PER_WRK_ID" />
+    </Key>
+    <Property Name="TGT_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="WRK_GRP_ID" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="TGT_PER_WRK_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_TRSMSSN_LOG">
+    <Key>
+      <PropertyRef Name="TRSMSSN_LOG_ID" />
+    </Key>
+    <Property Name="TRSMSSN_LOG_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="DATA_KND_IDTFR" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="USER_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="WRK_RSLT_IDTFR" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="ORGINL_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="LOG_DTTM" Type="datetime" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_UC">
+    <Key>
+      <PropertyRef Name="UC" />
+    </Key>
+    <Property Name="UC" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="U_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="USEDVCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_UICD">
+    <Key>
+      <PropertyRef Name="UICD" />
+    </Key>
+    <Property Name="UICD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="UI_NM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UIDVCD" Type="char" MaxLength="2" />
+    <Property Name="USEDVCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_UIDVCD">
+    <Key>
+      <PropertyRef Name="UIDVCD" />
+    </Key>
+    <Property Name="UIDVCD" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="UI_DVS_NM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="USEDVCD" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_USER">
+    <Key>
+      <PropertyRef Name="USER_ID" />
+    </Key>
+    <Property Name="USER_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LOGINID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="USER_PW_CTNT" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="USER_FULNM" Type="varchar(max)" Nullable="false" />
+    <Property Name="RNKCD" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="SRVNO" Type="varchar(max)" />
+    <Property Name="SIGNTR_FILE" Type="varchar(max)" Nullable="false" />
+    <Property Name="ASGMT_UC" Type="varchar(max)" Nullable="false" />
+    <Property Name="USER_LOGIN_PSBLT_YN" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="SCRTMGTNO" Type="varchar" MaxLength="26" Nullable="false" />
+    <Property Name="USER_DEL_YN" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="ATHRT_GRP_ID" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="WRK_GRP_ID" Type="varchar" MaxLength="8" />
+    <Property Name="USER_DEPT_TTL" Type="varchar(max)" />
+    <Property Name="USER_EXPLN" Type="varchar" MaxLength="4000" />
+    <Property Name="USER_PW_ERR_NUMTM" Type="int" />
+    <Property Name="LOGIN_DT" Type="datetime" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_USER_BF_PW">
+    <Key>
+      <PropertyRef Name="BF_PW_ID" />
+    </Key>
+    <Property Name="USER_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="OLD_ECRYPTPW" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="MDFC_DTTM" Type="datetime" Nullable="false" />
+    <Property Name="BF_PW_ID" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_USER_POI">
+    <Key>
+      <PropertyRef Name="USER_POI_ID" />
+    </Key>
+    <Property Name="POI_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="USER_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CORDC" Type="geometry" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="USER_POI_ID" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_USER_SMBL">
+    <Key>
+      <PropertyRef Name="SMBL_ID" />
+    </Key>
+    <Property Name="SMBL_ID" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="SMBL_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SMBL_IMAGE" Type="image" Nullable="false" />
+    <Property Name="REGSTR_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_USER_TGT_CTGR">
+    <Key>
+      <PropertyRef Name="TGT_CTGR_ID" />
+    </Key>
+    <Property Name="TGT_CTGR_ID" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="USER_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TGT_CTGR_NM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <!--생성 중 오류 발생:
+경고 6002: 테이블/뷰 'GS425_IEE_DB.dbo.TB_USER_TGT_CTGR_PER_TGT'에 기본 키가 정의되지 않았습니다. 키가 유추되었고 읽기 전용 테이블/뷰로 정의되었습니다.-->
+  <EntityType Name="TB_USER_TGT_CTGR_PER_TGT">
+    <Key>
+      <PropertyRef Name="TGT_CTGR_ID" />
+      <PropertyRef Name="TGT_ID" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="TGT_CTGR_ID" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="TGT_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_WRK">
+    <Key>
+      <PropertyRef Name="WRK_ID" />
+    </Key>
+    <Property Name="WRK_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="WRK_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ORGINL_IMAGE_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="WRK_GROUP_ID" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="WORKR_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_WRK_ALLTMT_PLCY">
+    <Key>
+      <PropertyRef Name="WRK_ALLTMT_PLCY_ID" />
+    </Key>
+    <Property Name="WRK_ALLTMT_PLCY_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="WRK_ALLTMT_PLCY_NM" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="WRK_ALLTMT_PLCY_KND_IDTFR" Type="varchar" MaxLength="10" />
+    <Property Name="IMGCLTSNKNCD" Type="char" MaxLength="2" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_WRK_GRP">
+    <Key>
+      <PropertyRef Name="WRK_GRP_ID" />
+    </Key>
+    <Property Name="WRK_GRP_ID" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="WRK_GRP_NM" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="WRK_GRP_EXPLN_CTNT" Type="varchar" MaxLength="1000" />
+    <Property Name="WRK_GRP_KND_IDTFR" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_WRK_ORD">
+    <Key>
+      <PropertyRef Name="ORD_ID" />
+    </Key>
+    <Property Name="ORD_ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ORD_TYPE_IDTFR" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="WRK_STATE_IDTFR" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="RQST_DTTM" Type="datetime" Nullable="false" />
+    <Property Name="QUE_DTTM" Type="datetime" />
+    <Property Name="FNSH_DTTM" Type="datetime" />
+    <Property Name="WRK_TIME" Type="float" />
+    <Property Name="REQ_WORKRK_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="WRK_CTNT" Type="text" Nullable="false" />
+    <Property Name="SVR_IDTFR" Type="varchar" MaxLength="10" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_JCS_TB_TGT_TB_ETASPCD">
+    <End Role="TB_ETASPCD" Type="Self.TB_ETASPCD" Multiplicity="1" />
+    <End Role="TB_JCS_TGT" Type="Self.TB_JCS_TGT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ETASPCD">
+        <PropertyRef Name="ETASPCD" />
+      </Principal>
+      <Dependent Role="TB_JCS_TGT">
+        <PropertyRef Name="ETASPCD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_ANTT_TMPL_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_ANTT_TMPL" Type="Self.TB_ANTT_TMPL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_ANTT_TMPL">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_APPRV_CLPLN_SCENES_TB_APPRV_CLPLN">
+    <End Role="TB_APPRV_CLPLN" Type="Self.TB_APPRV_CLPLN" Multiplicity="1" />
+    <End Role="TB_APPRV_CLPLN_SCENES" Type="Self.TB_APPRV_CLPLN_SCENES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_APPRV_CLPLN">
+        <PropertyRef Name="APPROVAL_CLPLN_ID" />
+      </Principal>
+      <Dependent Role="TB_APPRV_CLPLN_SCENES">
+        <PropertyRef Name="CPLN_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_CHG_DTCT_IMAGE_TB_ORGINL_IMAGE">
+    <End Role="TB_ORGINL_IMAGE" Type="Self.TB_ORGINL_IMAGE" Multiplicity="1" />
+    <End Role="TB_CHG_DTCT_IMAGE" Type="Self.TB_CHG_DTCT_IMAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ORGINL_IMAGE">
+        <PropertyRef Name="ORGINL_IMAGE_ID" />
+      </Principal>
+      <Dependent Role="TB_CHG_DTCT_IMAGE">
+        <PropertyRef Name="ORGINL_IMAGE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_CHG_DTCT_IMAGE_TB_ORGINL_IMAGE1">
+    <End Role="TB_ORGINL_IMAGE" Type="Self.TB_ORGINL_IMAGE" Multiplicity="1" />
+    <End Role="TB_CHG_DTCT_IMAGE" Type="Self.TB_CHG_DTCT_IMAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ORGINL_IMAGE">
+        <PropertyRef Name="ORGINL_IMAGE_ID" />
+      </Principal>
+      <Dependent Role="TB_CHG_DTCT_IMAGE">
+        <PropertyRef Name="REF_IMAGE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_CRCTN_IMAGE_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_CRCTN_IMAGE" Type="Self.TB_CRCTN_IMAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_CRCTN_IMAGE">
+        <PropertyRef Name="WORKR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DCPHRIMAGE_LOCTN_TB_ADMINISTZONE">
+    <End Role="TB_ADMINISTZONE" Type="Self.TB_ADMINISTZONE" Multiplicity="1" />
+    <End Role="TB_DCPHRIMAGE_LOCTN" Type="Self.TB_DCPHRIMAGE_LOCTN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ADMINISTZONE">
+        <PropertyRef Name="ADMINISTZONE_CD" />
+      </Principal>
+      <Dependent Role="TB_DCPHRIMAGE_LOCTN">
+        <PropertyRef Name="ADMINISTZONE_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DCPHRIMAGE_LOCTN_TB_DCPHRIMAGE">
+    <End Role="TB_DCPHRIMAGE" Type="Self.TB_DCPHRIMAGE" Multiplicity="1" />
+    <End Role="TB_DCPHRIMAGE_LOCTN" Type="Self.TB_DCPHRIMAGE_LOCTN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_DCPHRIMAGE">
+        <PropertyRef Name="DCPHRIMAGE_ID" />
+      </Principal>
+      <Dependent Role="TB_DCPHRIMAGE_LOCTN">
+        <PropertyRef Name="DCPHRIMAGE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DCPHRIMAGE_TB_ORGINL_IMAGE">
+    <End Role="TB_ORGINL_IMAGE" Type="Self.TB_ORGINL_IMAGE" Multiplicity="1" />
+    <End Role="TB_DCPHRIMAGE" Type="Self.TB_DCPHRIMAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ORGINL_IMAGE">
+        <PropertyRef Name="ORGINL_IMAGE_ID" />
+      </Principal>
+      <Dependent Role="TB_DCPHRIMAGE">
+        <PropertyRef Name="ORGINL_IMAGE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DCPHRIMAGE_TB_TGT">
+    <End Role="TB_TGT" Type="Self.TB_TGT" Multiplicity="1" />
+    <End Role="TB_DCPHRIMAGE" Type="Self.TB_DCPHRIMAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_TGT">
+        <PropertyRef Name="TGT_ID" />
+      </Principal>
+      <Dependent Role="TB_DCPHRIMAGE">
+        <PropertyRef Name="TGT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DCPHRIMAGE_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_DCPHRIMAGE" Type="Self.TB_DCPHRIMAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_DCPHRIMAGE">
+        <PropertyRef Name="REGSTR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DCPHRIMAGE_TB_USER1">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="0..1" />
+    <End Role="TB_DCPHRIMAGE" Type="Self.TB_DCPHRIMAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_DCPHRIMAGE">
+        <PropertyRef Name="APPRVR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DCPHRIMAGE_TB_USER2">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="0..1" />
+    <End Role="TB_DCPHRIMAGE" Type="Self.TB_DCPHRIMAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_DCPHRIMAGE">
+        <PropertyRef Name="UNTCMD_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DCPHRRPRT_TB_DCPHRRPRT">
+    <End Role="TB_DCPHRRPRT_TYPE" Type="Self.TB_DCPHRRPRT_TYPE" Multiplicity="1" />
+    <End Role="TB_DCPHRRPRT" Type="Self.TB_DCPHRRPRT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_DCPHRRPRT_TYPE">
+        <PropertyRef Name="DCPHRRPRT_TYPE_IDTFR" />
+      </Principal>
+      <Dependent Role="TB_DCPHRRPRT">
+        <PropertyRef Name="DCPHRRPRT_TYPE_IDTFR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DCPHRRPRT_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_DCPHRRPRT" Type="Self.TB_DCPHRRPRT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_DCPHRRPRT">
+        <PropertyRef Name="CRTOR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DCPHRRPRT_TB_USER1">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="0..1" />
+    <End Role="TB_DCPHRRPRT" Type="Self.TB_DCPHRRPRT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_DCPHRRPRT">
+        <PropertyRef Name="APPRVR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DCPHRRPRT_TB_USER2">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="0..1" />
+    <End Role="TB_DCPHRRPRT" Type="Self.TB_DCPHRRPRT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_DCPHRRPRT">
+        <PropertyRef Name="UNTCMD_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_ENMEQP_BASIC_IMAGE_TB_ENMEQP">
+    <End Role="TB_ENMEQP" Type="Self.TB_ENMEQP" Multiplicity="1" />
+    <End Role="TB_ENMEQP_BASIC_IMAGE" Type="Self.TB_ENMEQP_BASIC_IMAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ENMEQP">
+        <PropertyRef Name="ENMYFAMC" />
+      </Principal>
+      <Dependent Role="TB_ENMEQP_BASIC_IMAGE">
+        <PropertyRef Name="ENMYFAMC" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_ENMEQP_IMAGE_TB_ENMEQP">
+    <End Role="TB_ENMEQP" Type="Self.TB_ENMEQP" Multiplicity="1" />
+    <End Role="TB_ENMEQP_IMAGE" Type="Self.TB_ENMEQP_IMAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ENMEQP">
+        <PropertyRef Name="ENMYFAMC" />
+      </Principal>
+      <Dependent Role="TB_ENMEQP_IMAGE">
+        <PropertyRef Name="ENMYFAMC" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_ENMEQP_SPEC_TB_ENMEQP">
+    <End Role="TB_ENMEQP" Type="Self.TB_ENMEQP" Multiplicity="1" />
+    <End Role="TB_ENMEQP_SPEC" Type="Self.TB_ENMEQP_SPEC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ENMEQP">
+        <PropertyRef Name="ENMYFAMC" />
+      </Principal>
+      <Dependent Role="TB_ENMEQP_SPEC">
+        <PropertyRef Name="ENMYFAMC" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_IMAGE_PRCSS_KND_TB_CLTNSNSRKDCD">
+    <End Role="TB_CLTNSNSRKDCD" Type="Self.TB_CLTNSNSRKDCD" Multiplicity="0..1" />
+    <End Role="TB_IMAGE_PRCSS_KND" Type="Self.TB_IMAGE_PRCSS_KND" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_CLTNSNSRKDCD">
+        <PropertyRef Name="CLTNSNSRKDCD" />
+      </Principal>
+      <Dependent Role="TB_IMAGE_PRCSS_KND">
+        <PropertyRef Name="CLTNSNSRKDCD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_INFMTN_CLTN_EMPH_MATR_PER_TGT_TB_INFMTN_CLTN_EMPH_MATR">
+    <End Role="TB_INFMTN_CLTN_EMPH_MATR" Type="Self.TB_INFMTN_CLTN_EMPH_MATR" Multiplicity="1" />
+    <End Role="TB_INFMTN_CLTN_EMPH_MATR_PER_TGT" Type="Self.TB_INFMTN_CLTN_EMPH_MATR_PER_TGT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_INFMTN_CLTN_EMPH_MATR">
+        <PropertyRef Name="INFMTN_CLTN_EMPH_MATR_SN" />
+      </Principal>
+      <Dependent Role="TB_INFMTN_CLTN_EMPH_MATR_PER_TGT">
+        <PropertyRef Name="INFMTN_CLTN_EMPH_SN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_INFMTN_CLTN_EMPH_MATR_PER_TGT_TB_TGT">
+    <End Role="TB_TGT" Type="Self.TB_TGT" Multiplicity="1" />
+    <End Role="TB_INFMTN_CLTN_EMPH_MATR_PER_TGT" Type="Self.TB_INFMTN_CLTN_EMPH_MATR_PER_TGT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_TGT">
+        <PropertyRef Name="TGT_ID" />
+      </Principal>
+      <Dependent Role="TB_INFMTN_CLTN_EMPH_MATR_PER_TGT">
+        <PropertyRef Name="TGT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_INFMTN_IDTF_CTNT_CHNG_LOG_TB_INFMTN_IDTF_CTNT">
+    <End Role="TB_INFMTN_IDTF_CTNT" Type="Self.TB_INFMTN_IDTF_CTNT" Multiplicity="1" />
+    <End Role="TB_INFMTN_IDTF_CTNT_CHNG_LOG" Type="Self.TB_INFMTN_IDTF_CTNT_CHNG_LOG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_INFMTN_IDTF_CTNT">
+        <PropertyRef Name="INFMTN_IDTF_CTNT_ID" />
+      </Principal>
+      <Dependent Role="TB_INFMTN_IDTF_CTNT_CHNG_LOG">
+        <PropertyRef Name="ORGINL_INFMTN_IDTF_CTNT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_INFMTN_IDTF_CTNT_CHNG_LOG_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_INFMTN_IDTF_CTNT_CHNG_LOG" Type="Self.TB_INFMTN_IDTF_CTNT_CHNG_LOG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_INFMTN_IDTF_CTNT_CHNG_LOG">
+        <PropertyRef Name="CHGMN_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT_TB_DCPHRRPRT">
+    <End Role="TB_DCPHRRPRT" Type="Self.TB_DCPHRRPRT" Multiplicity="1" />
+    <End Role="TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT" Type="Self.TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_DCPHRRPRT">
+        <PropertyRef Name="DCPHRRPRT_ID" />
+      </Principal>
+      <Dependent Role="TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT">
+        <PropertyRef Name="DCPHRRPRT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT_TB_INFMTN_IDTF_CTNT">
+    <End Role="TB_INFMTN_IDTF_CTNT" Type="Self.TB_INFMTN_IDTF_CTNT" Multiplicity="1" />
+    <End Role="TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT" Type="Self.TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_INFMTN_IDTF_CTNT">
+        <PropertyRef Name="INFMTN_IDTF_CTNT_ID" />
+      </Principal>
+      <Dependent Role="TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT">
+        <PropertyRef Name="INFMTN_IDTF_CTNT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_INFMTN_IDTF_CTNT_TB_DCPHRIMAGE">
+    <End Role="TB_DCPHRIMAGE" Type="Self.TB_DCPHRIMAGE" Multiplicity="0..1" />
+    <End Role="TB_INFMTN_IDTF_CTNT" Type="Self.TB_INFMTN_IDTF_CTNT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_DCPHRIMAGE">
+        <PropertyRef Name="DCPHRIMAGE_ID" />
+      </Principal>
+      <Dependent Role="TB_INFMTN_IDTF_CTNT">
+        <PropertyRef Name="DCPHRIMAGE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_INFMTN_IDTF_CTNT_TB_ORGINL_IMAGE">
+    <End Role="TB_ORGINL_IMAGE" Type="Self.TB_ORGINL_IMAGE" Multiplicity="0..1" />
+    <End Role="TB_INFMTN_IDTF_CTNT" Type="Self.TB_INFMTN_IDTF_CTNT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ORGINL_IMAGE">
+        <PropertyRef Name="ORGINL_IMAGE_ID" />
+      </Principal>
+      <Dependent Role="TB_INFMTN_IDTF_CTNT">
+        <PropertyRef Name="ORGINL_IMAGE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_INFMTN_IDTF_CTNT_TB_TGT">
+    <End Role="TB_TGT" Type="Self.TB_TGT" Multiplicity="1" />
+    <End Role="TB_INFMTN_IDTF_CTNT" Type="Self.TB_INFMTN_IDTF_CTNT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_TGT">
+        <PropertyRef Name="TGT_ID" />
+      </Principal>
+      <Dependent Role="TB_INFMTN_IDTF_CTNT">
+        <PropertyRef Name="TGT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_INFMTN_IDTF_CTNT_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_INFMTN_IDTF_CTNT" Type="Self.TB_INFMTN_IDTF_CTNT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_INFMTN_IDTF_CTNT">
+        <PropertyRef Name="REGSTR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_INFMTN_IDTF_CTNT_TMPL_TB_INFMTN_IDTF_CTNT_TMPL">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_INFMTN_IDTF_CTNT_TMPL" Type="Self.TB_INFMTN_IDTF_CTNT_TMPL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_INFMTN_IDTF_CTNT_TMPL">
+        <PropertyRef Name="REGSTR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_JCS_TGT_TB_MS2525CCMSCD">
+    <End Role="TB_MS2525CCMSCD" Type="Self.TB_MS2525CCMSCD" Multiplicity="1" />
+    <End Role="TB_JCS_TGT" Type="Self.TB_JCS_TGT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_MS2525CCMSCD">
+        <PropertyRef Name="MS2525CCMSCD" />
+      </Principal>
+      <Dependent Role="TB_JCS_TGT">
+        <PropertyRef Name="MS2525CCMSCD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_JCS_TGT_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_JCS_TGT" Type="Self.TB_JCS_TGT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_JCS_TGT">
+        <PropertyRef Name="REGSTR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_JCS_TGT_TB_WRK_GRP">
+    <End Role="TB_WRK_GRP" Type="Self.TB_WRK_GRP" Multiplicity="0..1" />
+    <End Role="TB_JCS_TGT" Type="Self.TB_JCS_TGT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_WRK_GRP">
+        <PropertyRef Name="WRK_GRP_ID" />
+      </Principal>
+      <Dependent Role="TB_JCS_TGT">
+        <PropertyRef Name="WRK_GRP_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_LOG_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_LOG" Type="Self.TB_LOG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_LOG">
+        <PropertyRef Name="WORKR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_MSGTXT_MGT_RCDBK_TB_DCPHRIMAGE">
+    <End Role="TB_DCPHRIMAGE" Type="Self.TB_DCPHRIMAGE" Multiplicity="1" />
+    <End Role="TB_MSGTXT_MGT_RCDBK" Type="Self.TB_MSGTXT_MGT_RCDBK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_DCPHRIMAGE">
+        <PropertyRef Name="DCPHRIMAGE_ID" />
+      </Principal>
+      <Dependent Role="TB_MSGTXT_MGT_RCDBK">
+        <PropertyRef Name="DCPHRIMAGE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_MSGTXT_MGT_RCDBK_TB_LKSTCD">
+    <End Role="TB_LKSTCD" Type="Self.TB_LKSTCD" Multiplicity="1" />
+    <End Role="TB_MSGTXT_MGT_RCDBK" Type="Self.TB_MSGTXT_MGT_RCDBK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_LKSTCD">
+        <PropertyRef Name="LKSTCD" />
+      </Principal>
+      <Dependent Role="TB_MSGTXT_MGT_RCDBK">
+        <PropertyRef Name="LKSTCD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_MSGTXT_MGT_RCDBK_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_MSGTXT_MGT_RCDBK" Type="Self.TB_MSGTXT_MGT_RCDBK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_MSGTXT_MGT_RCDBK">
+        <PropertyRef Name="CRTOR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_ORGINL_IMAGE_TB_CLSLVCD">
+    <End Role="TB_CLSLVCD" Type="Self.TB_CLSLVCD" Multiplicity="1" />
+    <End Role="TB_ORGINL_IMAGE" Type="Self.TB_ORGINL_IMAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_CLSLVCD">
+        <PropertyRef Name="CLSLVCD" />
+      </Principal>
+      <Dependent Role="TB_ORGINL_IMAGE">
+        <PropertyRef Name="CLSLVCD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_ORGINL_IMAGE_TB_CLTNSNSRKDCD">
+    <End Role="TB_CLTNSNSRKDCD" Type="Self.TB_CLTNSNSRKDCD" Multiplicity="1" />
+    <End Role="TB_ORGINL_IMAGE" Type="Self.TB_ORGINL_IMAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_CLTNSNSRKDCD">
+        <PropertyRef Name="CLTNSNSRKDCD" />
+      </Principal>
+      <Dependent Role="TB_ORGINL_IMAGE">
+        <PropertyRef Name="CLTNSNSRKDCD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_ORGINL_IMAGE_TB_IMGCLTSNKNCD">
+    <End Role="TB_IMGCLTSNKNCD" Type="Self.TB_IMGCLTSNKNCD" Multiplicity="1" />
+    <End Role="TB_ORGINL_IMAGE" Type="Self.TB_ORGINL_IMAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_IMGCLTSNKNCD">
+        <PropertyRef Name="IMGCLTSNKNCD" />
+      </Principal>
+      <Dependent Role="TB_ORGINL_IMAGE">
+        <PropertyRef Name="IMGCLTSNKNCD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_ORGINL_IMAGE_TB_INCLUNTDVCD">
+    <End Role="TB_INCLUNTDVCD" Type="Self.TB_INCLUNTDVCD" Multiplicity="1" />
+    <End Role="TB_ORGINL_IMAGE" Type="Self.TB_ORGINL_IMAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_INCLUNTDVCD">
+        <PropertyRef Name="INCLUNTDVCD" />
+      </Principal>
+      <Dependent Role="TB_ORGINL_IMAGE">
+        <PropertyRef Name="INCLUNTDVCD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_ORGINL_IMAGE_TB_NCB">
+    <End Role="TB_NCB" Type="Self.TB_NCB" Multiplicity="0..1" />
+    <End Role="TB_ORGINL_IMAGE" Type="Self.TB_ORGINL_IMAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_NCB">
+        <PropertyRef Name="NCB" />
+      </Principal>
+      <Dependent Role="TB_ORGINL_IMAGE">
+        <PropertyRef Name="NCB" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_ORGINL_IMAGE_TB_ORGINL_IMAGE">
+    <End Role="TB_IMAGE_PRCSS_KND" Type="Self.TB_IMAGE_PRCSS_KND" Multiplicity="1" />
+    <End Role="TB_ORGINL_IMAGE" Type="Self.TB_ORGINL_IMAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_IMAGE_PRCSS_KND">
+        <PropertyRef Name="IMAGE_PRCSS_KND_IDTFR" />
+      </Principal>
+      <Dependent Role="TB_ORGINL_IMAGE">
+        <PropertyRef Name="IMAGE_PRCSS_KND_IDTFR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_PRGM_TB_ATHRT_GRP">
+    <End Role="TB_ATHRT_GRP" Type="Self.TB_ATHRT_GRP" Multiplicity="1" />
+    <End Role="TB_PRGM" Type="Self.TB_PRGM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ATHRT_GRP">
+        <PropertyRef Name="ATHRT_GRP_ID" />
+      </Principal>
+      <Dependent Role="TB_PRGM">
+        <PropertyRef Name="ATHRT_GRP_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_RCP_SCRT_MGT_RCDBK_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_RCP_SCRT_MGT_RCDBK" Type="Self.TB_RCP_SCRT_MGT_RCDBK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_RCP_SCRT_MGT_RCDBK">
+        <PropertyRef Name="ADMIN_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_RECVRY_DATA_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_RECVRY_DATA" Type="Self.TB_RECVRY_DATA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_RECVRY_DATA">
+        <PropertyRef Name="RQSTR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_SCRT_HISTRY_CARD_TB_RCP_SCRT_MGT_RCDBK">
+    <End Role="TB_RCP_SCRT_MGT_RCDBK" Type="Self.TB_RCP_SCRT_MGT_RCDBK" Multiplicity="1" />
+    <End Role="TB_SCRT_HISTRY_CARD" Type="Self.TB_SCRT_HISTRY_CARD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_RCP_SCRT_MGT_RCDBK">
+        <PropertyRef Name="SCRT_MGT_RCDBK_ID" />
+      </Principal>
+      <Dependent Role="TB_SCRT_HISTRY_CARD">
+        <PropertyRef Name="SCRT_MGT_RCDBK_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_SCRT_HISTRY_CARD_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_SCRT_HISTRY_CARD" Type="Self.TB_SCRT_HISTRY_CARD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_SCRT_HISTRY_CARD">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_SNDNG_SCRT_MGT_RCDBK_TB_LKSTCD">
+    <End Role="TB_LKSTCD" Type="Self.TB_LKSTCD" Multiplicity="1" />
+    <End Role="TB_SNDNG_SCRT_MGT_RCDBK" Type="Self.TB_SNDNG_SCRT_MGT_RCDBK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_LKSTCD">
+        <PropertyRef Name="LKSTCD" />
+      </Principal>
+      <Dependent Role="TB_SNDNG_SCRT_MGT_RCDBK">
+        <PropertyRef Name="LKSTCD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_SNDNG_SCRT_MGT_RCDBK_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_SNDNG_SCRT_MGT_RCDBK" Type="Self.TB_SNDNG_SCRT_MGT_RCDBK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_SNDNG_SCRT_MGT_RCDBK">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_TGT_PER_PLCY_TB_TGT">
+    <End Role="TB_TGT" Type="Self.TB_TGT" Multiplicity="1" />
+    <End Role="TB_TGT_PER_PLCY" Type="Self.TB_TGT_PER_PLCY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_TGT">
+        <PropertyRef Name="TGT_ID" />
+      </Principal>
+      <Dependent Role="TB_TGT_PER_PLCY">
+        <PropertyRef Name="TGT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_TGT_PER_PLCY_TB_WRK_ALLTMT_PLCY">
+    <End Role="TB_WRK_ALLTMT_PLCY" Type="Self.TB_WRK_ALLTMT_PLCY" Multiplicity="1" />
+    <End Role="TB_TGT_PER_PLCY" Type="Self.TB_TGT_PER_PLCY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_WRK_ALLTMT_PLCY">
+        <PropertyRef Name="WRK_ALLTMT_PLCY_ID" />
+      </Principal>
+      <Dependent Role="TB_TGT_PER_PLCY">
+        <PropertyRef Name="WRK_ALLTMT_PLCY_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_TGT_PER_WRK_GRP_TB_WRK_GRP">
+    <End Role="TB_WRK_GRP" Type="Self.TB_WRK_GRP" Multiplicity="1" />
+    <End Role="TB_WRK_ALLTMT_PLCY" Type="Self.TB_WRK_ALLTMT_PLCY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_WRK_GRP">
+        <PropertyRef Name="WRK_GRP_ID" />
+      </Principal>
+      <Dependent Role="TB_WRK_ALLTMT_PLCY">
+        <PropertyRef Name="WRK_ALLTMT_PLCY_NM" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_TGT_PER_WRK_GRP_TB_WRK_GRP1">
+    <End Role="TB_WRK_GRP" Type="Self.TB_WRK_GRP" Multiplicity="1" />
+    <End Role="TB_TGT_PER_WRK_GRP" Type="Self.TB_TGT_PER_WRK_GRP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_WRK_GRP">
+        <PropertyRef Name="WRK_GRP_ID" />
+      </Principal>
+      <Dependent Role="TB_TGT_PER_WRK_GRP">
+        <PropertyRef Name="WRK_GRP_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_TGT_TB_ETASPCD">
+    <End Role="TB_ETASPCD" Type="Self.TB_ETASPCD" Multiplicity="1" />
+    <End Role="TB_TGT" Type="Self.TB_TGT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ETASPCD">
+        <PropertyRef Name="ETASPCD" />
+      </Principal>
+      <Dependent Role="TB_TGT">
+        <PropertyRef Name="ETASPCD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_TGT_TB_MS2525CCMSCD">
+    <End Role="TB_MS2525CCMSCD" Type="Self.TB_MS2525CCMSCD" Multiplicity="1" />
+    <End Role="TB_TGT" Type="Self.TB_TGT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_MS2525CCMSCD">
+        <PropertyRef Name="MS2525CCMSCD" />
+      </Principal>
+      <Dependent Role="TB_TGT">
+        <PropertyRef Name="MS2525CCMSCD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_TGT_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_TGT" Type="Self.TB_TGT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_TGT">
+        <PropertyRef Name="REGSTR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_TGT_TB_WRK_GRP">
+    <End Role="TB_WRK_GRP" Type="Self.TB_WRK_GRP" Multiplicity="0..1" />
+    <End Role="TB_TGT" Type="Self.TB_TGT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_WRK_GRP">
+        <PropertyRef Name="WRK_GRP_ID" />
+      </Principal>
+      <Dependent Role="TB_TGT">
+        <PropertyRef Name="WRK_GRP_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_TRSMSSN_LOG_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_TRSMSSN_LOG" Type="Self.TB_TRSMSSN_LOG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_TRSMSSN_LOG">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_USER_BF_PW_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_USER_BF_PW" Type="Self.TB_USER_BF_PW" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_USER_BF_PW">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_USER_POI_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_USER_POI" Type="Self.TB_USER_POI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_USER_POI">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_USER_SMBL_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_USER_SMBL" Type="Self.TB_USER_SMBL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_USER_SMBL">
+        <PropertyRef Name="REGSTR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_USER_TB_ATHRT_GRP">
+    <End Role="TB_ATHRT_GRP" Type="Self.TB_ATHRT_GRP" Multiplicity="1" />
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ATHRT_GRP">
+        <PropertyRef Name="ATHRT_GRP_ID" />
+      </Principal>
+      <Dependent Role="TB_USER">
+        <PropertyRef Name="ATHRT_GRP_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_USER_TB_RANK">
+    <End Role="TB_RANK" Type="Self.TB_RANK" Multiplicity="1" />
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_RANK">
+        <PropertyRef Name="RNKCD" />
+      </Principal>
+      <Dependent Role="TB_USER">
+        <PropertyRef Name="RNKCD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_USER_TB_WRK_GRP">
+    <End Role="TB_WRK_GRP" Type="Self.TB_WRK_GRP" Multiplicity="0..1" />
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_WRK_GRP">
+        <PropertyRef Name="WRK_GRP_ID" />
+      </Principal>
+      <Dependent Role="TB_USER">
+        <PropertyRef Name="WRK_GRP_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_USER_TGT_CTGR_PER_TGT_TB_TGT">
+    <End Role="TB_TGT" Type="Self.TB_TGT" Multiplicity="1" />
+    <End Role="TB_USER_TGT_CTGR_PER_TGT" Type="Self.TB_USER_TGT_CTGR_PER_TGT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_TGT">
+        <PropertyRef Name="TGT_ID" />
+      </Principal>
+      <Dependent Role="TB_USER_TGT_CTGR_PER_TGT">
+        <PropertyRef Name="TGT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_USER_TGT_CTGR_PER_TGT_TB_USER_TGT_CTGR">
+    <End Role="TB_USER_TGT_CTGR" Type="Self.TB_USER_TGT_CTGR" Multiplicity="1" />
+    <End Role="TB_USER_TGT_CTGR_PER_TGT" Type="Self.TB_USER_TGT_CTGR_PER_TGT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER_TGT_CTGR">
+        <PropertyRef Name="TGT_CTGR_ID" />
+      </Principal>
+      <Dependent Role="TB_USER_TGT_CTGR_PER_TGT">
+        <PropertyRef Name="TGT_CTGR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_USER_TGT_CTGR_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_USER_TGT_CTGR" Type="Self.TB_USER_TGT_CTGR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_USER_TGT_CTGR">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_WRK_ORD_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_WRK_ORD" Type="Self.TB_WRK_ORD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_WRK_ORD">
+        <PropertyRef Name="REQ_WORKRK_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TB_DCPHRIMAGE_PER_DCPHRRPRT_TB_DCPHRIMAGE_DCPHRIMAGE_ID_fk">
+    <End Role="TB_DCPHRIMAGE" Type="Self.TB_DCPHRIMAGE" Multiplicity="1" />
+    <End Role="TB_DCPHRIMAGE_PER_DCPHRRPRT" Type="Self.TB_DCPHRIMAGE_PER_DCPHRRPRT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_DCPHRIMAGE">
+        <PropertyRef Name="DCPHRIMAGE_ID" />
+      </Principal>
+      <Dependent Role="TB_DCPHRIMAGE_PER_DCPHRRPRT">
+        <PropertyRef Name="DCPHRIMAGE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TB_DCPHRIMAGE_PER_DCPHRRPRT_TB_DCPHRRPRT_DCPHRRPRT_ID_fk">
+    <End Role="TB_DCPHRRPRT" Type="Self.TB_DCPHRRPRT" Multiplicity="1" />
+    <End Role="TB_DCPHRIMAGE_PER_DCPHRRPRT" Type="Self.TB_DCPHRIMAGE_PER_DCPHRRPRT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_DCPHRRPRT">
+        <PropertyRef Name="DCPHRRPRT_ID" />
+      </Principal>
+      <Dependent Role="TB_DCPHRIMAGE_PER_DCPHRRPRT">
+        <PropertyRef Name="DCPHRRPRT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="GS425_IEE_DBModelStoreContainer">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_ADMINISTZONE" EntityType="Self.TB_ADMINISTZONE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_ANTT_TMPL" EntityType="Self.TB_ANTT_TMPL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_APPRV_CLPLN" EntityType="Self.TB_APPRV_CLPLN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_APPRV_CLPLN_SCENES" EntityType="Self.TB_APPRV_CLPLN_SCENES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_ASSIGN_WRK_PLCY" EntityType="Self.TB_ASSIGN_WRK_PLCY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_ATHRT_GRP" EntityType="Self.TB_ATHRT_GRP" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_BCUP_LOG" EntityType="Self.TB_BCUP_LOG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_CHG_DTCT_IMAGE" EntityType="Self.TB_CHG_DTCT_IMAGE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_CLPLN_SCENE_PRCSS" EntityType="Self.TB_CLPLN_SCENE_PRCSS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_CLSLVCD" EntityType="Self.TB_CLSLVCD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_CLTNSNSRKDCD" EntityType="Self.TB_CLTNSNSRKDCD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_CMN_CD" EntityType="Self.TB_CMN_CD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_CRCTN_IMAGE" EntityType="Self.TB_CRCTN_IMAGE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_DATA_SNCZT" EntityType="Self.TB_DATA_SNCZT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_DCPHRIMAGE" EntityType="Self.TB_DCPHRIMAGE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_DCPHRIMAGE_LOCTN" EntityType="Self.TB_DCPHRIMAGE_LOCTN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_DCPHRIMAGE_PER_DCPHRRPRT" EntityType="Self.TB_DCPHRIMAGE_PER_DCPHRRPRT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_DCPHRRPRT" EntityType="Self.TB_DCPHRRPRT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_DCPHRRPRT_TYPE" EntityType="Self.TB_DCPHRRPRT_TYPE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_ENGLSH_WORD" EntityType="Self.TB_ENGLSH_WORD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_ENMEQP" EntityType="Self.TB_ENMEQP" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_ENMEQP_BASIC_IMAGE" EntityType="Self.TB_ENMEQP_BASIC_IMAGE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_ENMEQP_IMAGE" EntityType="Self.TB_ENMEQP_IMAGE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_ENMEQP_SPEC" EntityType="Self.TB_ENMEQP_SPEC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_ETASPCD" EntityType="Self.TB_ETASPCD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_FFDB" EntityType="Self.TB_FFDB" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_IMAGE_PRCSS_KND" EntityType="Self.TB_IMAGE_PRCSS_KND" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_IMGCLTSNKNCD" EntityType="Self.TB_IMGCLTSNKNCD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_INCLUNTDVCD" EntityType="Self.TB_INCLUNTDVCD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_INFMTN_CLTN_EMPH_MATR" EntityType="Self.TB_INFMTN_CLTN_EMPH_MATR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_INFMTN_CLTN_EMPH_MATR_PER_TGT" EntityType="Self.TB_INFMTN_CLTN_EMPH_MATR_PER_TGT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_INFMTN_IDTF_CTNT" EntityType="Self.TB_INFMTN_IDTF_CTNT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_INFMTN_IDTF_CTNT_CHNG_LOG" EntityType="Self.TB_INFMTN_IDTF_CTNT_CHNG_LOG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT" EntityType="Self.TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_INFMTN_IDTF_CTNT_TMPL" EntityType="Self.TB_INFMTN_IDTF_CTNT_TMPL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_INFO_DB_PRINT_DIARY" EntityType="Self.TB_INFO_DB_PRINT_DIARY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_JCS_TGT" EntityType="Self.TB_JCS_TGT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_LKSTCD" EntityType="Self.TB_LKSTCD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_LOG" EntityType="Self.TB_LOG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_MS2525CCMSCD" EntityType="Self.TB_MS2525CCMSCD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_MS2525CUSCD" EntityType="Self.TB_MS2525CUSCD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_MSGTXT_MGT_RCDBK" EntityType="Self.TB_MSGTXT_MGT_RCDBK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_MSN" EntityType="Self.TB_MSN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_NCB" EntityType="Self.TB_NCB" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_NTT_TMPL" EntityType="Self.TB_NTT_TMPL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_OB" EntityType="Self.TB_OB" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_ORD_LEVEL_IMG_PROCES" EntityType="Self.TB_ORD_LEVEL_IMG_PROCES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_ORGINL_IMAGE" EntityType="Self.TB_ORGINL_IMAGE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_PRGM" EntityType="Self.TB_PRGM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_RANK" EntityType="Self.TB_RANK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_RCP_SCRT_MGT_RCDBK" EntityType="Self.TB_RCP_SCRT_MGT_RCDBK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_RDSCD" EntityType="Self.TB_RDSCD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_RECVRY_DATA" EntityType="Self.TB_RECVRY_DATA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_RSTRCT_DSMT" EntityType="Self.TB_RSTRCT_DSMT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_SCRT_HISTRY_CARD" EntityType="Self.TB_SCRT_HISTRY_CARD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_SHTNG_MODE_KND" EntityType="Self.TB_SHTNG_MODE_KND" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_SNDNG_SCRT_MGT_RCDBK" EntityType="Self.TB_SNDNG_SCRT_MGT_RCDBK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_TGT" EntityType="Self.TB_TGT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_TGT_PER_WRK_GRP" EntityType="Self.TB_TGT_PER_WRK_GRP" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_TRSMSSN_LOG" EntityType="Self.TB_TRSMSSN_LOG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_UC" EntityType="Self.TB_UC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_UICD" EntityType="Self.TB_UICD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_UIDVCD" EntityType="Self.TB_UIDVCD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_USER" EntityType="Self.TB_USER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_USER_BF_PW" EntityType="Self.TB_USER_BF_PW" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_USER_POI" EntityType="Self.TB_USER_POI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_USER_SMBL" EntityType="Self.TB_USER_SMBL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_USER_TGT_CTGR" EntityType="Self.TB_USER_TGT_CTGR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_WRK" EntityType="Self.TB_WRK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_WRK_ALLTMT_PLCY" EntityType="Self.TB_WRK_ALLTMT_PLCY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_WRK_GRP" EntityType="Self.TB_WRK_GRP" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_WRK_ORD" EntityType="Self.TB_WRK_ORD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_DCPHRRPRT_TMPL" EntityType="Self.TB_DCPHRRPRT_TMPL" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TB_DCPHRRPRT_TMPL].[DCPHRRPRT_TMPL_ID] AS [DCPHRRPRT_TMPL_ID], 
+    [TB_DCPHRRPRT_TMPL].[FORM_NM] AS [FORM_NM], 
+    [TB_DCPHRRPRT_TMPL].[HGRNK_ITM_ID] AS [HGRNK_ITM_ID], 
+    [TB_DCPHRRPRT_TMPL].[rowguid] AS [rowguid]
+    FROM [dbo].[TB_DCPHRRPRT_TMPL] AS [TB_DCPHRRPRT_TMPL]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="TB_SYST_OPT" EntityType="Self.TB_SYST_OPT" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TB_SYST_OPT].[LCL_DTTM] AS [LCL_DTTM], 
+    [TB_SYST_OPT].[rowguid] AS [rowguid]
+    FROM [dbo].[TB_SYST_OPT] AS [TB_SYST_OPT]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="TB_TGT_PER_ORGINL_IMAGE" EntityType="Self.TB_TGT_PER_ORGINL_IMAGE" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TB_TGT_PER_ORGINL_IMAGE].[TGT_ID] AS [TGT_ID], 
+    [TB_TGT_PER_ORGINL_IMAGE].[ORGINL_IMAGE_ID] AS [ORGINL_IMAGE_ID], 
+    [TB_TGT_PER_ORGINL_IMAGE].[rowguid] AS [rowguid]
+    FROM [dbo].[TB_TGT_PER_ORGINL_IMAGE] AS [TB_TGT_PER_ORGINL_IMAGE]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="TB_TGT_PER_PLCY" EntityType="Self.TB_TGT_PER_PLCY" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TB_TGT_PER_PLCY].[WRK_ALLTMT_PLCY_ID] AS [WRK_ALLTMT_PLCY_ID], 
+    [TB_TGT_PER_PLCY].[TGT_ID] AS [TGT_ID], 
+    [TB_TGT_PER_PLCY].[rowguid] AS [rowguid]
+    FROM [dbo].[TB_TGT_PER_PLCY] AS [TB_TGT_PER_PLCY]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="TB_USER_TGT_CTGR_PER_TGT" EntityType="Self.TB_USER_TGT_CTGR_PER_TGT" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TB_USER_TGT_CTGR_PER_TGT].[TGT_CTGR_ID] AS [TGT_CTGR_ID], 
+    [TB_USER_TGT_CTGR_PER_TGT].[TGT_ID] AS [TGT_ID], 
+    [TB_USER_TGT_CTGR_PER_TGT].[rowguid] AS [rowguid]
+    FROM [dbo].[TB_USER_TGT_CTGR_PER_TGT] AS [TB_USER_TGT_CTGR_PER_TGT]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_JCS_TB_TGT_TB_ETASPCD" Association="Self.FK_JCS_TB_TGT_TB_ETASPCD">
+      <End Role="TB_ETASPCD" EntitySet="TB_ETASPCD" />
+      <End Role="TB_JCS_TGT" EntitySet="TB_JCS_TGT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_ANTT_TMPL_TB_USER" Association="Self.FK_TB_ANTT_TMPL_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_ANTT_TMPL" EntitySet="TB_ANTT_TMPL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_APPRV_CLPLN_SCENES_TB_APPRV_CLPLN" Association="Self.FK_TB_APPRV_CLPLN_SCENES_TB_APPRV_CLPLN">
+      <End Role="TB_APPRV_CLPLN" EntitySet="TB_APPRV_CLPLN" />
+      <End Role="TB_APPRV_CLPLN_SCENES" EntitySet="TB_APPRV_CLPLN_SCENES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_CHG_DTCT_IMAGE_TB_ORGINL_IMAGE" Association="Self.FK_TB_CHG_DTCT_IMAGE_TB_ORGINL_IMAGE">
+      <End Role="TB_ORGINL_IMAGE" EntitySet="TB_ORGINL_IMAGE" />
+      <End Role="TB_CHG_DTCT_IMAGE" EntitySet="TB_CHG_DTCT_IMAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_CHG_DTCT_IMAGE_TB_ORGINL_IMAGE1" Association="Self.FK_TB_CHG_DTCT_IMAGE_TB_ORGINL_IMAGE1">
+      <End Role="TB_ORGINL_IMAGE" EntitySet="TB_ORGINL_IMAGE" />
+      <End Role="TB_CHG_DTCT_IMAGE" EntitySet="TB_CHG_DTCT_IMAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_CRCTN_IMAGE_TB_USER" Association="Self.FK_TB_CRCTN_IMAGE_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_CRCTN_IMAGE" EntitySet="TB_CRCTN_IMAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DCPHRIMAGE_LOCTN_TB_ADMINISTZONE" Association="Self.FK_TB_DCPHRIMAGE_LOCTN_TB_ADMINISTZONE">
+      <End Role="TB_ADMINISTZONE" EntitySet="TB_ADMINISTZONE" />
+      <End Role="TB_DCPHRIMAGE_LOCTN" EntitySet="TB_DCPHRIMAGE_LOCTN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DCPHRIMAGE_LOCTN_TB_DCPHRIMAGE" Association="Self.FK_TB_DCPHRIMAGE_LOCTN_TB_DCPHRIMAGE">
+      <End Role="TB_DCPHRIMAGE" EntitySet="TB_DCPHRIMAGE" />
+      <End Role="TB_DCPHRIMAGE_LOCTN" EntitySet="TB_DCPHRIMAGE_LOCTN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DCPHRIMAGE_TB_ORGINL_IMAGE" Association="Self.FK_TB_DCPHRIMAGE_TB_ORGINL_IMAGE">
+      <End Role="TB_ORGINL_IMAGE" EntitySet="TB_ORGINL_IMAGE" />
+      <End Role="TB_DCPHRIMAGE" EntitySet="TB_DCPHRIMAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DCPHRIMAGE_TB_TGT" Association="Self.FK_TB_DCPHRIMAGE_TB_TGT">
+      <End Role="TB_TGT" EntitySet="TB_TGT" />
+      <End Role="TB_DCPHRIMAGE" EntitySet="TB_DCPHRIMAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DCPHRIMAGE_TB_USER" Association="Self.FK_TB_DCPHRIMAGE_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_DCPHRIMAGE" EntitySet="TB_DCPHRIMAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DCPHRIMAGE_TB_USER1" Association="Self.FK_TB_DCPHRIMAGE_TB_USER1">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_DCPHRIMAGE" EntitySet="TB_DCPHRIMAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DCPHRIMAGE_TB_USER2" Association="Self.FK_TB_DCPHRIMAGE_TB_USER2">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_DCPHRIMAGE" EntitySet="TB_DCPHRIMAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DCPHRRPRT_TB_DCPHRRPRT" Association="Self.FK_TB_DCPHRRPRT_TB_DCPHRRPRT">
+      <End Role="TB_DCPHRRPRT_TYPE" EntitySet="TB_DCPHRRPRT_TYPE" />
+      <End Role="TB_DCPHRRPRT" EntitySet="TB_DCPHRRPRT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DCPHRRPRT_TB_USER" Association="Self.FK_TB_DCPHRRPRT_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_DCPHRRPRT" EntitySet="TB_DCPHRRPRT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DCPHRRPRT_TB_USER1" Association="Self.FK_TB_DCPHRRPRT_TB_USER1">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_DCPHRRPRT" EntitySet="TB_DCPHRRPRT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DCPHRRPRT_TB_USER2" Association="Self.FK_TB_DCPHRRPRT_TB_USER2">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_DCPHRRPRT" EntitySet="TB_DCPHRRPRT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_ENMEQP_BASIC_IMAGE_TB_ENMEQP" Association="Self.FK_TB_ENMEQP_BASIC_IMAGE_TB_ENMEQP">
+      <End Role="TB_ENMEQP" EntitySet="TB_ENMEQP" />
+      <End Role="TB_ENMEQP_BASIC_IMAGE" EntitySet="TB_ENMEQP_BASIC_IMAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_ENMEQP_IMAGE_TB_ENMEQP" Association="Self.FK_TB_ENMEQP_IMAGE_TB_ENMEQP">
+      <End Role="TB_ENMEQP" EntitySet="TB_ENMEQP" />
+      <End Role="TB_ENMEQP_IMAGE" EntitySet="TB_ENMEQP_IMAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_ENMEQP_SPEC_TB_ENMEQP" Association="Self.FK_TB_ENMEQP_SPEC_TB_ENMEQP">
+      <End Role="TB_ENMEQP" EntitySet="TB_ENMEQP" />
+      <End Role="TB_ENMEQP_SPEC" EntitySet="TB_ENMEQP_SPEC" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_IMAGE_PRCSS_KND_TB_CLTNSNSRKDCD" Association="Self.FK_TB_IMAGE_PRCSS_KND_TB_CLTNSNSRKDCD">
+      <End Role="TB_CLTNSNSRKDCD" EntitySet="TB_CLTNSNSRKDCD" />
+      <End Role="TB_IMAGE_PRCSS_KND" EntitySet="TB_IMAGE_PRCSS_KND" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_INFMTN_CLTN_EMPH_MATR_PER_TGT_TB_INFMTN_CLTN_EMPH_MATR" Association="Self.FK_TB_INFMTN_CLTN_EMPH_MATR_PER_TGT_TB_INFMTN_CLTN_EMPH_MATR">
+      <End Role="TB_INFMTN_CLTN_EMPH_MATR" EntitySet="TB_INFMTN_CLTN_EMPH_MATR" />
+      <End Role="TB_INFMTN_CLTN_EMPH_MATR_PER_TGT" EntitySet="TB_INFMTN_CLTN_EMPH_MATR_PER_TGT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_INFMTN_CLTN_EMPH_MATR_PER_TGT_TB_TGT" Association="Self.FK_TB_INFMTN_CLTN_EMPH_MATR_PER_TGT_TB_TGT">
+      <End Role="TB_TGT" EntitySet="TB_TGT" />
+      <End Role="TB_INFMTN_CLTN_EMPH_MATR_PER_TGT" EntitySet="TB_INFMTN_CLTN_EMPH_MATR_PER_TGT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_INFMTN_IDTF_CTNT_CHNG_LOG_TB_INFMTN_IDTF_CTNT" Association="Self.FK_TB_INFMTN_IDTF_CTNT_CHNG_LOG_TB_INFMTN_IDTF_CTNT">
+      <End Role="TB_INFMTN_IDTF_CTNT" EntitySet="TB_INFMTN_IDTF_CTNT" />
+      <End Role="TB_INFMTN_IDTF_CTNT_CHNG_LOG" EntitySet="TB_INFMTN_IDTF_CTNT_CHNG_LOG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_INFMTN_IDTF_CTNT_CHNG_LOG_TB_USER" Association="Self.FK_TB_INFMTN_IDTF_CTNT_CHNG_LOG_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_INFMTN_IDTF_CTNT_CHNG_LOG" EntitySet="TB_INFMTN_IDTF_CTNT_CHNG_LOG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT_TB_DCPHRRPRT" Association="Self.FK_TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT_TB_DCPHRRPRT">
+      <End Role="TB_DCPHRRPRT" EntitySet="TB_DCPHRRPRT" />
+      <End Role="TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT" EntitySet="TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT_TB_INFMTN_IDTF_CTNT" Association="Self.FK_TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT_TB_INFMTN_IDTF_CTNT">
+      <End Role="TB_INFMTN_IDTF_CTNT" EntitySet="TB_INFMTN_IDTF_CTNT" />
+      <End Role="TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT" EntitySet="TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_INFMTN_IDTF_CTNT_TB_DCPHRIMAGE" Association="Self.FK_TB_INFMTN_IDTF_CTNT_TB_DCPHRIMAGE">
+      <End Role="TB_DCPHRIMAGE" EntitySet="TB_DCPHRIMAGE" />
+      <End Role="TB_INFMTN_IDTF_CTNT" EntitySet="TB_INFMTN_IDTF_CTNT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_INFMTN_IDTF_CTNT_TB_ORGINL_IMAGE" Association="Self.FK_TB_INFMTN_IDTF_CTNT_TB_ORGINL_IMAGE">
+      <End Role="TB_ORGINL_IMAGE" EntitySet="TB_ORGINL_IMAGE" />
+      <End Role="TB_INFMTN_IDTF_CTNT" EntitySet="TB_INFMTN_IDTF_CTNT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_INFMTN_IDTF_CTNT_TB_TGT" Association="Self.FK_TB_INFMTN_IDTF_CTNT_TB_TGT">
+      <End Role="TB_TGT" EntitySet="TB_TGT" />
+      <End Role="TB_INFMTN_IDTF_CTNT" EntitySet="TB_INFMTN_IDTF_CTNT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_INFMTN_IDTF_CTNT_TB_USER" Association="Self.FK_TB_INFMTN_IDTF_CTNT_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_INFMTN_IDTF_CTNT" EntitySet="TB_INFMTN_IDTF_CTNT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_INFMTN_IDTF_CTNT_TMPL_TB_INFMTN_IDTF_CTNT_TMPL" Association="Self.FK_TB_INFMTN_IDTF_CTNT_TMPL_TB_INFMTN_IDTF_CTNT_TMPL">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_INFMTN_IDTF_CTNT_TMPL" EntitySet="TB_INFMTN_IDTF_CTNT_TMPL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_JCS_TGT_TB_MS2525CCMSCD" Association="Self.FK_TB_JCS_TGT_TB_MS2525CCMSCD">
+      <End Role="TB_MS2525CCMSCD" EntitySet="TB_MS2525CCMSCD" />
+      <End Role="TB_JCS_TGT" EntitySet="TB_JCS_TGT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_JCS_TGT_TB_USER" Association="Self.FK_TB_JCS_TGT_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_JCS_TGT" EntitySet="TB_JCS_TGT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_JCS_TGT_TB_WRK_GRP" Association="Self.FK_TB_JCS_TGT_TB_WRK_GRP">
+      <End Role="TB_WRK_GRP" EntitySet="TB_WRK_GRP" />
+      <End Role="TB_JCS_TGT" EntitySet="TB_JCS_TGT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_LOG_TB_USER" Association="Self.FK_TB_LOG_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_LOG" EntitySet="TB_LOG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_MSGTXT_MGT_RCDBK_TB_DCPHRIMAGE" Association="Self.FK_TB_MSGTXT_MGT_RCDBK_TB_DCPHRIMAGE">
+      <End Role="TB_DCPHRIMAGE" EntitySet="TB_DCPHRIMAGE" />
+      <End Role="TB_MSGTXT_MGT_RCDBK" EntitySet="TB_MSGTXT_MGT_RCDBK" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_MSGTXT_MGT_RCDBK_TB_LKSTCD" Association="Self.FK_TB_MSGTXT_MGT_RCDBK_TB_LKSTCD">
+      <End Role="TB_LKSTCD" EntitySet="TB_LKSTCD" />
+      <End Role="TB_MSGTXT_MGT_RCDBK" EntitySet="TB_MSGTXT_MGT_RCDBK" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_MSGTXT_MGT_RCDBK_TB_USER" Association="Self.FK_TB_MSGTXT_MGT_RCDBK_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_MSGTXT_MGT_RCDBK" EntitySet="TB_MSGTXT_MGT_RCDBK" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_ORGINL_IMAGE_TB_CLSLVCD" Association="Self.FK_TB_ORGINL_IMAGE_TB_CLSLVCD">
+      <End Role="TB_CLSLVCD" EntitySet="TB_CLSLVCD" />
+      <End Role="TB_ORGINL_IMAGE" EntitySet="TB_ORGINL_IMAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_ORGINL_IMAGE_TB_CLTNSNSRKDCD" Association="Self.FK_TB_ORGINL_IMAGE_TB_CLTNSNSRKDCD">
+      <End Role="TB_CLTNSNSRKDCD" EntitySet="TB_CLTNSNSRKDCD" />
+      <End Role="TB_ORGINL_IMAGE" EntitySet="TB_ORGINL_IMAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_ORGINL_IMAGE_TB_IMGCLTSNKNCD" Association="Self.FK_TB_ORGINL_IMAGE_TB_IMGCLTSNKNCD">
+      <End Role="TB_IMGCLTSNKNCD" EntitySet="TB_IMGCLTSNKNCD" />
+      <End Role="TB_ORGINL_IMAGE" EntitySet="TB_ORGINL_IMAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_ORGINL_IMAGE_TB_INCLUNTDVCD" Association="Self.FK_TB_ORGINL_IMAGE_TB_INCLUNTDVCD">
+      <End Role="TB_INCLUNTDVCD" EntitySet="TB_INCLUNTDVCD" />
+      <End Role="TB_ORGINL_IMAGE" EntitySet="TB_ORGINL_IMAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_ORGINL_IMAGE_TB_NCB" Association="Self.FK_TB_ORGINL_IMAGE_TB_NCB">
+      <End Role="TB_NCB" EntitySet="TB_NCB" />
+      <End Role="TB_ORGINL_IMAGE" EntitySet="TB_ORGINL_IMAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_ORGINL_IMAGE_TB_ORGINL_IMAGE" Association="Self.FK_TB_ORGINL_IMAGE_TB_ORGINL_IMAGE">
+      <End Role="TB_IMAGE_PRCSS_KND" EntitySet="TB_IMAGE_PRCSS_KND" />
+      <End Role="TB_ORGINL_IMAGE" EntitySet="TB_ORGINL_IMAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_PRGM_TB_ATHRT_GRP" Association="Self.FK_TB_PRGM_TB_ATHRT_GRP">
+      <End Role="TB_ATHRT_GRP" EntitySet="TB_ATHRT_GRP" />
+      <End Role="TB_PRGM" EntitySet="TB_PRGM" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_RCP_SCRT_MGT_RCDBK_TB_USER" Association="Self.FK_TB_RCP_SCRT_MGT_RCDBK_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_RCP_SCRT_MGT_RCDBK" EntitySet="TB_RCP_SCRT_MGT_RCDBK" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_RECVRY_DATA_TB_USER" Association="Self.FK_TB_RECVRY_DATA_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_RECVRY_DATA" EntitySet="TB_RECVRY_DATA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_SCRT_HISTRY_CARD_TB_RCP_SCRT_MGT_RCDBK" Association="Self.FK_TB_SCRT_HISTRY_CARD_TB_RCP_SCRT_MGT_RCDBK">
+      <End Role="TB_RCP_SCRT_MGT_RCDBK" EntitySet="TB_RCP_SCRT_MGT_RCDBK" />
+      <End Role="TB_SCRT_HISTRY_CARD" EntitySet="TB_SCRT_HISTRY_CARD" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_SCRT_HISTRY_CARD_TB_USER" Association="Self.FK_TB_SCRT_HISTRY_CARD_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_SCRT_HISTRY_CARD" EntitySet="TB_SCRT_HISTRY_CARD" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_SNDNG_SCRT_MGT_RCDBK_TB_LKSTCD" Association="Self.FK_TB_SNDNG_SCRT_MGT_RCDBK_TB_LKSTCD">
+      <End Role="TB_LKSTCD" EntitySet="TB_LKSTCD" />
+      <End Role="TB_SNDNG_SCRT_MGT_RCDBK" EntitySet="TB_SNDNG_SCRT_MGT_RCDBK" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_SNDNG_SCRT_MGT_RCDBK_TB_USER" Association="Self.FK_TB_SNDNG_SCRT_MGT_RCDBK_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_SNDNG_SCRT_MGT_RCDBK" EntitySet="TB_SNDNG_SCRT_MGT_RCDBK" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_TGT_PER_PLCY_TB_TGT" Association="Self.FK_TB_TGT_PER_PLCY_TB_TGT">
+      <End Role="TB_TGT" EntitySet="TB_TGT" />
+      <End Role="TB_TGT_PER_PLCY" EntitySet="TB_TGT_PER_PLCY" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_TGT_PER_PLCY_TB_WRK_ALLTMT_PLCY" Association="Self.FK_TB_TGT_PER_PLCY_TB_WRK_ALLTMT_PLCY">
+      <End Role="TB_WRK_ALLTMT_PLCY" EntitySet="TB_WRK_ALLTMT_PLCY" />
+      <End Role="TB_TGT_PER_PLCY" EntitySet="TB_TGT_PER_PLCY" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_TGT_PER_WRK_GRP_TB_WRK_GRP" Association="Self.FK_TB_TGT_PER_WRK_GRP_TB_WRK_GRP">
+      <End Role="TB_WRK_GRP" EntitySet="TB_WRK_GRP" />
+      <End Role="TB_WRK_ALLTMT_PLCY" EntitySet="TB_WRK_ALLTMT_PLCY" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_TGT_PER_WRK_GRP_TB_WRK_GRP1" Association="Self.FK_TB_TGT_PER_WRK_GRP_TB_WRK_GRP1">
+      <End Role="TB_WRK_GRP" EntitySet="TB_WRK_GRP" />
+      <End Role="TB_TGT_PER_WRK_GRP" EntitySet="TB_TGT_PER_WRK_GRP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_TGT_TB_ETASPCD" Association="Self.FK_TB_TGT_TB_ETASPCD">
+      <End Role="TB_ETASPCD" EntitySet="TB_ETASPCD" />
+      <End Role="TB_TGT" EntitySet="TB_TGT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_TGT_TB_MS2525CCMSCD" Association="Self.FK_TB_TGT_TB_MS2525CCMSCD">
+      <End Role="TB_MS2525CCMSCD" EntitySet="TB_MS2525CCMSCD" />
+      <End Role="TB_TGT" EntitySet="TB_TGT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_TGT_TB_USER" Association="Self.FK_TB_TGT_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_TGT" EntitySet="TB_TGT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_TGT_TB_WRK_GRP" Association="Self.FK_TB_TGT_TB_WRK_GRP">
+      <End Role="TB_WRK_GRP" EntitySet="TB_WRK_GRP" />
+      <End Role="TB_TGT" EntitySet="TB_TGT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_TRSMSSN_LOG_TB_USER" Association="Self.FK_TB_TRSMSSN_LOG_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_TRSMSSN_LOG" EntitySet="TB_TRSMSSN_LOG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_USER_BF_PW_TB_USER" Association="Self.FK_TB_USER_BF_PW_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_USER_BF_PW" EntitySet="TB_USER_BF_PW" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_USER_POI_TB_USER" Association="Self.FK_TB_USER_POI_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_USER_POI" EntitySet="TB_USER_POI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_USER_SMBL_TB_USER" Association="Self.FK_TB_USER_SMBL_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_USER_SMBL" EntitySet="TB_USER_SMBL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_USER_TB_ATHRT_GRP" Association="Self.FK_TB_USER_TB_ATHRT_GRP">
+      <End Role="TB_ATHRT_GRP" EntitySet="TB_ATHRT_GRP" />
+      <End Role="TB_USER" EntitySet="TB_USER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_USER_TB_RANK" Association="Self.FK_TB_USER_TB_RANK">
+      <End Role="TB_RANK" EntitySet="TB_RANK" />
+      <End Role="TB_USER" EntitySet="TB_USER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_USER_TB_WRK_GRP" Association="Self.FK_TB_USER_TB_WRK_GRP">
+      <End Role="TB_WRK_GRP" EntitySet="TB_WRK_GRP" />
+      <End Role="TB_USER" EntitySet="TB_USER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_USER_TGT_CTGR_PER_TGT_TB_TGT" Association="Self.FK_TB_USER_TGT_CTGR_PER_TGT_TB_TGT">
+      <End Role="TB_TGT" EntitySet="TB_TGT" />
+      <End Role="TB_USER_TGT_CTGR_PER_TGT" EntitySet="TB_USER_TGT_CTGR_PER_TGT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_USER_TGT_CTGR_PER_TGT_TB_USER_TGT_CTGR" Association="Self.FK_TB_USER_TGT_CTGR_PER_TGT_TB_USER_TGT_CTGR">
+      <End Role="TB_USER_TGT_CTGR" EntitySet="TB_USER_TGT_CTGR" />
+      <End Role="TB_USER_TGT_CTGR_PER_TGT" EntitySet="TB_USER_TGT_CTGR_PER_TGT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_USER_TGT_CTGR_TB_USER" Association="Self.FK_TB_USER_TGT_CTGR_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_USER_TGT_CTGR" EntitySet="TB_USER_TGT_CTGR" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_WRK_ORD_TB_USER" Association="Self.FK_TB_WRK_ORD_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_WRK_ORD" EntitySet="TB_WRK_ORD" />
+    </AssociationSet>
+    <AssociationSet Name="TB_DCPHRIMAGE_PER_DCPHRRPRT_TB_DCPHRIMAGE_DCPHRIMAGE_ID_fk" Association="Self.TB_DCPHRIMAGE_PER_DCPHRRPRT_TB_DCPHRIMAGE_DCPHRIMAGE_ID_fk">
+      <End Role="TB_DCPHRIMAGE" EntitySet="TB_DCPHRIMAGE" />
+      <End Role="TB_DCPHRIMAGE_PER_DCPHRRPRT" EntitySet="TB_DCPHRIMAGE_PER_DCPHRRPRT" />
+    </AssociationSet>
+    <AssociationSet Name="TB_DCPHRIMAGE_PER_DCPHRRPRT_TB_DCPHRRPRT_DCPHRRPRT_ID_fk" Association="Self.TB_DCPHRIMAGE_PER_DCPHRRPRT_TB_DCPHRRPRT_DCPHRRPRT_ID_fk">
+      <End Role="TB_DCPHRRPRT" EntitySet="TB_DCPHRRPRT" />
+      <End Role="TB_DCPHRIMAGE_PER_DCPHRRPRT" EntitySet="TB_DCPHRIMAGE_PER_DCPHRRPRT" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

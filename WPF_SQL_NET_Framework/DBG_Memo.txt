@@ -1,0 +1,77 @@
+﻿
+
+DB 상태 확인 방법
+- 1. power shell : ip, port 확인 (더 정확히는 port 확인 인듯(?))
+- 2. ping : DB Select 문 Query 확인
+
+C# - DB 통신 방법
+- sysyem.data.sqlclient : 객체 사용
+
+기능
+- 로그인 화면:
+	DB(동적 적용) - DB Table(최대 3개)
+	-> 1. DB : power shell 확인
+	-> 2. ping : Query(select 1) 확인
+
+- 메인 화면:
+	1. Text Log : 현재 wpf의 모든 로그 확인
+	2. DB(tab) : DB Table 상태 확인(Color)
+	3. 테스트 기능 : 
+		-> 1. Auto Mode: Query(select 1) 2초간격 지속 확인
+			- 주의) query 문이 잘못 된건지 db 접속이 끊긴 건지 확인 해야함
+				- green: DB 주소, Query 둘다 양호
+				- orange: DB 주소: 불량, Query: 양호
+				- red: DB 주소: 불량, Query: 불량, DB Table 불량
+
+		-> 2. Func Button: 수동 DB 상태 확인 (PS, Ping)
+
+
+
+25-09-22 피드백
+
+[공통 사항]
+1. Color
+ - green: 서버: 정상, 데이터 베이스: 정상
+ - orange: (warning) 서버: 정상, 데이터 베이스: 불량
+ - red: (error) 네트워크 level(cmd) 응답: 불량 
+ - black: (critical) 네트워크 level(power shell) 응답: 불량
+ - white: 각 단계 별 응담 확인 진행 중
+
+
+(23일 작업 내용)
+1. 단계 별 오류 확인 : 각 단계 별 부정 응답일 경우 부정 응답만 추려서 진행
+STEP 1: [PASS]
+- 확인 단계
+	-> SELECT 1 질의
+
+STEP 2: [WARNING]
+- 확인 단계 (C# 내부에서 할 수 있는 동작들 확인)
+	-> 1. SQL CONNECT 상태 확인
+
+	// 시간 남을 때 추가하도록 하자
+	-> 2. ConnectionString 확인 (제외하자 1번에서 이미 진행함)
+	-> 3. Data Base 존재 확인 (select 직접 작성)
+		-> 3 - 2. Data Base 상태 확인 (select 직접 작성)
+
+STEP 3: [ERROR]
+- 확인 단계 (네트워크 Level 확인)
+	-> 1. CMD를 이용해서 직접 IP 확인
+
+STEP 4: [CRITICAL]
+- 확인 단계 (네트워크 Level 확인)
+	-> 1. POWER SHELL 이용해서 PORT 확인
+
+
+
+[10-13]
+기능: 프로그램 사용량 확인
+방법: WMI 사용
+-> WMI(IP,Domain,PW)로 원격 접속 가능 및 리소스 확인 가능
+
+1. 현재 내 PC의 응용 프로그램(.exe) 리소스 확인
+2. 원격 PC의 리소스 확인
+
+
+1. 현재 내 PC의 응용 프로그램 리소스 확인
+STEP 1: 전체 응용 프로그램 CheckList로 뿌린다.
+STEP 2: Check된 응용프로그램(최대 3개), cpu,메모리 사용량 LOG(그래프)

@@ -1,0 +1,118 @@
+﻿<Window x:Class="WPF_SQL_NET_Framework.DB_LogIN"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_SQL_NET_Framework"
+        xmlns:vm ="clr-namespace:WPF_SQL_NET_Framework.ViewModel"
+        mc:Ignorable="d"
+        Title="LogINWindow" Height="438" Width="475" Loaded="Window_Loaded">
+
+    <Window.DataContext>
+        <vm:VM_DBLogin/>
+    </Window.DataContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="70"/>
+                <ColumnDefinition Width="70"/>
+                <ColumnDefinition Width="70"/>
+            </Grid.ColumnDefinitions>
+
+            <GroupBox Grid.Row="0" Margin="2" Header="DB 주소(IP,PORT) 연결">
+                <ProgressBar Margin="5" Minimum="0" Maximum="100" IsIndeterminate="{Binding PB_Loading}"/>
+            </GroupBox>
+
+            <Button Grid.Column="1" Margin="4" Content="추가" Command="{Binding AddTabInfo}" IsEnabled="{Binding Btn_Enable}"/>
+            <Button Grid.Column="2" Margin="4" Content="삭제" Command="{Binding DelTabInfo}" IsEnabled="{Binding Btn_Enable}"/>
+            <Button Grid.Column="3" Margin="4" Content="{Binding Btn_Text}" Command="{Binding DB_Connect}" IsEnabled="{Binding Btn_Enable}"/>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <TabControl Margin="10" ItemsSource="{Binding Server_List}" SelectedIndex="{Binding SelectTabIndex}">
+                <TabControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding TabName}"/>
+                    </DataTemplate>
+                </TabControl.ItemTemplate>
+
+                <TabControl.ContentTemplate>
+                    <DataTemplate>
+                        <Grid Background="#FFE5E5E5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="20"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+                            
+                            <Grid Grid.Row="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="110"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Label Grid.Row="0" Grid.Column="0" Margin="2" Content="Server Name(IP) :"/>
+                                <Label Grid.Row="1" Grid.Column="0" Margin="2" Content="포트(Port) :"/>
+                                <Label Grid.Row="2" Grid.Column="0" Margin="2" Content="ID :"/>
+                                <Label Grid.Row="3" Grid.Column="0" Margin="2" Content="PW :"/>
+                                <!--<Label Grid.Row="4" Margin="2" Content="DB Name :"/>
+                                <Label Grid.Row="5" Margin="2" Content="DB Name :"/>
+                                <Label Grid.Row="6" Margin="2" Content="DB Name :"/>-->
+
+                                <TextBox Grid.Row="0" Grid.Column="1" Margin="2" Text="{Binding Server_IP, UpdateSourceTrigger=PropertyChanged}"/>
+                                <TextBox Grid.Row="1" Grid.Column="1" Margin="2" Text="{Binding Server_PORT, UpdateSourceTrigger=PropertyChanged}"/>
+                                <TextBox Grid.Row="2" Grid.Column="1" Margin="2" Text="{Binding Server_ID, UpdateSourceTrigger=PropertyChanged}"/>
+                                <TextBox Grid.Row="3" Grid.Column="1" Margin="2" Text="{Binding Server_PW, UpdateSourceTrigger=PropertyChanged}"/>
+                            </Grid>
+
+                            <Grid Grid.Row="1">
+
+                            </Grid>
+
+                            <Grid Grid.Row="2">
+                                <ItemsControl Grid.Row="4" ItemsSource="{Binding DB_List}">
+                                    <ItemsControl.ItemsPanel>
+                                        <ItemsPanelTemplate>
+                                            <StackPanel/>
+                                        </ItemsPanelTemplate>
+                                    </ItemsControl.ItemsPanel>
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <Grid Margin="2">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="110"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+
+                                                <Label Grid.Column="0" Margin="2" Content="DB Name :"/>
+                                                <TextBox Grid.Column="1" Margin="2" Text="{Binding DBName}"/>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                            </Grid>
+                            
+                            <!--<TextBox Grid.Row="4" Grid.Column="1" Margin="2" Text="{Binding DB_Name_1, UpdateSourceTrigger=PropertyChanged}"/>
+                            <TextBox Grid.Row="5" Grid.Column="1" Margin="2" Text="{Binding DB_Name_2, UpdateSourceTrigger=PropertyChanged}"/>
+                            <TextBox Grid.Row="6" Grid.Column="1" Margin="2" Text="{Binding DB_Name_3, UpdateSourceTrigger=PropertyChanged}"/>-->
+                        </Grid>
+                    </DataTemplate>
+                </TabControl.ContentTemplate>
+            </TabControl>
+        </Grid>
+
+    </Grid>
+</Window>

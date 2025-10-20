@@ -1,0 +1,202 @@
+2025-10-09 18:12:41.331 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-09 18:12:48.464 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 불량]
+2025-10-09 18:15:22.724 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-09 18:15:26.080 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-09 18:15:26.083 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-09 18:15:26.113 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-09 18:15:26.115 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-09 18:15:26.169 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-09 18:15:26.169 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-09 18:15:26.183 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-09 18:27:34.734 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-09 18:27:38.068 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-09 18:27:38.071 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-09 18:27:38.086 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-09 18:27:38.088 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-09 18:27:38.098 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-09 18:27:38.116 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-09 18:27:38.116 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-09 18:35:21.080 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-09 18:35:24.439 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-09 18:35:24.442 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-09 18:35:24.457 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-09 18:35:24.459 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-09 18:35:24.469 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-09 18:35:24.488 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-09 18:35:24.488 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-09 18:36:28.070 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-09 18:36:31.350 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-09 18:36:31.353 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-09 18:36:31.368 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-09 18:36:31.370 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-09 18:36:31.381 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-09 18:36:31.398 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-09 18:36:31.399 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-09 18:41:55.589 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-09 18:41:58.935 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-09 18:41:58.938 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-09 18:41:58.953 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-09 18:41:58.955 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-09 18:41:58.965 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-09 18:41:58.983 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-09 18:41:58.984 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-09 18:50:43.444 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-09 18:50:46.842 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-09 18:50:46.845 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-09 18:50:46.861 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-09 18:50:46.863 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-09 18:50:46.874 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-09 18:50:46.887 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-09 18:50:46.895 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-09 18:52:36.925 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-09 18:52:40.259 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-09 18:52:40.262 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-09 18:52:40.277 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-09 18:52:40.280 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-09 18:52:40.338 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 불량]
+2025-10-09 18:52:40.339 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-09 18:52:40.339 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-09 18:52:45.886 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-09 18:52:48.009 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-09 18:52:48.010 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-09 18:52:48.011 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-09 18:52:48.013 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-09 18:52:48.016 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-09 18:52:48.025 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-09 18:52:48.033 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-09 18:56:30.980 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-09 18:56:42.905 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-09 18:56:49.228 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-09 18:57:04.230 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-09 18:58:52.024 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-09 18:58:53.290 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 불량]
+2025-10-09 18:58:53.831 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-09 18:58:54.303 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-09 18:59:02.977 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-09 18:59:06.777 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-09 18:59:06.778 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-09 18:59:06.779 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-09 18:59:06.780 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-09 18:59:06.785 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-09 18:59:06.794 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-09 18:59:06.803 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-09 19:01:15.339 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-09 19:01:18.695 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-09 19:01:18.698 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-09 19:01:18.713 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-09 19:01:18.715 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-09 19:01:18.726 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-09 19:01:18.745 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-09 19:01:18.746 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-09 19:08:09.020 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-09 19:08:12.376 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-09 19:08:12.378 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-09 19:08:12.393 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-09 19:08:12.396 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-09 19:08:12.406 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-09 19:08:12.425 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-09 19:08:12.426 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-09 19:10:15.977 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-09 19:10:19.367 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-09 19:10:19.370 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-09 19:10:19.385 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-09 19:10:19.388 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-09 19:10:19.398 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-09 19:10:19.459 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-09 19:10:19.460 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-09 19:12:30.292 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-09 19:12:33.638 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-09 19:12:33.641 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-09 19:12:33.655 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-09 19:12:33.657 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-09 19:12:33.668 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-09 19:12:33.686 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-09 19:12:33.687 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-09 19:15:12.686 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-09 19:15:16.856 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-09 19:15:16.859 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-09 19:15:16.874 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-09 19:15:16.876 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-09 19:15:16.887 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-09 19:15:16.907 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-09 19:15:16.908 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-09 19:16:29.971 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-09 19:16:33.310 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-09 19:16:33.313 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-09 19:16:33.328 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-09 19:16:33.330 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-09 19:16:33.340 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-09 19:16:33.360 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-09 19:16:33.360 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-09 19:22:05.268 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-09 19:22:08.627 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-09 19:22:08.630 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-09 19:22:08.645 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-09 19:22:08.647 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-09 19:22:08.658 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-09 19:22:08.676 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-09 19:22:08.677 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-09 19:23:02.443 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-09 19:23:05.663 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-09 19:23:05.666 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-09 19:23:05.682 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-09 19:23:05.684 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-09 19:23:05.694 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-09 19:23:05.715 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-09 19:23:05.716 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-09 19:31:43.625 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-09 19:31:46.960 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-09 19:31:46.963 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-09 19:31:46.978 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-09 19:31:46.980 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-09 19:31:46.991 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-09 19:31:47.010 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-09 19:31:47.010 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-09 19:32:14.958 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-09 19:32:18.188 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-09 19:32:18.191 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-09 19:32:18.206 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-09 19:32:18.209 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-09 19:32:18.219 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-09 19:32:18.237 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-09 19:32:18.237 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-09 19:32:51.752 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-09 19:33:02.404 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-09 19:33:09.112 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-09 19:33:10.826 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-09 19:33:11.689 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-09 19:33:16.607 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 불량]
+2025-10-09 19:33:17.177 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-09 19:33:17.637 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-09 19:33:23.487 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-09 19:33:26.467 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-09 19:33:27.079 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-09 19:33:27.367 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-09 19:33:27.631 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-09 19:33:27.897 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-09 19:33:28.142 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-09 19:33:28.408 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-09 20:58:41.735 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-09 20:58:48.370 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-09 20:58:48.373 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-09 20:58:48.390 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-09 20:58:48.391 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-09 20:58:48.403 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-09 20:58:48.423 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-09 20:58:48.424 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-09 20:59:43.900 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-09 20:59:47.270 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-09 20:59:47.273 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-09 20:59:47.289 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-09 20:59:47.292 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-09 20:59:47.303 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-09 20:59:47.325 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-09 20:59:47.326 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-09 21:00:19.099 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-09 21:00:22.516 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-09 21:00:22.519 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-09 21:00:22.536 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-09 21:00:22.538 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-09 21:00:22.550 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-09 21:00:22.564 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-09 21:00:22.574 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]

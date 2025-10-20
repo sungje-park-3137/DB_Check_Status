@@ -1,0 +1,20 @@
+auto->default->변화 확인(ui)
+pw->*
+textbox -> readonly
+textbox clear
+
+
+새로 작성 중인 cs
+DB_Data
+Main_Model
+LogIN_ViewModel
+Main_Model_2
+
+기존 cs
+func_Main
+Main_Model
+
+참고예제 cs
+CAPIViewModel
+DBConnection
+MainWindowViewModel

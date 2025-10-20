@@ -1,0 +1,61 @@
+﻿<UserControl x:Class="WPF_SQL_NET_Framework.View.UC_DBInfo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPF_SQL_NET_Framework.View"
+             xmlns:vm="clr-namespace:WPF_SQL_NET_Framework.ViewModel"
+             mc:Ignorable="d"
+             d:DesignHeight="500" d:DesignWidth="1000">
+
+    <UserControl.DataContext>
+        <vm:VM_DBQuery/>
+    </UserControl.DataContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        
+        <TabControl Grid.Row="0" Margin="10" ItemsSource="{Binding Server_List}">
+            <TabControl.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding TabName}"/>
+                </DataTemplate>
+            </TabControl.ItemTemplate>
+
+            <TabControl.ContentTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="30"/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="2*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <GroupBox Header="DB 접속 - Server" Grid.Column="0">
+                                <Grid>
+                                    <DataGrid Grid.Row="0" AutoGenerateColumns="True" ItemsSource="{Binding DB_Server_RcvTable}" SelectedItem=""/>
+                                </Grid>
+                            </GroupBox>
+
+                            <GroupBox Header="DB 접속 - DB" Grid.Column="1">
+                                <Grid>
+                                    <DataGrid Grid.Row="0" AutoGenerateColumns="True" ItemsSource="{Binding DB_RcvTable}"/>
+                                </Grid>
+                            </GroupBox>
+                        </Grid>
+                    </Grid>
+                </DataTemplate>
+            </TabControl.ContentTemplate>
+        </TabControl>
+
+        <Button Grid.Row="1" Content="Send Query" Margin="2" Command="{Binding Server_Query}"/>
+
+    </Grid>
+</UserControl>

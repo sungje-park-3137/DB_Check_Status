@@ -1,0 +1,102 @@
+﻿<UserControl x:Class="WPF_SQL_NET_Framework.View.UC_ProcessControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPF_SQL_NET_Framework"
+             xmlns:vm="clr-namespace:WPF_SQL_NET_Framework.ViewModel"
+             xmlns:oxy="http://oxyplot.org/wpf"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="1000">
+    <UserControl.DataContext>
+        <vm:VM_ProcessControl/>
+    </UserControl.DataContext>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Button Margin="5" Content="Load Process" Command="{Binding BTN_GetProcess}"/>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="19*"/>
+                    <ColumnDefinition Width="81*"/>
+                </Grid.ColumnDefinitions>
+                <!--<ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <ItemsControl ItemsSource="{Binding Process_List}">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <StackPanel Orientation="Vertical"/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <CheckBox Content="{Binding PName}" Height="50" Margin="3" Command="{Binding BTN_CheckProcess}"/>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>-->
+
+                <CheckBox Content="AutoCheckProcess" Margin="5,5,5,5" IsChecked="{Binding BTN_CheckProcess, Mode=TwoWay}" Grid.ColumnSpan="2"/>
+            </Grid>
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="0">
+                    <TextBlock Text="Limit Check CPU" VerticalAlignment="Center"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <TextBox Margin="5" Text="{Binding TB_LimitCPU, Mode=OneWayToSource}"/>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="0">
+                    <TextBlock Text="Limit Check Memory" VerticalAlignment="Center"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <TextBox Margin="5" Text="{Binding TB_LimitMemory, Mode=OneWayToSource}"/>
+                </Grid>
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <oxy:PlotView Grid.Row="0" Model="{Binding ProcessChart}"/>
+            <DataGrid Grid.Row="1" ItemsSource="{Binding Process_List}" Margin="5" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridCheckBoxColumn Header="Check" Binding="{Binding IsCheck, Mode=TwoWay}"/>
+                    <DataGridTextColumn Header="Process ID" Binding="{Binding PID}"/>
+                    <DataGridTextColumn Header="Process Name" Binding="{Binding PName}"/>
+                    <DataGridTextColumn Header="Process Path" Binding="{Binding PPath}"/>
+                    <DataGridTextColumn Header="Process CPU Time" Binding="{Binding LastPCpuTime}"/>
+                    <DataGridTextColumn Header="Process Memory(byte)" Binding="{Binding LastPMemory}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+    </Grid>
+</UserControl>

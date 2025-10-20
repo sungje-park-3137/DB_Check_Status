@@ -1,0 +1,2351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GS425_IEE_DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TB_ADMINISTZONE">
+    <Key>
+      <PropertyRef Name="ADMINISTZONE_CD" />
+    </Key>
+    <Property Name="ADMINISTZONE_CD" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ADMINISTZONE_NM" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BDRY_CORDC" Type="Geometry" Nullable="false" />
+    <Property Name="HGRNK_ADMINISTZONE_CD" Type="String" MaxLength="8" FixedLength="true" Unicode="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_DCPHRIMAGE_LOCTN" Relationship="Self.FK_TB_DCPHRIMAGE_LOCTN_TB_ADMINISTZONE" FromRole="TB_ADMINISTZONE" ToRole="TB_DCPHRIMAGE_LOCTN" />
+  </EntityType>
+  <EntityType Name="TB_ANTT_TMPL">
+    <Key>
+      <PropertyRef Name="NTT_TMPL_ID" />
+    </Key>
+    <Property Name="NTT_TMPL_ID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NTT_TMPL_NM" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USER_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TMPL_FILE" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="TMPL_KND_IDTFR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_USER" Relationship="Self.FK_TB_ANTT_TMPL_TB_USER" FromRole="TB_ANTT_TMPL" ToRole="TB_USER" />
+  </EntityType>
+  <EntityType Name="TB_APPRV_CLPLN">
+    <Key>
+      <PropertyRef Name="APPROVAL_CLPLN_ID" />
+    </Key>
+    <Property Name="APPROVAL_CLPLN_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CRT_DNT" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CLPLN_START_DNT" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CLPLN_FNSH_DNT" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="STL_IDTFR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_APPRV_CLPLN_SCENES" Relationship="Self.FK_TB_APPRV_CLPLN_SCENES_TB_APPRV_CLPLN" FromRole="TB_APPRV_CLPLN" ToRole="TB_APPRV_CLPLN_SCENES" />
+  </EntityType>
+  <EntityType Name="TB_APPRV_CLPLN_SCENES">
+    <Key>
+      <PropertyRef Name="SCENE_ID" />
+    </Key>
+    <Property Name="SCENE_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IMAGE_NM" Type="String" MaxLength="300" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CPLN_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BDRY_CORDC" Type="Geometry" Nullable="false" />
+    <Property Name="SHTNG_START_DTTM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UGCY_SHTNG_YN" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SHTNG_END_DTTM" Type="DateTime" Precision="3" />
+    <Property Name="MSN_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_APPRV_CLPLN" Relationship="Self.FK_TB_APPRV_CLPLN_SCENES_TB_APPRV_CLPLN" FromRole="TB_APPRV_CLPLN_SCENES" ToRole="TB_APPRV_CLPLN" />
+  </EntityType>
+  <EntityType Name="TB_ASSIGN_WRK_PLCY">
+    <Key>
+      <PropertyRef Name="WRK_ALLTMT_PLCY_ID" />
+    </Key>
+    <Property Name="WRK_ALLTMT_PLCY_ID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="WRK_ALLTMT_PLCY_NM" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="WRK_ALLTMT_PLCY_TP_IDTFR" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IMGCLTSNKNCD" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_ATHRT_GRP">
+    <Key>
+      <PropertyRef Name="ATHRT_GRP_ID" />
+    </Key>
+    <Property Name="ATHRT_GRP_ID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ATHRT_GRP_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ATHRT_GRP_EXPLN" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_PRGM" Relationship="Self.FK_TB_PRGM_TB_ATHRT_GRP" FromRole="TB_ATHRT_GRP" ToRole="TB_PRGM" />
+    <NavigationProperty Name="TB_USER" Relationship="Self.FK_TB_USER_TB_ATHRT_GRP" FromRole="TB_ATHRT_GRP" ToRole="TB_USER" />
+  </EntityType>
+  <EntityType Name="TB_BCUP_LOG">
+    <Key>
+      <PropertyRef Name="BCUP_LOG_ID" />
+    </Key>
+    <Property Name="BCUP_LOG_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DTA_KND_IDTFR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="WRK_TYPE_KND_IDTFR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LOG_DTTM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_CHG_DTCT_IMAGE">
+    <Key>
+      <PropertyRef Name="CHNG_DTCT_IMAGE_ID" />
+    </Key>
+    <Property Name="CHNG_DTCT_IMAGE_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FILE_ROUTE" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ORGINL_IMAGE_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="REF_IMAGE_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="WRK_DTTM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="BDRY_CORDC" Type="Geometry" Nullable="false" />
+    <Property Name="CENTR_CORDC" Type="Geometry" Nullable="false" />
+    <Property Name="AUTO_YN" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CRT_MODE_IDTFR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_ORGINL_IMAGE" Relationship="Self.FK_TB_CHG_DTCT_IMAGE_TB_ORGINL_IMAGE" FromRole="TB_CHG_DTCT_IMAGE" ToRole="TB_ORGINL_IMAGE" />
+    <NavigationProperty Name="TB_ORGINL_IMAGE1" Relationship="Self.FK_TB_CHG_DTCT_IMAGE_TB_ORGINL_IMAGE1" FromRole="TB_CHG_DTCT_IMAGE" ToRole="TB_ORGINL_IMAGE" />
+  </EntityType>
+  <EntityType Name="TB_CLPLN_SCENE_PRCSS">
+    <Key>
+      <PropertyRef Name="CLPLN_SCENE_PRCSS_ID" />
+    </Key>
+    <Property Name="CLPLN_SCENE_PRCSS_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IMAGE_NM" Type="String" MaxLength="300" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PRCSS_IMAGE_ID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="WRK_STATE" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CRT_DTTM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_CLSLVCD">
+    <Key>
+      <PropertyRef Name="CLSLVCD" />
+    </Key>
+    <Property Name="CLSLVCD" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="CLSLV_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USEDVCD" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_ORGINL_IMAGE" Relationship="Self.FK_TB_ORGINL_IMAGE_TB_CLSLVCD" FromRole="TB_CLSLVCD" ToRole="TB_ORGINL_IMAGE" />
+  </EntityType>
+  <EntityType Name="TB_CLTNSNSRKDCD">
+    <Key>
+      <PropertyRef Name="CLTNSNSRKDCD" />
+    </Key>
+    <Property Name="CLTNSNSRKDCD" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="CLTNSNSRKDCD_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USEDVCD" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_IMAGE_PRCSS_KND" Relationship="Self.FK_TB_IMAGE_PRCSS_KND_TB_CLTNSNSRKDCD" FromRole="TB_CLTNSNSRKDCD" ToRole="TB_IMAGE_PRCSS_KND" />
+    <NavigationProperty Name="TB_ORGINL_IMAGE" Relationship="Self.FK_TB_ORGINL_IMAGE_TB_CLTNSNSRKDCD" FromRole="TB_CLTNSNSRKDCD" ToRole="TB_ORGINL_IMAGE" />
+  </EntityType>
+  <EntityType Name="TB_CMN_CD">
+    <Key>
+      <PropertyRef Name="CTGR_IDTFR" />
+      <PropertyRef Name="DTL_IDTFR" />
+    </Key>
+    <Property Name="CTGR_IDTFR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DTL_IDTFR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CTGR_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DTL_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CMN_CD_ID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_CRCTN_IMAGE">
+    <Key>
+      <PropertyRef Name="CRCTN_IMAGE_ID" />
+    </Key>
+    <Property Name="CRCTN_IMAGE_ID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BDRY_CORDC" Type="Geometry" />
+    <Property Name="CENTR_CORDC" Type="Geometry" />
+    <Property Name="ORGINL_IMAGE_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="WORKR_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CRT_DTTM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CRCTN_IMAGE_TYPE_IDTFR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CRCTN_IMAGE_FILE_ROUTE" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CRCTN_IMAGE_NM" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_USER" Relationship="Self.FK_TB_CRCTN_IMAGE_TB_USER" FromRole="TB_CRCTN_IMAGE" ToRole="TB_USER" />
+  </EntityType>
+  <EntityType Name="TB_DATA_SNCZT">
+    <Key>
+      <PropertyRef Name="DATA_CHG_ID" />
+    </Key>
+    <Property Name="DATA_CHG_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TB_NM" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CHG_KND" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CHG_DATA_IDTFR" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="CHG_DTTM" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TB_DCPHRIMAGE">
+    <Key>
+      <PropertyRef Name="DCPHRIMAGE_ID" />
+    </Key>
+    <Property Name="DCPHRIMAGE_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MSN_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DCPHRIMAGE_NM" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ORGINL_IMAGE_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DCPHRIMAGE_FILE" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="TGT_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="WRK_STATE_IDTFR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TRSMSSN_STATE_IDTFR" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="REGSTR_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BDRY_CORDC" Type="Geometry" Nullable="false" />
+    <Property Name="CENTR_CORDC" Type="Geometry" Nullable="false" />
+    <Property Name="RTTN_ANG" Type="Double" Nullable="false" />
+    <Property Name="UPDT_DTTM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CRT_DTTIM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ADMINISTZONE_NM" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="RSTRCT_DSMT_GRPNO" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="APPRVR_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UNTCMD_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NTT_FILE" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="RAWDATA_ROUTE" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_DCPHRIMAGE_LOCTN" Relationship="Self.FK_TB_DCPHRIMAGE_LOCTN_TB_DCPHRIMAGE" FromRole="TB_DCPHRIMAGE" ToRole="TB_DCPHRIMAGE_LOCTN" />
+    <NavigationProperty Name="TB_ORGINL_IMAGE" Relationship="Self.FK_TB_DCPHRIMAGE_TB_ORGINL_IMAGE" FromRole="TB_DCPHRIMAGE" ToRole="TB_ORGINL_IMAGE" />
+    <NavigationProperty Name="TB_TGT" Relationship="Self.FK_TB_DCPHRIMAGE_TB_TGT" FromRole="TB_DCPHRIMAGE" ToRole="TB_TGT" />
+    <NavigationProperty Name="TB_USER" Relationship="Self.FK_TB_DCPHRIMAGE_TB_USER" FromRole="TB_DCPHRIMAGE" ToRole="TB_USER" />
+    <NavigationProperty Name="TB_USER1" Relationship="Self.FK_TB_DCPHRIMAGE_TB_USER1" FromRole="TB_DCPHRIMAGE" ToRole="TB_USER" />
+    <NavigationProperty Name="TB_USER2" Relationship="Self.FK_TB_DCPHRIMAGE_TB_USER2" FromRole="TB_DCPHRIMAGE" ToRole="TB_USER" />
+    <NavigationProperty Name="TB_INFMTN_IDTF_CTNT" Relationship="Self.FK_TB_INFMTN_IDTF_CTNT_TB_DCPHRIMAGE" FromRole="TB_DCPHRIMAGE" ToRole="TB_INFMTN_IDTF_CTNT" />
+    <NavigationProperty Name="TB_MSGTXT_MGT_RCDBK" Relationship="Self.FK_TB_MSGTXT_MGT_RCDBK_TB_DCPHRIMAGE" FromRole="TB_DCPHRIMAGE" ToRole="TB_MSGTXT_MGT_RCDBK" />
+    <NavigationProperty Name="TB_DCPHRIMAGE_PER_DCPHRRPRT" Relationship="Self.TB_DCPHRIMAGE_PER_DCPHRRPRT_TB_DCPHRIMAGE_DCPHRIMAGE_ID_fk" FromRole="TB_DCPHRIMAGE" ToRole="TB_DCPHRIMAGE_PER_DCPHRRPRT" />
+  </EntityType>
+  <EntityType Name="TB_DCPHRIMAGE_LOCTN">
+    <Key>
+      <PropertyRef Name="DCPHRIMAGE_LOCTN_ID" />
+    </Key>
+    <Property Name="DCPHRIMAGE_LOCTN_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ADMINISTZONE_CD" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DCPHRIMAGE_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_ADMINISTZONE" Relationship="Self.FK_TB_DCPHRIMAGE_LOCTN_TB_ADMINISTZONE" FromRole="TB_DCPHRIMAGE_LOCTN" ToRole="TB_ADMINISTZONE" />
+    <NavigationProperty Name="TB_DCPHRIMAGE" Relationship="Self.FK_TB_DCPHRIMAGE_LOCTN_TB_DCPHRIMAGE" FromRole="TB_DCPHRIMAGE_LOCTN" ToRole="TB_DCPHRIMAGE" />
+  </EntityType>
+  <EntityType Name="TB_DCPHRIMAGE_PER_DCPHRRPRT">
+    <Key>
+      <PropertyRef Name="DCPHRIMAGE_PER_DCPHRRPRT_ID" />
+    </Key>
+    <Property Name="DCPHRRPRT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DCPHRIMAGE_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DCPHRIMAGE_PER_DCPHRRPRT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_DCPHRIMAGE" Relationship="Self.TB_DCPHRIMAGE_PER_DCPHRRPRT_TB_DCPHRIMAGE_DCPHRIMAGE_ID_fk" FromRole="TB_DCPHRIMAGE_PER_DCPHRRPRT" ToRole="TB_DCPHRIMAGE" />
+    <NavigationProperty Name="TB_DCPHRRPRT" Relationship="Self.TB_DCPHRIMAGE_PER_DCPHRRPRT_TB_DCPHRRPRT_DCPHRRPRT_ID_fk" FromRole="TB_DCPHRIMAGE_PER_DCPHRRPRT" ToRole="TB_DCPHRRPRT" />
+  </EntityType>
+  <EntityType Name="TB_DCPHRRPRT">
+    <Key>
+      <PropertyRef Name="DCPHRRPRT_ID" />
+    </Key>
+    <Property Name="DCPHRRPRT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DCPHRRPRT_TITLE" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FiLE_ROUTE" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RGST_DTTM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CRTOR_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BCUP_STATE_IDTFR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BCUP_FILE_ROUTE" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="DCPHRRPRT_TYPE_IDTFR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TRSMSSN_STATE_IDTFR" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MSN_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="APPRVR_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UNTCMD_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MIFS_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RSTRCT_DSMT_GRPNO" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="SNCNZ_IDTFR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_DCPHRIMAGE_PER_DCPHRRPRT" Relationship="Self.TB_DCPHRIMAGE_PER_DCPHRRPRT_TB_DCPHRRPRT_DCPHRRPRT_ID_fk" FromRole="TB_DCPHRRPRT" ToRole="TB_DCPHRIMAGE_PER_DCPHRRPRT" />
+    <NavigationProperty Name="TB_DCPHRRPRT_TYPE" Relationship="Self.FK_TB_DCPHRRPRT_TB_DCPHRRPRT" FromRole="TB_DCPHRRPRT" ToRole="TB_DCPHRRPRT_TYPE" />
+    <NavigationProperty Name="TB_USER" Relationship="Self.FK_TB_DCPHRRPRT_TB_USER" FromRole="TB_DCPHRRPRT" ToRole="TB_USER" />
+    <NavigationProperty Name="TB_USER1" Relationship="Self.FK_TB_DCPHRRPRT_TB_USER1" FromRole="TB_DCPHRRPRT" ToRole="TB_USER" />
+    <NavigationProperty Name="TB_USER2" Relationship="Self.FK_TB_DCPHRRPRT_TB_USER2" FromRole="TB_DCPHRRPRT" ToRole="TB_USER" />
+    <NavigationProperty Name="TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT" Relationship="Self.FK_TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT_TB_DCPHRRPRT" FromRole="TB_DCPHRRPRT" ToRole="TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT" />
+  </EntityType>
+  <EntityType Name="TB_DCPHRRPRT_TYPE">
+    <Key>
+      <PropertyRef Name="DCPHRRPRT_TYPE_IDTFR" />
+    </Key>
+    <Property Name="DCPHRRPRT_TYPE_IDTFR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DCPHRRPRT_TYPE_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USEDVCD" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_DCPHRRPRT" Relationship="Self.FK_TB_DCPHRRPRT_TB_DCPHRRPRT" FromRole="TB_DCPHRRPRT_TYPE" ToRole="TB_DCPHRRPRT" />
+  </EntityType>
+  <EntityType Name="TB_ENGLSH_WORD">
+    <Key>
+      <PropertyRef Name="WORD_NM" />
+      <PropertyRef Name="WORD_TYPE" />
+    </Key>
+    <Property Name="WORD_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="WORD_TYPE" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_ENMEQP">
+    <Key>
+      <PropertyRef Name="ENMYFAMC" />
+    </Key>
+    <Property Name="ENMYFAMC" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ENMEQP_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ENMEQP_EXPLN" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="ENMEQP_ALIAS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="rowguid" Type="Guid" />
+    <NavigationProperty Name="TB_ENMEQP_BASIC_IMAGE" Relationship="Self.FK_TB_ENMEQP_BASIC_IMAGE_TB_ENMEQP" FromRole="TB_ENMEQP" ToRole="TB_ENMEQP_BASIC_IMAGE" />
+    <NavigationProperty Name="TB_ENMEQP_IMAGE" Relationship="Self.FK_TB_ENMEQP_IMAGE_TB_ENMEQP" FromRole="TB_ENMEQP" ToRole="TB_ENMEQP_IMAGE" />
+    <NavigationProperty Name="TB_ENMEQP_SPEC" Relationship="Self.FK_TB_ENMEQP_SPEC_TB_ENMEQP" FromRole="TB_ENMEQP" ToRole="TB_ENMEQP_SPEC" />
+  </EntityType>
+  <EntityType Name="TB_ENMEQP_BASIC_IMAGE">
+    <Key>
+      <PropertyRef Name="ENMEQP_BASIC_IMAGE_ID" />
+    </Key>
+    <Property Name="ENMEQP_BASIC_IMAGE_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SIDVW_FILE" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="PLNVW_FILE" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="ENMYFAMC" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_ENMEQP" Relationship="Self.FK_TB_ENMEQP_BASIC_IMAGE_TB_ENMEQP" FromRole="TB_ENMEQP_BASIC_IMAGE" ToRole="TB_ENMEQP" />
+  </EntityType>
+  <EntityType Name="TB_ENMEQP_IMAGE">
+    <Key>
+      <PropertyRef Name="ENMEQP_IMAGE_ID" />
+    </Key>
+    <Property Name="ENMYFAMC" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ENMEQP_IMAGE_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ENMEQP_IMAGE_NM" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IMAGE_FILE" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_ENMEQP" Relationship="Self.FK_TB_ENMEQP_IMAGE_TB_ENMEQP" FromRole="TB_ENMEQP_IMAGE" ToRole="TB_ENMEQP" />
+  </EntityType>
+  <EntityType Name="TB_ENMEQP_SPEC">
+    <Key>
+      <PropertyRef Name="ENMEQP_SPEC_ID" />
+    </Key>
+    <Property Name="ENMEQP_SPEC_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ENMYFAMC" Type="String" MaxLength="8" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ENMEQP_SPEC_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="VAL" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UICD" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_ENMEQP" Relationship="Self.FK_TB_ENMEQP_SPEC_TB_ENMEQP" FromRole="TB_ENMEQP_SPEC" ToRole="TB_ENMEQP" />
+  </EntityType>
+  <EntityType Name="TB_ETASPCD">
+    <Key>
+      <PropertyRef Name="ETASPCD" />
+    </Key>
+    <Property Name="ETASPCD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ETASPCD_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USEDVCD" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_JCS_TGT" Relationship="Self.FK_JCS_TB_TGT_TB_ETASPCD" FromRole="TB_ETASPCD" ToRole="TB_JCS_TGT" />
+    <NavigationProperty Name="TB_TGT" Relationship="Self.FK_TB_TGT_TB_ETASPCD" FromRole="TB_ETASPCD" ToRole="TB_TGT" />
+  </EntityType>
+  <EntityType Name="TB_FFDB">
+    <Key>
+      <PropertyRef Name="BENO" />
+      <PropertyRef Name="SUFNO" />
+    </Key>
+    <Property Name="BENO" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="SUFNO" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="FKSGNCD" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="GOTLRCLSCD" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="GOTGMDCLSCD" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="GOTGSMCLSCD" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="HANGL_NM" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ENGLSH_NM" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CORDC" Type="Geometry" Nullable="false" />
+    <Property Name="HAE_ALT" Type="Double" Nullable="false" />
+    <Property Name="MSL_ALT" Type="Double" Nullable="false" />
+    <Property Name="INSTLTN_STATE_IDTFR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="INSTLTN_STATE_EXPLN" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="OPRSTCD" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="JDPINO" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="JTL_YN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RTL_YN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NSL_YN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CTL_YN" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="TGT_PRDCN_DATE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TGT_MDFC_DATE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_IMAGE_PRCSS_KND">
+    <Key>
+      <PropertyRef Name="IMAGE_PRCSS_KND_IDTFR" />
+    </Key>
+    <Property Name="IMAGE_PRCSS_KND_IDTFR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IMAGE_PRCSS_KND_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USEDVCD" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="CLTNSNSRKDCD" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_CLTNSNSRKDCD" Relationship="Self.FK_TB_IMAGE_PRCSS_KND_TB_CLTNSNSRKDCD" FromRole="TB_IMAGE_PRCSS_KND" ToRole="TB_CLTNSNSRKDCD" />
+    <NavigationProperty Name="TB_ORGINL_IMAGE" Relationship="Self.FK_TB_ORGINL_IMAGE_TB_ORGINL_IMAGE" FromRole="TB_IMAGE_PRCSS_KND" ToRole="TB_ORGINL_IMAGE" />
+  </EntityType>
+  <EntityType Name="TB_IMGCLTSNKNCD">
+    <Key>
+      <PropertyRef Name="IMGCLTSNKNCD" />
+    </Key>
+    <Property Name="IMGCLTSNKNCD" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="IMGCLTSNKNCD_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USEDVCD" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_ORGINL_IMAGE" Relationship="Self.FK_TB_ORGINL_IMAGE_TB_IMGCLTSNKNCD" FromRole="TB_IMGCLTSNKNCD" ToRole="TB_ORGINL_IMAGE" />
+  </EntityType>
+  <EntityType Name="TB_INCLUNTDVCD">
+    <Key>
+      <PropertyRef Name="INCLUNTDVCD" />
+    </Key>
+    <Property Name="INCLUNTDVCD" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="INCLUNTDVCD_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USEDVCD" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_ORGINL_IMAGE" Relationship="Self.FK_TB_ORGINL_IMAGE_TB_INCLUNTDVCD" FromRole="TB_INCLUNTDVCD" ToRole="TB_ORGINL_IMAGE" />
+  </EntityType>
+  <EntityType Name="TB_INFMTN_CLTN_EMPH_MATR">
+    <Key>
+      <PropertyRef Name="INFMTN_CLTN_EMPH_MATR_SN" />
+    </Key>
+    <Property Name="INFMTN_CLTN_EMPH_MATR_SN" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="INFMTN_CLTN_EMPH_MATR_CTNT" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CLTN_EMPH_START_DTTM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CLTN_EMPH_FNSH_DTTM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_INFMTN_CLTN_EMPH_MATR_PER_TGT" Relationship="Self.FK_TB_INFMTN_CLTN_EMPH_MATR_PER_TGT_TB_INFMTN_CLTN_EMPH_MATR" FromRole="TB_INFMTN_CLTN_EMPH_MATR" ToRole="TB_INFMTN_CLTN_EMPH_MATR_PER_TGT" />
+  </EntityType>
+  <EntityType Name="TB_INFMTN_CLTN_EMPH_MATR_PER_TGT">
+    <Key>
+      <PropertyRef Name="INFMTN_CLTN_EMPH_MATR_PER_TGT_ID" />
+    </Key>
+    <Property Name="INFMTN_CLTN_EMPH_SN" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TGT_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="INFMTN_CLTN_EMPH_MATR_PER_TGT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_INFMTN_CLTN_EMPH_MATR" Relationship="Self.FK_TB_INFMTN_CLTN_EMPH_MATR_PER_TGT_TB_INFMTN_CLTN_EMPH_MATR" FromRole="TB_INFMTN_CLTN_EMPH_MATR_PER_TGT" ToRole="TB_INFMTN_CLTN_EMPH_MATR" />
+    <NavigationProperty Name="TB_TGT" Relationship="Self.FK_TB_INFMTN_CLTN_EMPH_MATR_PER_TGT_TB_TGT" FromRole="TB_INFMTN_CLTN_EMPH_MATR_PER_TGT" ToRole="TB_TGT" />
+  </EntityType>
+  <EntityType Name="TB_INFMTN_IDTF_CTNT">
+    <Key>
+      <PropertyRef Name="INFMTN_IDTF_CTNT_ID" />
+    </Key>
+    <Property Name="INFMTN_IDTF_CTNT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MSN_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TGT_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CTNT" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="REGSTR_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UPDT_DTTM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TRSMSSN_STATE_IDTFR" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ORGINL_IMAGE_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="WRK_STATE_IDTFR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="REGSTR_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MIFS_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="DCPHRIMAGE_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TB_DCPHRIMAGE" Relationship="Self.FK_TB_INFMTN_IDTF_CTNT_TB_DCPHRIMAGE" FromRole="TB_INFMTN_IDTF_CTNT" ToRole="TB_DCPHRIMAGE" />
+    <NavigationProperty Name="TB_INFMTN_IDTF_CTNT_CHNG_LOG" Relationship="Self.FK_TB_INFMTN_IDTF_CTNT_CHNG_LOG_TB_INFMTN_IDTF_CTNT" FromRole="TB_INFMTN_IDTF_CTNT" ToRole="TB_INFMTN_IDTF_CTNT_CHNG_LOG" />
+    <NavigationProperty Name="TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT" Relationship="Self.FK_TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT_TB_INFMTN_IDTF_CTNT" FromRole="TB_INFMTN_IDTF_CTNT" ToRole="TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT" />
+    <NavigationProperty Name="TB_ORGINL_IMAGE" Relationship="Self.FK_TB_INFMTN_IDTF_CTNT_TB_ORGINL_IMAGE" FromRole="TB_INFMTN_IDTF_CTNT" ToRole="TB_ORGINL_IMAGE" />
+    <NavigationProperty Name="TB_TGT" Relationship="Self.FK_TB_INFMTN_IDTF_CTNT_TB_TGT" FromRole="TB_INFMTN_IDTF_CTNT" ToRole="TB_TGT" />
+    <NavigationProperty Name="TB_USER" Relationship="Self.FK_TB_INFMTN_IDTF_CTNT_TB_USER" FromRole="TB_INFMTN_IDTF_CTNT" ToRole="TB_USER" />
+  </EntityType>
+  <EntityType Name="TB_INFMTN_IDTF_CTNT_CHNG_LOG">
+    <Key>
+      <PropertyRef Name="INFMTN_IDTF_CTNT_CHNG_LOG_ID" />
+    </Key>
+    <Property Name="INFMTN_IDTF_CTNT_CHNG_LOG_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ORGINL_INFMTN_IDTF_CTNT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BF_INFMTN_IDTF_CTNT" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CHGMN_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CHNG_DTTM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_INFMTN_IDTF_CTNT" Relationship="Self.FK_TB_INFMTN_IDTF_CTNT_CHNG_LOG_TB_INFMTN_IDTF_CTNT" FromRole="TB_INFMTN_IDTF_CTNT_CHNG_LOG" ToRole="TB_INFMTN_IDTF_CTNT" />
+    <NavigationProperty Name="TB_USER" Relationship="Self.FK_TB_INFMTN_IDTF_CTNT_CHNG_LOG_TB_USER" FromRole="TB_INFMTN_IDTF_CTNT_CHNG_LOG" ToRole="TB_USER" />
+  </EntityType>
+  <EntityType Name="TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT">
+    <Key>
+      <PropertyRef Name="INFMTN_IDTF_CTNT_PER_DCPHRRPRT_ID" />
+    </Key>
+    <Property Name="INFMTN_IDTF_CTNT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DCPHRRPRT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MN_INFMTN_IDTF_CTNT_YN" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="INFMTN_IDTF_CTNT_PER_DCPHRRPRT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_DCPHRRPRT" Relationship="Self.FK_TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT_TB_DCPHRRPRT" FromRole="TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT" ToRole="TB_DCPHRRPRT" />
+    <NavigationProperty Name="TB_INFMTN_IDTF_CTNT" Relationship="Self.FK_TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT_TB_INFMTN_IDTF_CTNT" FromRole="TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT" ToRole="TB_INFMTN_IDTF_CTNT" />
+  </EntityType>
+  <EntityType Name="TB_INFMTN_IDTF_CTNT_TMPL">
+    <Key>
+      <PropertyRef Name="INFMTN_IDTF_CTNT_TMPL_ID" />
+    </Key>
+    <Property Name="INFMTN_IDTF_CTNT_TMPL_ID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="REGSTR_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CTNT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UPDT_DTTM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_USER" Relationship="Self.FK_TB_INFMTN_IDTF_CTNT_TMPL_TB_INFMTN_IDTF_CTNT_TMPL" FromRole="TB_INFMTN_IDTF_CTNT_TMPL" ToRole="TB_USER" />
+  </EntityType>
+  <EntityType Name="TB_INFO_DB_PRINT_DIARY">
+    <Key>
+      <PropertyRef Name="INFO_DB_PRINT_DIARY_ID" />
+    </Key>
+    <Property Name="INFO_DB_PRINT_DIARY_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PRINT_DTTM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DATA_KND_IDTFR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DATA_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PRINT_USER_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PRINT_RSN" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DESTRTN_DTTM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DESTRTN_RSN" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DATA_TITLE" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_JCS_TGT">
+    <Key>
+      <PropertyRef Name="TGT_ID" />
+    </Key>
+    <Property Name="TGT_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BENO" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SUFNO" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="TGT_NM" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TGTRCMDPRICD" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="OB_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ETASPCD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CORDC" Type="Geometry" Nullable="false" />
+    <Property Name="WARSBL_CD" Type="String" MaxLength="15" FixedLength="true" Unicode="false" />
+    <Property Name="RSTRCT_DSMT_GRPNO" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="MS2525CCMSCD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RGST_DTTM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="REGSTR_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FRNFC_DB_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDTF_USER_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RGST_UNIT_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="WRK_GRP_ID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="REGSTR_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MDFC_DTTM" Type="DateTime" Precision="3" />
+    <Property Name="MDFR_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_ETASPCD" Relationship="Self.FK_JCS_TB_TGT_TB_ETASPCD" FromRole="TB_JCS_TGT" ToRole="TB_ETASPCD" />
+    <NavigationProperty Name="TB_MS2525CCMSCD" Relationship="Self.FK_TB_JCS_TGT_TB_MS2525CCMSCD" FromRole="TB_JCS_TGT" ToRole="TB_MS2525CCMSCD" />
+    <NavigationProperty Name="TB_USER" Relationship="Self.FK_TB_JCS_TGT_TB_USER" FromRole="TB_JCS_TGT" ToRole="TB_USER" />
+    <NavigationProperty Name="TB_WRK_GRP" Relationship="Self.FK_TB_JCS_TGT_TB_WRK_GRP" FromRole="TB_JCS_TGT" ToRole="TB_WRK_GRP" />
+  </EntityType>
+  <EntityType Name="TB_LKSTCD">
+    <Key>
+      <PropertyRef Name="LKSTCD" />
+    </Key>
+    <Property Name="LKSTCD" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="LKSTCD_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USEDVCD" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_MSGTXT_MGT_RCDBK" Relationship="Self.FK_TB_MSGTXT_MGT_RCDBK_TB_LKSTCD" FromRole="TB_LKSTCD" ToRole="TB_MSGTXT_MGT_RCDBK" />
+    <NavigationProperty Name="TB_SNDNG_SCRT_MGT_RCDBK" Relationship="Self.FK_TB_SNDNG_SCRT_MGT_RCDBK_TB_LKSTCD" FromRole="TB_LKSTCD" ToRole="TB_SNDNG_SCRT_MGT_RCDBK" />
+  </EntityType>
+  <EntityType Name="TB_LOG">
+    <Key>
+      <PropertyRef Name="LOG_ID" />
+    </Key>
+    <Property Name="LOG_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="WORKR_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EXPLN" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LOG_DTTM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DTA_KND_IDTFR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IP" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DATA_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="WRK_KND_IDTFR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="WRK_RSLT_IDTFR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_USER" Relationship="Self.FK_TB_LOG_TB_USER" FromRole="TB_LOG" ToRole="TB_USER" />
+  </EntityType>
+  <EntityType Name="TB_MS2525CCMSCD">
+    <Key>
+      <PropertyRef Name="MS2525CCMSCD" />
+    </Key>
+    <Property Name="MS2525CCMSCD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MS2525CCMSCD_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USEDVCD" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_JCS_TGT" Relationship="Self.FK_TB_JCS_TGT_TB_MS2525CCMSCD" FromRole="TB_MS2525CCMSCD" ToRole="TB_JCS_TGT" />
+    <NavigationProperty Name="TB_TGT" Relationship="Self.FK_TB_TGT_TB_MS2525CCMSCD" FromRole="TB_MS2525CCMSCD" ToRole="TB_TGT" />
+  </EntityType>
+  <EntityType Name="TB_MS2525CUSCD">
+    <Key>
+      <PropertyRef Name="MS2525CUSCD" />
+    </Key>
+    <Property Name="MS2525CUSCD" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="MS2525CUSCD_NM" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USEDVCD" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_MSGTXT_MGT_RCDBK">
+    <Key>
+      <PropertyRef Name="MSGTXT_MGT_RCDBK_ID" />
+    </Key>
+    <Property Name="MSGTXT_MGT_RCDBK_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SNDNGNO" Type="String" MaxLength="22" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SNDNG_DTTM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LKSTCD" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="DCPHRIMAGE_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CLSLVCD" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="DOC_TITLE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PRSVT_PRD" Type="Double" Nullable="false" />
+    <Property Name="RMRK" Type="String" MaxLength="300" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CRTOR_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_DCPHRIMAGE" Relationship="Self.FK_TB_MSGTXT_MGT_RCDBK_TB_DCPHRIMAGE" FromRole="TB_MSGTXT_MGT_RCDBK" ToRole="TB_DCPHRIMAGE" />
+    <NavigationProperty Name="TB_LKSTCD" Relationship="Self.FK_TB_MSGTXT_MGT_RCDBK_TB_LKSTCD" FromRole="TB_MSGTXT_MGT_RCDBK" ToRole="TB_LKSTCD" />
+    <NavigationProperty Name="TB_USER" Relationship="Self.FK_TB_MSGTXT_MGT_RCDBK_TB_USER" FromRole="TB_MSGTXT_MGT_RCDBK" ToRole="TB_USER" />
+  </EntityType>
+  <EntityType Name="TB_MSN">
+    <Key>
+      <PropertyRef Name="MSN_NM" />
+    </Key>
+    <Property Name="MSN_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MSN_KND_IDTFR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MSN_DTTM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DEL_YN" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_NCB">
+    <Key>
+      <PropertyRef Name="NCB" />
+    </Key>
+    <Property Name="NCB" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="NATN_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USEDVCD" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_ORGINL_IMAGE" Relationship="Self.FK_TB_ORGINL_IMAGE_TB_NCB" FromRole="TB_NCB" ToRole="TB_ORGINL_IMAGE" />
+  </EntityType>
+  <EntityType Name="TB_NTT_TMPL">
+    <Key>
+      <PropertyRef Name="NTT_TMPL_ID" />
+    </Key>
+    <Property Name="NTT_TMPL_ID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NTT_TMPL_NM" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="REGSTR_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TMPL_FILE" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="TMPL_KND_IDTFR" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="TMPL_THMNAIL_FILE" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_OB">
+    <Key>
+      <PropertyRef Name="OB_ID" />
+    </Key>
+    <Property Name="OB_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="OB_NM" Type="String" MaxLength="300" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SMPLCT_OB_NM" Type="String" MaxLength="300" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CORDC" Type="Geometry" Nullable="false" />
+    <Property Name="APPRV_DATE" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_ORD_LEVEL_IMG_PROCES">
+    <Key>
+      <PropertyRef Name="ORD_LEVEL_IMG_PROCES_ID" />
+    </Key>
+    <Property Name="ORD_LEVEL_IMG_PROCES_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ORD_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CATALOG_ID" Type="String" MaxLength="300" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LEVEL_IMG_IDTFR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DTL_STATE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UPDT_DTTM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="RQST_USER_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_ORGINL_IMAGE">
+    <Key>
+      <PropertyRef Name="ORGINL_IMAGE_ID" />
+    </Key>
+    <Property Name="ORGINL_IMAGE_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MSN_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PRDCN_ID_NM" Type="String" MaxLength="300" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PRDCN_LEVEL_IDTFR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CLTNSNSRKDCD" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="IMGCLTSNKNCD" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="INCLUNTDVCD" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="CLSLVCD" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ORGINL_IMAGE_FILE_ROUTE" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ECRYPT_IMAGE_FILE_ROUTE" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="TRSMSSN_IMAGE_FILE_ROUTE" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="SHTNG_DTTM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="BDRY_CORDC" Type="Geometry" Nullable="false" />
+    <Property Name="CENTR_CORDC" Type="Geometry" Nullable="false" />
+    <Property Name="PAIR_IMAGE_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SU_ANG" Type="Double" Nullable="false" />
+    <Property Name="SHTNG_MODE_IDTFR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SAR_SGNL_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CRT_DTTM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="STATE_IDTFR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="STLNO" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SCAN_ANG" Type="Double" />
+    <Property Name="PNTRTN_ANG" Type="Double" />
+    <Property Name="IMAGE_PRCSS_KND_IDTFR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TRSMSSN_STATE_IDTFR" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MIFS_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PTC_VAL" Type="Double" />
+    <Property Name="ROLL_VAL" Type="Double" />
+    <Property Name="RSTRCT_DSMT_GRPNO" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="ORGINL_IMAGE_NM" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="NCB" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="TB_CHG_DTCT_IMAGE" Relationship="Self.FK_TB_CHG_DTCT_IMAGE_TB_ORGINL_IMAGE" FromRole="TB_ORGINL_IMAGE" ToRole="TB_CHG_DTCT_IMAGE" />
+    <NavigationProperty Name="TB_CHG_DTCT_IMAGE1" Relationship="Self.FK_TB_CHG_DTCT_IMAGE_TB_ORGINL_IMAGE1" FromRole="TB_ORGINL_IMAGE" ToRole="TB_CHG_DTCT_IMAGE" />
+    <NavigationProperty Name="TB_CLSLVCD" Relationship="Self.FK_TB_ORGINL_IMAGE_TB_CLSLVCD" FromRole="TB_ORGINL_IMAGE" ToRole="TB_CLSLVCD" />
+    <NavigationProperty Name="TB_CLTNSNSRKDCD" Relationship="Self.FK_TB_ORGINL_IMAGE_TB_CLTNSNSRKDCD" FromRole="TB_ORGINL_IMAGE" ToRole="TB_CLTNSNSRKDCD" />
+    <NavigationProperty Name="TB_DCPHRIMAGE" Relationship="Self.FK_TB_DCPHRIMAGE_TB_ORGINL_IMAGE" FromRole="TB_ORGINL_IMAGE" ToRole="TB_DCPHRIMAGE" />
+    <NavigationProperty Name="TB_IMAGE_PRCSS_KND" Relationship="Self.FK_TB_ORGINL_IMAGE_TB_ORGINL_IMAGE" FromRole="TB_ORGINL_IMAGE" ToRole="TB_IMAGE_PRCSS_KND" />
+    <NavigationProperty Name="TB_IMGCLTSNKNCD" Relationship="Self.FK_TB_ORGINL_IMAGE_TB_IMGCLTSNKNCD" FromRole="TB_ORGINL_IMAGE" ToRole="TB_IMGCLTSNKNCD" />
+    <NavigationProperty Name="TB_INCLUNTDVCD" Relationship="Self.FK_TB_ORGINL_IMAGE_TB_INCLUNTDVCD" FromRole="TB_ORGINL_IMAGE" ToRole="TB_INCLUNTDVCD" />
+    <NavigationProperty Name="TB_INFMTN_IDTF_CTNT" Relationship="Self.FK_TB_INFMTN_IDTF_CTNT_TB_ORGINL_IMAGE" FromRole="TB_ORGINL_IMAGE" ToRole="TB_INFMTN_IDTF_CTNT" />
+    <NavigationProperty Name="TB_NCB" Relationship="Self.FK_TB_ORGINL_IMAGE_TB_NCB" FromRole="TB_ORGINL_IMAGE" ToRole="TB_NCB" />
+  </EntityType>
+  <EntityType Name="TB_PRGM">
+    <Key>
+      <PropertyRef Name="PRGM_PER_ATHRT_ID" />
+    </Key>
+    <Property Name="PRGM_PER_ATHRT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PRGM_ID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ATHRT_GRP_ID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PRGM_ATHRT_IDTFR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_ATHRT_GRP" Relationship="Self.FK_TB_PRGM_TB_ATHRT_GRP" FromRole="TB_PRGM" ToRole="TB_ATHRT_GRP" />
+  </EntityType>
+  <EntityType Name="TB_RANK">
+    <Key>
+      <PropertyRef Name="RNKCD" />
+    </Key>
+    <Property Name="RNKCD" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="RANK_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USEDVCD" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_USER" Relationship="Self.FK_TB_USER_TB_RANK" FromRole="TB_RANK" ToRole="TB_USER" />
+  </EntityType>
+  <EntityType Name="TB_RCP_SCRT_MGT_RCDBK">
+    <Key>
+      <PropertyRef Name="SCRT_MGT_RCDBK_ID" />
+    </Key>
+    <Property Name="SCRT_MGT_RCDBK_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MGTNO" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="COPYNO" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CLSLVCD" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="DOC_TITLE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AVNTS_PRTCTN_YN" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="AVNTS_PRSVT_YN" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ORGINL_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ADMIN_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RCP_DTTM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_USER" Relationship="Self.FK_TB_RCP_SCRT_MGT_RCDBK_TB_USER" FromRole="TB_RCP_SCRT_MGT_RCDBK" ToRole="TB_USER" />
+    <NavigationProperty Name="TB_SCRT_HISTRY_CARD" Relationship="Self.FK_TB_SCRT_HISTRY_CARD_TB_RCP_SCRT_MGT_RCDBK" FromRole="TB_RCP_SCRT_MGT_RCDBK" ToRole="TB_SCRT_HISTRY_CARD" />
+  </EntityType>
+  <EntityType Name="TB_RDSCD">
+    <Key>
+      <PropertyRef Name="RDSCD" />
+    </Key>
+    <Property Name="RDSCD" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="RPFRT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USEDVCD" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="RDSCD_IDTFR" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_RECVRY_DATA">
+    <Key>
+      <PropertyRef Name="RECVRY_ID" />
+    </Key>
+    <Property Name="RECVRY_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DATA_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RQSTR_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="STATE_IDTFR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UPDT_DTTM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DATA_TYPE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_USER" Relationship="Self.FK_TB_RECVRY_DATA_TB_USER" FromRole="TB_RECVRY_DATA" ToRole="TB_USER" />
+  </EntityType>
+  <EntityType Name="TB_RSTRCT_DSMT">
+    <Key>
+      <PropertyRef Name="RSTRCT_DSMT_GRPNO" />
+    </Key>
+    <Property Name="RSTRCT_DSMT_GRPNO" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RSTRCT_DSMT_EXPLN" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_SCRT_HISTRY_CARD">
+    <Key>
+      <PropertyRef Name="SCRT_HISTRY_CARD_ID" />
+    </Key>
+    <Property Name="SCRT_HISTRY_CARD_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SCRT_MGT_RCDBK_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CRT_DTTM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="USE_PRPS_EXPLN" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USER_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="HISTRY_KND_IDTFR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="HISTRY_EXPLN" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="SAVE_FILE_ROUTE" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TB_RCP_SCRT_MGT_RCDBK" Relationship="Self.FK_TB_SCRT_HISTRY_CARD_TB_RCP_SCRT_MGT_RCDBK" FromRole="TB_SCRT_HISTRY_CARD" ToRole="TB_RCP_SCRT_MGT_RCDBK" />
+    <NavigationProperty Name="TB_USER" Relationship="Self.FK_TB_SCRT_HISTRY_CARD_TB_USER" FromRole="TB_SCRT_HISTRY_CARD" ToRole="TB_USER" />
+  </EntityType>
+  <EntityType Name="TB_SHTNG_MODE_KND">
+    <Key>
+      <PropertyRef Name="SHTNG_MODE_KND_IDTFR" />
+    </Key>
+    <Property Name="SHTNG_MODE_KND_IDTFR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SHTNG_MODE_KND_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USEDVCD" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_SNDNG_SCRT_MGT_RCDBK">
+    <Key>
+      <PropertyRef Name="SNDNG_SCRT_MGT_RCDBK_ID" />
+    </Key>
+    <Property Name="SNDNG_SCRT_MGT_RCDBK_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MGTNO" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SNDNG_DTTM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LKSTCD" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="DN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DOC_TITLE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AVNTS_PRSVT_YN" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="RMRK" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="USER_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="COPYNO" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_LKSTCD" Relationship="Self.FK_TB_SNDNG_SCRT_MGT_RCDBK_TB_LKSTCD" FromRole="TB_SNDNG_SCRT_MGT_RCDBK" ToRole="TB_LKSTCD" />
+    <NavigationProperty Name="TB_USER" Relationship="Self.FK_TB_SNDNG_SCRT_MGT_RCDBK_TB_USER" FromRole="TB_SNDNG_SCRT_MGT_RCDBK" ToRole="TB_USER" />
+  </EntityType>
+  <EntityType Name="TB_TGT">
+    <Key>
+      <PropertyRef Name="TGT_ID" />
+    </Key>
+    <Property Name="TGT_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BENO" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SUFNO" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="TGT_NM" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TGTRCMDPRICD" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="OB_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ETASPCD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CORDC" Type="Geometry" Nullable="false" />
+    <Property Name="WARSBL_CD" Type="String" MaxLength="15" FixedLength="true" Unicode="false" />
+    <Property Name="RSTRCT_DSMT_GRPNO" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="MS2525CCMSCD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RGST_DTTM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="REGSTR_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FRNFC_DB_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDTF_USER_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RGST_UNIT_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="WRK_GRP_ID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="REGSTR_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MDFC_DTTM" Type="DateTime" Precision="3" />
+    <Property Name="MDFR_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_DCPHRIMAGE" Relationship="Self.FK_TB_DCPHRIMAGE_TB_TGT" FromRole="TB_TGT" ToRole="TB_DCPHRIMAGE" />
+    <NavigationProperty Name="TB_ETASPCD" Relationship="Self.FK_TB_TGT_TB_ETASPCD" FromRole="TB_TGT" ToRole="TB_ETASPCD" />
+    <NavigationProperty Name="TB_INFMTN_CLTN_EMPH_MATR_PER_TGT" Relationship="Self.FK_TB_INFMTN_CLTN_EMPH_MATR_PER_TGT_TB_TGT" FromRole="TB_TGT" ToRole="TB_INFMTN_CLTN_EMPH_MATR_PER_TGT" />
+    <NavigationProperty Name="TB_INFMTN_IDTF_CTNT" Relationship="Self.FK_TB_INFMTN_IDTF_CTNT_TB_TGT" FromRole="TB_TGT" ToRole="TB_INFMTN_IDTF_CTNT" />
+    <NavigationProperty Name="TB_MS2525CCMSCD" Relationship="Self.FK_TB_TGT_TB_MS2525CCMSCD" FromRole="TB_TGT" ToRole="TB_MS2525CCMSCD" />
+    <NavigationProperty Name="TB_TGT_PER_PLCY" Relationship="Self.FK_TB_TGT_PER_PLCY_TB_TGT" FromRole="TB_TGT" ToRole="TB_TGT_PER_PLCY" />
+    <NavigationProperty Name="TB_USER" Relationship="Self.FK_TB_TGT_TB_USER" FromRole="TB_TGT" ToRole="TB_USER" />
+    <NavigationProperty Name="TB_WRK_GRP" Relationship="Self.FK_TB_TGT_TB_WRK_GRP" FromRole="TB_TGT" ToRole="TB_WRK_GRP" />
+    <NavigationProperty Name="TB_USER_TGT_CTGR_PER_TGT" Relationship="Self.FK_TB_USER_TGT_CTGR_PER_TGT_TB_TGT" FromRole="TB_TGT" ToRole="TB_USER_TGT_CTGR_PER_TGT" />
+  </EntityType>
+  <EntityType Name="TB_TGT_PER_WRK_GRP">
+    <Key>
+      <PropertyRef Name="TGT_PER_WRK_ID" />
+    </Key>
+    <Property Name="TGT_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="WRK_GRP_ID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TGT_PER_WRK_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_WRK_GRP" Relationship="Self.FK_TB_TGT_PER_WRK_GRP_TB_WRK_GRP1" FromRole="TB_TGT_PER_WRK_GRP" ToRole="TB_WRK_GRP" />
+  </EntityType>
+  <EntityType Name="TB_TRSMSSN_LOG">
+    <Key>
+      <PropertyRef Name="TRSMSSN_LOG_ID" />
+    </Key>
+    <Property Name="TRSMSSN_LOG_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DATA_KND_IDTFR" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="USER_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="WRK_RSLT_IDTFR" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ORGINL_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LOG_DTTM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_USER" Relationship="Self.FK_TB_TRSMSSN_LOG_TB_USER" FromRole="TB_TRSMSSN_LOG" ToRole="TB_USER" />
+  </EntityType>
+  <EntityType Name="TB_UC">
+    <Key>
+      <PropertyRef Name="UC" />
+    </Key>
+    <Property Name="UC" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="U_NM" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USEDVCD" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_UICD">
+    <Key>
+      <PropertyRef Name="UICD" />
+    </Key>
+    <Property Name="UICD" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="UI_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UIDVCD" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="USEDVCD" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_UIDVCD">
+    <Key>
+      <PropertyRef Name="UIDVCD" />
+    </Key>
+    <Property Name="UIDVCD" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="UI_DVS_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USEDVCD" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_USER">
+    <Key>
+      <PropertyRef Name="USER_ID" />
+    </Key>
+    <Property Name="USER_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LOGINID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USER_PW_CTNT" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USER_FULNM" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RNKCD" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="SRVNO" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="SIGNTR_FILE" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ASGMT_UC" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USER_LOGIN_PSBLT_YN" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="SCRTMGTNO" Type="String" MaxLength="26" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USER_DEL_YN" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ATHRT_GRP_ID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="WRK_GRP_ID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="USER_DEPT_TTL" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="USER_EXPLN" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="USER_PW_ERR_NUMTM" Type="Int32" />
+    <Property Name="LOGIN_DT" Type="DateTime" Precision="3" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_ANTT_TMPL" Relationship="Self.FK_TB_ANTT_TMPL_TB_USER" FromRole="TB_USER" ToRole="TB_ANTT_TMPL" />
+    <NavigationProperty Name="TB_ATHRT_GRP" Relationship="Self.FK_TB_USER_TB_ATHRT_GRP" FromRole="TB_USER" ToRole="TB_ATHRT_GRP" />
+    <NavigationProperty Name="TB_CRCTN_IMAGE" Relationship="Self.FK_TB_CRCTN_IMAGE_TB_USER" FromRole="TB_USER" ToRole="TB_CRCTN_IMAGE" />
+    <NavigationProperty Name="TB_DCPHRIMAGE" Relationship="Self.FK_TB_DCPHRIMAGE_TB_USER" FromRole="TB_USER" ToRole="TB_DCPHRIMAGE" />
+    <NavigationProperty Name="TB_DCPHRIMAGE1" Relationship="Self.FK_TB_DCPHRIMAGE_TB_USER1" FromRole="TB_USER" ToRole="TB_DCPHRIMAGE" />
+    <NavigationProperty Name="TB_DCPHRIMAGE2" Relationship="Self.FK_TB_DCPHRIMAGE_TB_USER2" FromRole="TB_USER" ToRole="TB_DCPHRIMAGE" />
+    <NavigationProperty Name="TB_DCPHRRPRT" Relationship="Self.FK_TB_DCPHRRPRT_TB_USER" FromRole="TB_USER" ToRole="TB_DCPHRRPRT" />
+    <NavigationProperty Name="TB_DCPHRRPRT1" Relationship="Self.FK_TB_DCPHRRPRT_TB_USER1" FromRole="TB_USER" ToRole="TB_DCPHRRPRT" />
+    <NavigationProperty Name="TB_DCPHRRPRT2" Relationship="Self.FK_TB_DCPHRRPRT_TB_USER2" FromRole="TB_USER" ToRole="TB_DCPHRRPRT" />
+    <NavigationProperty Name="TB_INFMTN_IDTF_CTNT" Relationship="Self.FK_TB_INFMTN_IDTF_CTNT_TB_USER" FromRole="TB_USER" ToRole="TB_INFMTN_IDTF_CTNT" />
+    <NavigationProperty Name="TB_INFMTN_IDTF_CTNT_CHNG_LOG" Relationship="Self.FK_TB_INFMTN_IDTF_CTNT_CHNG_LOG_TB_USER" FromRole="TB_USER" ToRole="TB_INFMTN_IDTF_CTNT_CHNG_LOG" />
+    <NavigationProperty Name="TB_INFMTN_IDTF_CTNT_TMPL" Relationship="Self.FK_TB_INFMTN_IDTF_CTNT_TMPL_TB_INFMTN_IDTF_CTNT_TMPL" FromRole="TB_USER" ToRole="TB_INFMTN_IDTF_CTNT_TMPL" />
+    <NavigationProperty Name="TB_JCS_TGT" Relationship="Self.FK_TB_JCS_TGT_TB_USER" FromRole="TB_USER" ToRole="TB_JCS_TGT" />
+    <NavigationProperty Name="TB_LOG" Relationship="Self.FK_TB_LOG_TB_USER" FromRole="TB_USER" ToRole="TB_LOG" />
+    <NavigationProperty Name="TB_MSGTXT_MGT_RCDBK" Relationship="Self.FK_TB_MSGTXT_MGT_RCDBK_TB_USER" FromRole="TB_USER" ToRole="TB_MSGTXT_MGT_RCDBK" />
+    <NavigationProperty Name="TB_RANK" Relationship="Self.FK_TB_USER_TB_RANK" FromRole="TB_USER" ToRole="TB_RANK" />
+    <NavigationProperty Name="TB_RCP_SCRT_MGT_RCDBK" Relationship="Self.FK_TB_RCP_SCRT_MGT_RCDBK_TB_USER" FromRole="TB_USER" ToRole="TB_RCP_SCRT_MGT_RCDBK" />
+    <NavigationProperty Name="TB_RECVRY_DATA" Relationship="Self.FK_TB_RECVRY_DATA_TB_USER" FromRole="TB_USER" ToRole="TB_RECVRY_DATA" />
+    <NavigationProperty Name="TB_SCRT_HISTRY_CARD" Relationship="Self.FK_TB_SCRT_HISTRY_CARD_TB_USER" FromRole="TB_USER" ToRole="TB_SCRT_HISTRY_CARD" />
+    <NavigationProperty Name="TB_SNDNG_SCRT_MGT_RCDBK" Relationship="Self.FK_TB_SNDNG_SCRT_MGT_RCDBK_TB_USER" FromRole="TB_USER" ToRole="TB_SNDNG_SCRT_MGT_RCDBK" />
+    <NavigationProperty Name="TB_TGT" Relationship="Self.FK_TB_TGT_TB_USER" FromRole="TB_USER" ToRole="TB_TGT" />
+    <NavigationProperty Name="TB_TRSMSSN_LOG" Relationship="Self.FK_TB_TRSMSSN_LOG_TB_USER" FromRole="TB_USER" ToRole="TB_TRSMSSN_LOG" />
+    <NavigationProperty Name="TB_USER_BF_PW" Relationship="Self.FK_TB_USER_BF_PW_TB_USER" FromRole="TB_USER" ToRole="TB_USER_BF_PW" />
+    <NavigationProperty Name="TB_USER_POI" Relationship="Self.FK_TB_USER_POI_TB_USER" FromRole="TB_USER" ToRole="TB_USER_POI" />
+    <NavigationProperty Name="TB_USER_SMBL" Relationship="Self.FK_TB_USER_SMBL_TB_USER" FromRole="TB_USER" ToRole="TB_USER_SMBL" />
+    <NavigationProperty Name="TB_WRK_GRP" Relationship="Self.FK_TB_USER_TB_WRK_GRP" FromRole="TB_USER" ToRole="TB_WRK_GRP" />
+    <NavigationProperty Name="TB_USER_TGT_CTGR" Relationship="Self.FK_TB_USER_TGT_CTGR_TB_USER" FromRole="TB_USER" ToRole="TB_USER_TGT_CTGR" />
+    <NavigationProperty Name="TB_WRK_ORD" Relationship="Self.FK_TB_WRK_ORD_TB_USER" FromRole="TB_USER" ToRole="TB_WRK_ORD" />
+  </EntityType>
+  <EntityType Name="TB_USER_BF_PW">
+    <Key>
+      <PropertyRef Name="BF_PW_ID" />
+    </Key>
+    <Property Name="USER_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="OLD_ECRYPTPW" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MDFC_DTTM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="BF_PW_ID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_USER" Relationship="Self.FK_TB_USER_BF_PW_TB_USER" FromRole="TB_USER_BF_PW" ToRole="TB_USER" />
+  </EntityType>
+  <EntityType Name="TB_USER_POI">
+    <Key>
+      <PropertyRef Name="USER_POI_ID" />
+    </Key>
+    <Property Name="POI_NM" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USER_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CORDC" Type="Geometry" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="USER_POI_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="TB_USER" Relationship="Self.FK_TB_USER_POI_TB_USER" FromRole="TB_USER_POI" ToRole="TB_USER" />
+  </EntityType>
+  <EntityType Name="TB_USER_SMBL">
+    <Key>
+      <PropertyRef Name="SMBL_ID" />
+    </Key>
+    <Property Name="SMBL_ID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SMBL_NM" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SMBL_IMAGE" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="REGSTR_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_USER" Relationship="Self.FK_TB_USER_SMBL_TB_USER" FromRole="TB_USER_SMBL" ToRole="TB_USER" />
+  </EntityType>
+  <EntityType Name="TB_USER_TGT_CTGR">
+    <Key>
+      <PropertyRef Name="TGT_CTGR_ID" />
+    </Key>
+    <Property Name="TGT_CTGR_ID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="USER_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TGT_CTGR_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_USER" Relationship="Self.FK_TB_USER_TGT_CTGR_TB_USER" FromRole="TB_USER_TGT_CTGR" ToRole="TB_USER" />
+    <NavigationProperty Name="TB_USER_TGT_CTGR_PER_TGT" Relationship="Self.FK_TB_USER_TGT_CTGR_PER_TGT_TB_USER_TGT_CTGR" FromRole="TB_USER_TGT_CTGR" ToRole="TB_USER_TGT_CTGR_PER_TGT" />
+  </EntityType>
+  <EntityType Name="TB_WRK">
+    <Key>
+      <PropertyRef Name="WRK_ID" />
+    </Key>
+    <Property Name="WRK_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="WRK_NM" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ORGINL_IMAGE_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="WRK_GROUP_ID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="WORKR_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_WRK_ALLTMT_PLCY">
+    <Key>
+      <PropertyRef Name="WRK_ALLTMT_PLCY_ID" />
+    </Key>
+    <Property Name="WRK_ALLTMT_PLCY_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="WRK_ALLTMT_PLCY_NM" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="WRK_ALLTMT_PLCY_KND_IDTFR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="IMGCLTSNKNCD" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_TGT_PER_PLCY" Relationship="Self.FK_TB_TGT_PER_PLCY_TB_WRK_ALLTMT_PLCY" FromRole="TB_WRK_ALLTMT_PLCY" ToRole="TB_TGT_PER_PLCY" />
+    <NavigationProperty Name="TB_WRK_GRP" Relationship="Self.FK_TB_TGT_PER_WRK_GRP_TB_WRK_GRP" FromRole="TB_WRK_ALLTMT_PLCY" ToRole="TB_WRK_GRP" />
+  </EntityType>
+  <EntityType Name="TB_WRK_GRP">
+    <Key>
+      <PropertyRef Name="WRK_GRP_ID" />
+    </Key>
+    <Property Name="WRK_GRP_ID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="WRK_GRP_NM" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="WRK_GRP_EXPLN_CTNT" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="WRK_GRP_KND_IDTFR" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_JCS_TGT" Relationship="Self.FK_TB_JCS_TGT_TB_WRK_GRP" FromRole="TB_WRK_GRP" ToRole="TB_JCS_TGT" />
+    <NavigationProperty Name="TB_TGT" Relationship="Self.FK_TB_TGT_TB_WRK_GRP" FromRole="TB_WRK_GRP" ToRole="TB_TGT" />
+    <NavigationProperty Name="TB_TGT_PER_WRK_GRP" Relationship="Self.FK_TB_TGT_PER_WRK_GRP_TB_WRK_GRP1" FromRole="TB_WRK_GRP" ToRole="TB_TGT_PER_WRK_GRP" />
+    <NavigationProperty Name="TB_USER" Relationship="Self.FK_TB_USER_TB_WRK_GRP" FromRole="TB_WRK_GRP" ToRole="TB_USER" />
+    <NavigationProperty Name="TB_WRK_ALLTMT_PLCY" Relationship="Self.FK_TB_TGT_PER_WRK_GRP_TB_WRK_GRP" FromRole="TB_WRK_GRP" ToRole="TB_WRK_ALLTMT_PLCY" />
+  </EntityType>
+  <EntityType Name="TB_WRK_ORD">
+    <Key>
+      <PropertyRef Name="ORD_ID" />
+    </Key>
+    <Property Name="ORD_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ORD_TYPE_IDTFR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="WRK_STATE_IDTFR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RQST_DTTM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="QUE_DTTM" Type="DateTime" Precision="3" />
+    <Property Name="FNSH_DTTM" Type="DateTime" Precision="3" />
+    <Property Name="WRK_TIME" Type="Double" />
+    <Property Name="REQ_WORKRK_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="WRK_CTNT" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SVR_IDTFR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_USER" Relationship="Self.FK_TB_WRK_ORD_TB_USER" FromRole="TB_WRK_ORD" ToRole="TB_USER" />
+  </EntityType>
+  <EntityType Name="TB_DCPHRRPRT_TMPL">
+    <Key>
+      <PropertyRef Name="DCPHRRPRT_TMPL_ID" />
+      <PropertyRef Name="FORM_NM" />
+      <PropertyRef Name="HGRNK_ITM_ID" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="DCPHRRPRT_TMPL_ID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FORM_NM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="HGRNK_ITM_ID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_SYST_OPT">
+    <Key>
+      <PropertyRef Name="LCL_DTTM" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="LCL_DTTM" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_TGT_PER_ORGINL_IMAGE">
+    <Key>
+      <PropertyRef Name="TGT_ID" />
+      <PropertyRef Name="ORGINL_IMAGE_ID" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="TGT_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ORGINL_IMAGE_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TB_TGT_PER_PLCY">
+    <Key>
+      <PropertyRef Name="WRK_ALLTMT_PLCY_ID" />
+      <PropertyRef Name="TGT_ID" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="WRK_ALLTMT_PLCY_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TGT_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_TGT" Relationship="Self.FK_TB_TGT_PER_PLCY_TB_TGT" FromRole="TB_TGT_PER_PLCY" ToRole="TB_TGT" />
+    <NavigationProperty Name="TB_WRK_ALLTMT_PLCY" Relationship="Self.FK_TB_TGT_PER_PLCY_TB_WRK_ALLTMT_PLCY" FromRole="TB_TGT_PER_PLCY" ToRole="TB_WRK_ALLTMT_PLCY" />
+  </EntityType>
+  <EntityType Name="TB_USER_TGT_CTGR_PER_TGT">
+    <Key>
+      <PropertyRef Name="TGT_CTGR_ID" />
+      <PropertyRef Name="TGT_ID" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="TGT_CTGR_ID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TGT_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="TB_TGT" Relationship="Self.FK_TB_USER_TGT_CTGR_PER_TGT_TB_TGT" FromRole="TB_USER_TGT_CTGR_PER_TGT" ToRole="TB_TGT" />
+    <NavigationProperty Name="TB_USER_TGT_CTGR" Relationship="Self.FK_TB_USER_TGT_CTGR_PER_TGT_TB_USER_TGT_CTGR" FromRole="TB_USER_TGT_CTGR_PER_TGT" ToRole="TB_USER_TGT_CTGR" />
+  </EntityType>
+  <Association Name="FK_TB_DCPHRIMAGE_LOCTN_TB_ADMINISTZONE">
+    <End Role="TB_ADMINISTZONE" Type="Self.TB_ADMINISTZONE" Multiplicity="1" />
+    <End Role="TB_DCPHRIMAGE_LOCTN" Type="Self.TB_DCPHRIMAGE_LOCTN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ADMINISTZONE">
+        <PropertyRef Name="ADMINISTZONE_CD" />
+      </Principal>
+      <Dependent Role="TB_DCPHRIMAGE_LOCTN">
+        <PropertyRef Name="ADMINISTZONE_CD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_ANTT_TMPL_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_ANTT_TMPL" Type="Self.TB_ANTT_TMPL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_ANTT_TMPL">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_APPRV_CLPLN_SCENES_TB_APPRV_CLPLN">
+    <End Role="TB_APPRV_CLPLN" Type="Self.TB_APPRV_CLPLN" Multiplicity="1" />
+    <End Role="TB_APPRV_CLPLN_SCENES" Type="Self.TB_APPRV_CLPLN_SCENES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_APPRV_CLPLN">
+        <PropertyRef Name="APPROVAL_CLPLN_ID" />
+      </Principal>
+      <Dependent Role="TB_APPRV_CLPLN_SCENES">
+        <PropertyRef Name="CPLN_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_PRGM_TB_ATHRT_GRP">
+    <End Role="TB_ATHRT_GRP" Type="Self.TB_ATHRT_GRP" Multiplicity="1" />
+    <End Role="TB_PRGM" Type="Self.TB_PRGM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ATHRT_GRP">
+        <PropertyRef Name="ATHRT_GRP_ID" />
+      </Principal>
+      <Dependent Role="TB_PRGM">
+        <PropertyRef Name="ATHRT_GRP_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_USER_TB_ATHRT_GRP">
+    <End Role="TB_ATHRT_GRP" Type="Self.TB_ATHRT_GRP" Multiplicity="1" />
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ATHRT_GRP">
+        <PropertyRef Name="ATHRT_GRP_ID" />
+      </Principal>
+      <Dependent Role="TB_USER">
+        <PropertyRef Name="ATHRT_GRP_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_CHG_DTCT_IMAGE_TB_ORGINL_IMAGE">
+    <End Role="TB_ORGINL_IMAGE" Type="Self.TB_ORGINL_IMAGE" Multiplicity="1" />
+    <End Role="TB_CHG_DTCT_IMAGE" Type="Self.TB_CHG_DTCT_IMAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ORGINL_IMAGE">
+        <PropertyRef Name="ORGINL_IMAGE_ID" />
+      </Principal>
+      <Dependent Role="TB_CHG_DTCT_IMAGE">
+        <PropertyRef Name="ORGINL_IMAGE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_CHG_DTCT_IMAGE_TB_ORGINL_IMAGE1">
+    <End Role="TB_ORGINL_IMAGE" Type="Self.TB_ORGINL_IMAGE" Multiplicity="1" />
+    <End Role="TB_CHG_DTCT_IMAGE" Type="Self.TB_CHG_DTCT_IMAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ORGINL_IMAGE">
+        <PropertyRef Name="ORGINL_IMAGE_ID" />
+      </Principal>
+      <Dependent Role="TB_CHG_DTCT_IMAGE">
+        <PropertyRef Name="REF_IMAGE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_ORGINL_IMAGE_TB_CLSLVCD">
+    <End Role="TB_CLSLVCD" Type="Self.TB_CLSLVCD" Multiplicity="1" />
+    <End Role="TB_ORGINL_IMAGE" Type="Self.TB_ORGINL_IMAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_CLSLVCD">
+        <PropertyRef Name="CLSLVCD" />
+      </Principal>
+      <Dependent Role="TB_ORGINL_IMAGE">
+        <PropertyRef Name="CLSLVCD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_IMAGE_PRCSS_KND_TB_CLTNSNSRKDCD">
+    <End Role="TB_CLTNSNSRKDCD" Type="Self.TB_CLTNSNSRKDCD" Multiplicity="0..1" />
+    <End Role="TB_IMAGE_PRCSS_KND" Type="Self.TB_IMAGE_PRCSS_KND" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_CLTNSNSRKDCD">
+        <PropertyRef Name="CLTNSNSRKDCD" />
+      </Principal>
+      <Dependent Role="TB_IMAGE_PRCSS_KND">
+        <PropertyRef Name="CLTNSNSRKDCD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_ORGINL_IMAGE_TB_CLTNSNSRKDCD">
+    <End Role="TB_CLTNSNSRKDCD" Type="Self.TB_CLTNSNSRKDCD" Multiplicity="1" />
+    <End Role="TB_ORGINL_IMAGE" Type="Self.TB_ORGINL_IMAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_CLTNSNSRKDCD">
+        <PropertyRef Name="CLTNSNSRKDCD" />
+      </Principal>
+      <Dependent Role="TB_ORGINL_IMAGE">
+        <PropertyRef Name="CLTNSNSRKDCD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_CRCTN_IMAGE_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_CRCTN_IMAGE" Type="Self.TB_CRCTN_IMAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_CRCTN_IMAGE">
+        <PropertyRef Name="WORKR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DCPHRIMAGE_LOCTN_TB_DCPHRIMAGE">
+    <End Role="TB_DCPHRIMAGE" Type="Self.TB_DCPHRIMAGE" Multiplicity="1" />
+    <End Role="TB_DCPHRIMAGE_LOCTN" Type="Self.TB_DCPHRIMAGE_LOCTN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_DCPHRIMAGE">
+        <PropertyRef Name="DCPHRIMAGE_ID" />
+      </Principal>
+      <Dependent Role="TB_DCPHRIMAGE_LOCTN">
+        <PropertyRef Name="DCPHRIMAGE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DCPHRIMAGE_TB_ORGINL_IMAGE">
+    <End Role="TB_ORGINL_IMAGE" Type="Self.TB_ORGINL_IMAGE" Multiplicity="1" />
+    <End Role="TB_DCPHRIMAGE" Type="Self.TB_DCPHRIMAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ORGINL_IMAGE">
+        <PropertyRef Name="ORGINL_IMAGE_ID" />
+      </Principal>
+      <Dependent Role="TB_DCPHRIMAGE">
+        <PropertyRef Name="ORGINL_IMAGE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DCPHRIMAGE_TB_TGT">
+    <End Role="TB_TGT" Type="Self.TB_TGT" Multiplicity="1" />
+    <End Role="TB_DCPHRIMAGE" Type="Self.TB_DCPHRIMAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_TGT">
+        <PropertyRef Name="TGT_ID" />
+      </Principal>
+      <Dependent Role="TB_DCPHRIMAGE">
+        <PropertyRef Name="TGT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DCPHRIMAGE_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_DCPHRIMAGE" Type="Self.TB_DCPHRIMAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_DCPHRIMAGE">
+        <PropertyRef Name="REGSTR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DCPHRIMAGE_TB_USER1">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="0..1" />
+    <End Role="TB_DCPHRIMAGE" Type="Self.TB_DCPHRIMAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_DCPHRIMAGE">
+        <PropertyRef Name="APPRVR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DCPHRIMAGE_TB_USER2">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="0..1" />
+    <End Role="TB_DCPHRIMAGE" Type="Self.TB_DCPHRIMAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_DCPHRIMAGE">
+        <PropertyRef Name="UNTCMD_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_INFMTN_IDTF_CTNT_TB_DCPHRIMAGE">
+    <End Role="TB_DCPHRIMAGE" Type="Self.TB_DCPHRIMAGE" Multiplicity="0..1" />
+    <End Role="TB_INFMTN_IDTF_CTNT" Type="Self.TB_INFMTN_IDTF_CTNT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_DCPHRIMAGE">
+        <PropertyRef Name="DCPHRIMAGE_ID" />
+      </Principal>
+      <Dependent Role="TB_INFMTN_IDTF_CTNT">
+        <PropertyRef Name="DCPHRIMAGE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_MSGTXT_MGT_RCDBK_TB_DCPHRIMAGE">
+    <End Role="TB_DCPHRIMAGE" Type="Self.TB_DCPHRIMAGE" Multiplicity="1" />
+    <End Role="TB_MSGTXT_MGT_RCDBK" Type="Self.TB_MSGTXT_MGT_RCDBK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_DCPHRIMAGE">
+        <PropertyRef Name="DCPHRIMAGE_ID" />
+      </Principal>
+      <Dependent Role="TB_MSGTXT_MGT_RCDBK">
+        <PropertyRef Name="DCPHRIMAGE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TB_DCPHRIMAGE_PER_DCPHRRPRT_TB_DCPHRIMAGE_DCPHRIMAGE_ID_fk">
+    <End Role="TB_DCPHRIMAGE" Type="Self.TB_DCPHRIMAGE" Multiplicity="1" />
+    <End Role="TB_DCPHRIMAGE_PER_DCPHRRPRT" Type="Self.TB_DCPHRIMAGE_PER_DCPHRRPRT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_DCPHRIMAGE">
+        <PropertyRef Name="DCPHRIMAGE_ID" />
+      </Principal>
+      <Dependent Role="TB_DCPHRIMAGE_PER_DCPHRRPRT">
+        <PropertyRef Name="DCPHRIMAGE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TB_DCPHRIMAGE_PER_DCPHRRPRT_TB_DCPHRRPRT_DCPHRRPRT_ID_fk">
+    <End Role="TB_DCPHRRPRT" Type="Self.TB_DCPHRRPRT" Multiplicity="1" />
+    <End Role="TB_DCPHRIMAGE_PER_DCPHRRPRT" Type="Self.TB_DCPHRIMAGE_PER_DCPHRRPRT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_DCPHRRPRT">
+        <PropertyRef Name="DCPHRRPRT_ID" />
+      </Principal>
+      <Dependent Role="TB_DCPHRIMAGE_PER_DCPHRRPRT">
+        <PropertyRef Name="DCPHRRPRT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DCPHRRPRT_TB_DCPHRRPRT">
+    <End Role="TB_DCPHRRPRT_TYPE" Type="Self.TB_DCPHRRPRT_TYPE" Multiplicity="1" />
+    <End Role="TB_DCPHRRPRT" Type="Self.TB_DCPHRRPRT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_DCPHRRPRT_TYPE">
+        <PropertyRef Name="DCPHRRPRT_TYPE_IDTFR" />
+      </Principal>
+      <Dependent Role="TB_DCPHRRPRT">
+        <PropertyRef Name="DCPHRRPRT_TYPE_IDTFR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DCPHRRPRT_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_DCPHRRPRT" Type="Self.TB_DCPHRRPRT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_DCPHRRPRT">
+        <PropertyRef Name="CRTOR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DCPHRRPRT_TB_USER1">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="0..1" />
+    <End Role="TB_DCPHRRPRT" Type="Self.TB_DCPHRRPRT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_DCPHRRPRT">
+        <PropertyRef Name="APPRVR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_DCPHRRPRT_TB_USER2">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="0..1" />
+    <End Role="TB_DCPHRRPRT" Type="Self.TB_DCPHRRPRT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_DCPHRRPRT">
+        <PropertyRef Name="UNTCMD_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT_TB_DCPHRRPRT">
+    <End Role="TB_DCPHRRPRT" Type="Self.TB_DCPHRRPRT" Multiplicity="1" />
+    <End Role="TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT" Type="Self.TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_DCPHRRPRT">
+        <PropertyRef Name="DCPHRRPRT_ID" />
+      </Principal>
+      <Dependent Role="TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT">
+        <PropertyRef Name="DCPHRRPRT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_ENMEQP_BASIC_IMAGE_TB_ENMEQP">
+    <End Role="TB_ENMEQP" Type="Self.TB_ENMEQP" Multiplicity="1" />
+    <End Role="TB_ENMEQP_BASIC_IMAGE" Type="Self.TB_ENMEQP_BASIC_IMAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ENMEQP">
+        <PropertyRef Name="ENMYFAMC" />
+      </Principal>
+      <Dependent Role="TB_ENMEQP_BASIC_IMAGE">
+        <PropertyRef Name="ENMYFAMC" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_ENMEQP_IMAGE_TB_ENMEQP">
+    <End Role="TB_ENMEQP" Type="Self.TB_ENMEQP" Multiplicity="1" />
+    <End Role="TB_ENMEQP_IMAGE" Type="Self.TB_ENMEQP_IMAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ENMEQP">
+        <PropertyRef Name="ENMYFAMC" />
+      </Principal>
+      <Dependent Role="TB_ENMEQP_IMAGE">
+        <PropertyRef Name="ENMYFAMC" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_ENMEQP_SPEC_TB_ENMEQP">
+    <End Role="TB_ENMEQP" Type="Self.TB_ENMEQP" Multiplicity="1" />
+    <End Role="TB_ENMEQP_SPEC" Type="Self.TB_ENMEQP_SPEC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ENMEQP">
+        <PropertyRef Name="ENMYFAMC" />
+      </Principal>
+      <Dependent Role="TB_ENMEQP_SPEC">
+        <PropertyRef Name="ENMYFAMC" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JCS_TB_TGT_TB_ETASPCD">
+    <End Role="TB_ETASPCD" Type="Self.TB_ETASPCD" Multiplicity="1" />
+    <End Role="TB_JCS_TGT" Type="Self.TB_JCS_TGT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ETASPCD">
+        <PropertyRef Name="ETASPCD" />
+      </Principal>
+      <Dependent Role="TB_JCS_TGT">
+        <PropertyRef Name="ETASPCD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_TGT_TB_ETASPCD">
+    <End Role="TB_ETASPCD" Type="Self.TB_ETASPCD" Multiplicity="1" />
+    <End Role="TB_TGT" Type="Self.TB_TGT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ETASPCD">
+        <PropertyRef Name="ETASPCD" />
+      </Principal>
+      <Dependent Role="TB_TGT">
+        <PropertyRef Name="ETASPCD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_ORGINL_IMAGE_TB_ORGINL_IMAGE">
+    <End Role="TB_IMAGE_PRCSS_KND" Type="Self.TB_IMAGE_PRCSS_KND" Multiplicity="1" />
+    <End Role="TB_ORGINL_IMAGE" Type="Self.TB_ORGINL_IMAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_IMAGE_PRCSS_KND">
+        <PropertyRef Name="IMAGE_PRCSS_KND_IDTFR" />
+      </Principal>
+      <Dependent Role="TB_ORGINL_IMAGE">
+        <PropertyRef Name="IMAGE_PRCSS_KND_IDTFR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_ORGINL_IMAGE_TB_IMGCLTSNKNCD">
+    <End Role="TB_IMGCLTSNKNCD" Type="Self.TB_IMGCLTSNKNCD" Multiplicity="1" />
+    <End Role="TB_ORGINL_IMAGE" Type="Self.TB_ORGINL_IMAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_IMGCLTSNKNCD">
+        <PropertyRef Name="IMGCLTSNKNCD" />
+      </Principal>
+      <Dependent Role="TB_ORGINL_IMAGE">
+        <PropertyRef Name="IMGCLTSNKNCD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_ORGINL_IMAGE_TB_INCLUNTDVCD">
+    <End Role="TB_INCLUNTDVCD" Type="Self.TB_INCLUNTDVCD" Multiplicity="1" />
+    <End Role="TB_ORGINL_IMAGE" Type="Self.TB_ORGINL_IMAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_INCLUNTDVCD">
+        <PropertyRef Name="INCLUNTDVCD" />
+      </Principal>
+      <Dependent Role="TB_ORGINL_IMAGE">
+        <PropertyRef Name="INCLUNTDVCD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_INFMTN_CLTN_EMPH_MATR_PER_TGT_TB_INFMTN_CLTN_EMPH_MATR">
+    <End Role="TB_INFMTN_CLTN_EMPH_MATR" Type="Self.TB_INFMTN_CLTN_EMPH_MATR" Multiplicity="1" />
+    <End Role="TB_INFMTN_CLTN_EMPH_MATR_PER_TGT" Type="Self.TB_INFMTN_CLTN_EMPH_MATR_PER_TGT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_INFMTN_CLTN_EMPH_MATR">
+        <PropertyRef Name="INFMTN_CLTN_EMPH_MATR_SN" />
+      </Principal>
+      <Dependent Role="TB_INFMTN_CLTN_EMPH_MATR_PER_TGT">
+        <PropertyRef Name="INFMTN_CLTN_EMPH_SN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_INFMTN_CLTN_EMPH_MATR_PER_TGT_TB_TGT">
+    <End Role="TB_TGT" Type="Self.TB_TGT" Multiplicity="1" />
+    <End Role="TB_INFMTN_CLTN_EMPH_MATR_PER_TGT" Type="Self.TB_INFMTN_CLTN_EMPH_MATR_PER_TGT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_TGT">
+        <PropertyRef Name="TGT_ID" />
+      </Principal>
+      <Dependent Role="TB_INFMTN_CLTN_EMPH_MATR_PER_TGT">
+        <PropertyRef Name="TGT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_INFMTN_IDTF_CTNT_CHNG_LOG_TB_INFMTN_IDTF_CTNT">
+    <End Role="TB_INFMTN_IDTF_CTNT" Type="Self.TB_INFMTN_IDTF_CTNT" Multiplicity="1" />
+    <End Role="TB_INFMTN_IDTF_CTNT_CHNG_LOG" Type="Self.TB_INFMTN_IDTF_CTNT_CHNG_LOG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_INFMTN_IDTF_CTNT">
+        <PropertyRef Name="INFMTN_IDTF_CTNT_ID" />
+      </Principal>
+      <Dependent Role="TB_INFMTN_IDTF_CTNT_CHNG_LOG">
+        <PropertyRef Name="ORGINL_INFMTN_IDTF_CTNT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT_TB_INFMTN_IDTF_CTNT">
+    <End Role="TB_INFMTN_IDTF_CTNT" Type="Self.TB_INFMTN_IDTF_CTNT" Multiplicity="1" />
+    <End Role="TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT" Type="Self.TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_INFMTN_IDTF_CTNT">
+        <PropertyRef Name="INFMTN_IDTF_CTNT_ID" />
+      </Principal>
+      <Dependent Role="TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT">
+        <PropertyRef Name="INFMTN_IDTF_CTNT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_INFMTN_IDTF_CTNT_TB_ORGINL_IMAGE">
+    <End Role="TB_ORGINL_IMAGE" Type="Self.TB_ORGINL_IMAGE" Multiplicity="0..1" />
+    <End Role="TB_INFMTN_IDTF_CTNT" Type="Self.TB_INFMTN_IDTF_CTNT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ORGINL_IMAGE">
+        <PropertyRef Name="ORGINL_IMAGE_ID" />
+      </Principal>
+      <Dependent Role="TB_INFMTN_IDTF_CTNT">
+        <PropertyRef Name="ORGINL_IMAGE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_INFMTN_IDTF_CTNT_TB_TGT">
+    <End Role="TB_TGT" Type="Self.TB_TGT" Multiplicity="1" />
+    <End Role="TB_INFMTN_IDTF_CTNT" Type="Self.TB_INFMTN_IDTF_CTNT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_TGT">
+        <PropertyRef Name="TGT_ID" />
+      </Principal>
+      <Dependent Role="TB_INFMTN_IDTF_CTNT">
+        <PropertyRef Name="TGT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_INFMTN_IDTF_CTNT_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_INFMTN_IDTF_CTNT" Type="Self.TB_INFMTN_IDTF_CTNT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_INFMTN_IDTF_CTNT">
+        <PropertyRef Name="REGSTR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_INFMTN_IDTF_CTNT_CHNG_LOG_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_INFMTN_IDTF_CTNT_CHNG_LOG" Type="Self.TB_INFMTN_IDTF_CTNT_CHNG_LOG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_INFMTN_IDTF_CTNT_CHNG_LOG">
+        <PropertyRef Name="CHGMN_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_INFMTN_IDTF_CTNT_TMPL_TB_INFMTN_IDTF_CTNT_TMPL">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_INFMTN_IDTF_CTNT_TMPL" Type="Self.TB_INFMTN_IDTF_CTNT_TMPL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_INFMTN_IDTF_CTNT_TMPL">
+        <PropertyRef Name="REGSTR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_JCS_TGT_TB_MS2525CCMSCD">
+    <End Role="TB_MS2525CCMSCD" Type="Self.TB_MS2525CCMSCD" Multiplicity="1" />
+    <End Role="TB_JCS_TGT" Type="Self.TB_JCS_TGT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_MS2525CCMSCD">
+        <PropertyRef Name="MS2525CCMSCD" />
+      </Principal>
+      <Dependent Role="TB_JCS_TGT">
+        <PropertyRef Name="MS2525CCMSCD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_JCS_TGT_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_JCS_TGT" Type="Self.TB_JCS_TGT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_JCS_TGT">
+        <PropertyRef Name="REGSTR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_JCS_TGT_TB_WRK_GRP">
+    <End Role="TB_WRK_GRP" Type="Self.TB_WRK_GRP" Multiplicity="0..1" />
+    <End Role="TB_JCS_TGT" Type="Self.TB_JCS_TGT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_WRK_GRP">
+        <PropertyRef Name="WRK_GRP_ID" />
+      </Principal>
+      <Dependent Role="TB_JCS_TGT">
+        <PropertyRef Name="WRK_GRP_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_MSGTXT_MGT_RCDBK_TB_LKSTCD">
+    <End Role="TB_LKSTCD" Type="Self.TB_LKSTCD" Multiplicity="1" />
+    <End Role="TB_MSGTXT_MGT_RCDBK" Type="Self.TB_MSGTXT_MGT_RCDBK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_LKSTCD">
+        <PropertyRef Name="LKSTCD" />
+      </Principal>
+      <Dependent Role="TB_MSGTXT_MGT_RCDBK">
+        <PropertyRef Name="LKSTCD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_SNDNG_SCRT_MGT_RCDBK_TB_LKSTCD">
+    <End Role="TB_LKSTCD" Type="Self.TB_LKSTCD" Multiplicity="1" />
+    <End Role="TB_SNDNG_SCRT_MGT_RCDBK" Type="Self.TB_SNDNG_SCRT_MGT_RCDBK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_LKSTCD">
+        <PropertyRef Name="LKSTCD" />
+      </Principal>
+      <Dependent Role="TB_SNDNG_SCRT_MGT_RCDBK">
+        <PropertyRef Name="LKSTCD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_LOG_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_LOG" Type="Self.TB_LOG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_LOG">
+        <PropertyRef Name="WORKR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_TGT_TB_MS2525CCMSCD">
+    <End Role="TB_MS2525CCMSCD" Type="Self.TB_MS2525CCMSCD" Multiplicity="1" />
+    <End Role="TB_TGT" Type="Self.TB_TGT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_MS2525CCMSCD">
+        <PropertyRef Name="MS2525CCMSCD" />
+      </Principal>
+      <Dependent Role="TB_TGT">
+        <PropertyRef Name="MS2525CCMSCD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_MSGTXT_MGT_RCDBK_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_MSGTXT_MGT_RCDBK" Type="Self.TB_MSGTXT_MGT_RCDBK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_MSGTXT_MGT_RCDBK">
+        <PropertyRef Name="CRTOR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_ORGINL_IMAGE_TB_NCB">
+    <End Role="TB_NCB" Type="Self.TB_NCB" Multiplicity="0..1" />
+    <End Role="TB_ORGINL_IMAGE" Type="Self.TB_ORGINL_IMAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_NCB">
+        <PropertyRef Name="NCB" />
+      </Principal>
+      <Dependent Role="TB_ORGINL_IMAGE">
+        <PropertyRef Name="NCB" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_USER_TB_RANK">
+    <End Role="TB_RANK" Type="Self.TB_RANK" Multiplicity="1" />
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_RANK">
+        <PropertyRef Name="RNKCD" />
+      </Principal>
+      <Dependent Role="TB_USER">
+        <PropertyRef Name="RNKCD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_RCP_SCRT_MGT_RCDBK_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_RCP_SCRT_MGT_RCDBK" Type="Self.TB_RCP_SCRT_MGT_RCDBK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_RCP_SCRT_MGT_RCDBK">
+        <PropertyRef Name="ADMIN_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_SCRT_HISTRY_CARD_TB_RCP_SCRT_MGT_RCDBK">
+    <End Role="TB_RCP_SCRT_MGT_RCDBK" Type="Self.TB_RCP_SCRT_MGT_RCDBK" Multiplicity="1" />
+    <End Role="TB_SCRT_HISTRY_CARD" Type="Self.TB_SCRT_HISTRY_CARD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_RCP_SCRT_MGT_RCDBK">
+        <PropertyRef Name="SCRT_MGT_RCDBK_ID" />
+      </Principal>
+      <Dependent Role="TB_SCRT_HISTRY_CARD">
+        <PropertyRef Name="SCRT_MGT_RCDBK_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_RECVRY_DATA_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_RECVRY_DATA" Type="Self.TB_RECVRY_DATA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_RECVRY_DATA">
+        <PropertyRef Name="RQSTR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_SCRT_HISTRY_CARD_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_SCRT_HISTRY_CARD" Type="Self.TB_SCRT_HISTRY_CARD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_SCRT_HISTRY_CARD">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_SNDNG_SCRT_MGT_RCDBK_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_SNDNG_SCRT_MGT_RCDBK" Type="Self.TB_SNDNG_SCRT_MGT_RCDBK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_SNDNG_SCRT_MGT_RCDBK">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_TGT_PER_PLCY_TB_TGT">
+    <End Role="TB_TGT" Type="Self.TB_TGT" Multiplicity="1" />
+    <End Role="TB_TGT_PER_PLCY" Type="Self.TB_TGT_PER_PLCY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_TGT">
+        <PropertyRef Name="TGT_ID" />
+      </Principal>
+      <Dependent Role="TB_TGT_PER_PLCY">
+        <PropertyRef Name="TGT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_TGT_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_TGT" Type="Self.TB_TGT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_TGT">
+        <PropertyRef Name="REGSTR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_TGT_TB_WRK_GRP">
+    <End Role="TB_WRK_GRP" Type="Self.TB_WRK_GRP" Multiplicity="0..1" />
+    <End Role="TB_TGT" Type="Self.TB_TGT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_WRK_GRP">
+        <PropertyRef Name="WRK_GRP_ID" />
+      </Principal>
+      <Dependent Role="TB_TGT">
+        <PropertyRef Name="WRK_GRP_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_USER_TGT_CTGR_PER_TGT_TB_TGT">
+    <End Role="TB_TGT" Type="Self.TB_TGT" Multiplicity="1" />
+    <End Role="TB_USER_TGT_CTGR_PER_TGT" Type="Self.TB_USER_TGT_CTGR_PER_TGT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_TGT">
+        <PropertyRef Name="TGT_ID" />
+      </Principal>
+      <Dependent Role="TB_USER_TGT_CTGR_PER_TGT">
+        <PropertyRef Name="TGT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_TGT_PER_WRK_GRP_TB_WRK_GRP1">
+    <End Role="TB_WRK_GRP" Type="Self.TB_WRK_GRP" Multiplicity="1" />
+    <End Role="TB_TGT_PER_WRK_GRP" Type="Self.TB_TGT_PER_WRK_GRP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_WRK_GRP">
+        <PropertyRef Name="WRK_GRP_ID" />
+      </Principal>
+      <Dependent Role="TB_TGT_PER_WRK_GRP">
+        <PropertyRef Name="WRK_GRP_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_TRSMSSN_LOG_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_TRSMSSN_LOG" Type="Self.TB_TRSMSSN_LOG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_TRSMSSN_LOG">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_USER_BF_PW_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_USER_BF_PW" Type="Self.TB_USER_BF_PW" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_USER_BF_PW">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_USER_POI_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_USER_POI" Type="Self.TB_USER_POI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_USER_POI">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_USER_SMBL_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_USER_SMBL" Type="Self.TB_USER_SMBL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_USER_SMBL">
+        <PropertyRef Name="REGSTR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_USER_TB_WRK_GRP">
+    <End Role="TB_WRK_GRP" Type="Self.TB_WRK_GRP" Multiplicity="0..1" />
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_WRK_GRP">
+        <PropertyRef Name="WRK_GRP_ID" />
+      </Principal>
+      <Dependent Role="TB_USER">
+        <PropertyRef Name="WRK_GRP_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_USER_TGT_CTGR_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_USER_TGT_CTGR" Type="Self.TB_USER_TGT_CTGR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_USER_TGT_CTGR">
+        <PropertyRef Name="USER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_WRK_ORD_TB_USER">
+    <End Role="TB_USER" Type="Self.TB_USER" Multiplicity="1" />
+    <End Role="TB_WRK_ORD" Type="Self.TB_WRK_ORD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER">
+        <PropertyRef Name="USER_ID" />
+      </Principal>
+      <Dependent Role="TB_WRK_ORD">
+        <PropertyRef Name="REQ_WORKRK_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_USER_TGT_CTGR_PER_TGT_TB_USER_TGT_CTGR">
+    <End Role="TB_USER_TGT_CTGR" Type="Self.TB_USER_TGT_CTGR" Multiplicity="1" />
+    <End Role="TB_USER_TGT_CTGR_PER_TGT" Type="Self.TB_USER_TGT_CTGR_PER_TGT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_USER_TGT_CTGR">
+        <PropertyRef Name="TGT_CTGR_ID" />
+      </Principal>
+      <Dependent Role="TB_USER_TGT_CTGR_PER_TGT">
+        <PropertyRef Name="TGT_CTGR_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_TGT_PER_PLCY_TB_WRK_ALLTMT_PLCY">
+    <End Role="TB_WRK_ALLTMT_PLCY" Type="Self.TB_WRK_ALLTMT_PLCY" Multiplicity="1" />
+    <End Role="TB_TGT_PER_PLCY" Type="Self.TB_TGT_PER_PLCY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_WRK_ALLTMT_PLCY">
+        <PropertyRef Name="WRK_ALLTMT_PLCY_ID" />
+      </Principal>
+      <Dependent Role="TB_TGT_PER_PLCY">
+        <PropertyRef Name="WRK_ALLTMT_PLCY_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_TGT_PER_WRK_GRP_TB_WRK_GRP">
+    <End Role="TB_WRK_GRP" Type="Self.TB_WRK_GRP" Multiplicity="1" />
+    <End Role="TB_WRK_ALLTMT_PLCY" Type="Self.TB_WRK_ALLTMT_PLCY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_WRK_GRP">
+        <PropertyRef Name="WRK_GRP_ID" />
+      </Principal>
+      <Dependent Role="TB_WRK_ALLTMT_PLCY">
+        <PropertyRef Name="WRK_ALLTMT_PLCY_NM" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="GS425_IEE_DBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="TB_ADMINISTZONE" EntityType="Self.TB_ADMINISTZONE" />
+    <EntitySet Name="TB_ANTT_TMPL" EntityType="Self.TB_ANTT_TMPL" />
+    <EntitySet Name="TB_APPRV_CLPLN" EntityType="Self.TB_APPRV_CLPLN" />
+    <EntitySet Name="TB_APPRV_CLPLN_SCENES" EntityType="Self.TB_APPRV_CLPLN_SCENES" />
+    <EntitySet Name="TB_ASSIGN_WRK_PLCY" EntityType="Self.TB_ASSIGN_WRK_PLCY" />
+    <EntitySet Name="TB_ATHRT_GRP" EntityType="Self.TB_ATHRT_GRP" />
+    <EntitySet Name="TB_BCUP_LOG" EntityType="Self.TB_BCUP_LOG" />
+    <EntitySet Name="TB_CHG_DTCT_IMAGE" EntityType="Self.TB_CHG_DTCT_IMAGE" />
+    <EntitySet Name="TB_CLPLN_SCENE_PRCSS" EntityType="Self.TB_CLPLN_SCENE_PRCSS" />
+    <EntitySet Name="TB_CLSLVCD" EntityType="Self.TB_CLSLVCD" />
+    <EntitySet Name="TB_CLTNSNSRKDCD" EntityType="Self.TB_CLTNSNSRKDCD" />
+    <EntitySet Name="TB_CMN_CD" EntityType="Self.TB_CMN_CD" />
+    <EntitySet Name="TB_CRCTN_IMAGE" EntityType="Self.TB_CRCTN_IMAGE" />
+    <EntitySet Name="TB_DATA_SNCZT" EntityType="Self.TB_DATA_SNCZT" />
+    <EntitySet Name="TB_DCPHRIMAGE" EntityType="Self.TB_DCPHRIMAGE" />
+    <EntitySet Name="TB_DCPHRIMAGE_LOCTN" EntityType="Self.TB_DCPHRIMAGE_LOCTN" />
+    <EntitySet Name="TB_DCPHRIMAGE_PER_DCPHRRPRT" EntityType="Self.TB_DCPHRIMAGE_PER_DCPHRRPRT" />
+    <EntitySet Name="TB_DCPHRRPRT" EntityType="Self.TB_DCPHRRPRT" />
+    <EntitySet Name="TB_DCPHRRPRT_TYPE" EntityType="Self.TB_DCPHRRPRT_TYPE" />
+    <EntitySet Name="TB_ENGLSH_WORD" EntityType="Self.TB_ENGLSH_WORD" />
+    <EntitySet Name="TB_ENMEQP" EntityType="Self.TB_ENMEQP" />
+    <EntitySet Name="TB_ENMEQP_BASIC_IMAGE" EntityType="Self.TB_ENMEQP_BASIC_IMAGE" />
+    <EntitySet Name="TB_ENMEQP_IMAGE" EntityType="Self.TB_ENMEQP_IMAGE" />
+    <EntitySet Name="TB_ENMEQP_SPEC" EntityType="Self.TB_ENMEQP_SPEC" />
+    <EntitySet Name="TB_ETASPCD" EntityType="Self.TB_ETASPCD" />
+    <EntitySet Name="TB_FFDB" EntityType="Self.TB_FFDB" />
+    <EntitySet Name="TB_IMAGE_PRCSS_KND" EntityType="Self.TB_IMAGE_PRCSS_KND" />
+    <EntitySet Name="TB_IMGCLTSNKNCD" EntityType="Self.TB_IMGCLTSNKNCD" />
+    <EntitySet Name="TB_INCLUNTDVCD" EntityType="Self.TB_INCLUNTDVCD" />
+    <EntitySet Name="TB_INFMTN_CLTN_EMPH_MATR" EntityType="Self.TB_INFMTN_CLTN_EMPH_MATR" />
+    <EntitySet Name="TB_INFMTN_CLTN_EMPH_MATR_PER_TGT" EntityType="Self.TB_INFMTN_CLTN_EMPH_MATR_PER_TGT" />
+    <EntitySet Name="TB_INFMTN_IDTF_CTNT" EntityType="Self.TB_INFMTN_IDTF_CTNT" />
+    <EntitySet Name="TB_INFMTN_IDTF_CTNT_CHNG_LOG" EntityType="Self.TB_INFMTN_IDTF_CTNT_CHNG_LOG" />
+    <EntitySet Name="TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT" EntityType="Self.TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT" />
+    <EntitySet Name="TB_INFMTN_IDTF_CTNT_TMPL" EntityType="Self.TB_INFMTN_IDTF_CTNT_TMPL" />
+    <EntitySet Name="TB_INFO_DB_PRINT_DIARY" EntityType="Self.TB_INFO_DB_PRINT_DIARY" />
+    <EntitySet Name="TB_JCS_TGT" EntityType="Self.TB_JCS_TGT" />
+    <EntitySet Name="TB_LKSTCD" EntityType="Self.TB_LKSTCD" />
+    <EntitySet Name="TB_LOG" EntityType="Self.TB_LOG" />
+    <EntitySet Name="TB_MS2525CCMSCD" EntityType="Self.TB_MS2525CCMSCD" />
+    <EntitySet Name="TB_MS2525CUSCD" EntityType="Self.TB_MS2525CUSCD" />
+    <EntitySet Name="TB_MSGTXT_MGT_RCDBK" EntityType="Self.TB_MSGTXT_MGT_RCDBK" />
+    <EntitySet Name="TB_MSN" EntityType="Self.TB_MSN" />
+    <EntitySet Name="TB_NCB" EntityType="Self.TB_NCB" />
+    <EntitySet Name="TB_NTT_TMPL" EntityType="Self.TB_NTT_TMPL" />
+    <EntitySet Name="TB_OB" EntityType="Self.TB_OB" />
+    <EntitySet Name="TB_ORD_LEVEL_IMG_PROCES" EntityType="Self.TB_ORD_LEVEL_IMG_PROCES" />
+    <EntitySet Name="TB_ORGINL_IMAGE" EntityType="Self.TB_ORGINL_IMAGE" />
+    <EntitySet Name="TB_PRGM" EntityType="Self.TB_PRGM" />
+    <EntitySet Name="TB_RANK" EntityType="Self.TB_RANK" />
+    <EntitySet Name="TB_RCP_SCRT_MGT_RCDBK" EntityType="Self.TB_RCP_SCRT_MGT_RCDBK" />
+    <EntitySet Name="TB_RDSCD" EntityType="Self.TB_RDSCD" />
+    <EntitySet Name="TB_RECVRY_DATA" EntityType="Self.TB_RECVRY_DATA" />
+    <EntitySet Name="TB_RSTRCT_DSMT" EntityType="Self.TB_RSTRCT_DSMT" />
+    <EntitySet Name="TB_SCRT_HISTRY_CARD" EntityType="Self.TB_SCRT_HISTRY_CARD" />
+    <EntitySet Name="TB_SHTNG_MODE_KND" EntityType="Self.TB_SHTNG_MODE_KND" />
+    <EntitySet Name="TB_SNDNG_SCRT_MGT_RCDBK" EntityType="Self.TB_SNDNG_SCRT_MGT_RCDBK" />
+    <EntitySet Name="TB_TGT" EntityType="Self.TB_TGT" />
+    <EntitySet Name="TB_TGT_PER_WRK_GRP" EntityType="Self.TB_TGT_PER_WRK_GRP" />
+    <EntitySet Name="TB_TRSMSSN_LOG" EntityType="Self.TB_TRSMSSN_LOG" />
+    <EntitySet Name="TB_UC" EntityType="Self.TB_UC" />
+    <EntitySet Name="TB_UICD" EntityType="Self.TB_UICD" />
+    <EntitySet Name="TB_UIDVCD" EntityType="Self.TB_UIDVCD" />
+    <EntitySet Name="TB_USER" EntityType="Self.TB_USER" />
+    <EntitySet Name="TB_USER_BF_PW" EntityType="Self.TB_USER_BF_PW" />
+    <EntitySet Name="TB_USER_POI" EntityType="Self.TB_USER_POI" />
+    <EntitySet Name="TB_USER_SMBL" EntityType="Self.TB_USER_SMBL" />
+    <EntitySet Name="TB_USER_TGT_CTGR" EntityType="Self.TB_USER_TGT_CTGR" />
+    <EntitySet Name="TB_WRK" EntityType="Self.TB_WRK" />
+    <EntitySet Name="TB_WRK_ALLTMT_PLCY" EntityType="Self.TB_WRK_ALLTMT_PLCY" />
+    <EntitySet Name="TB_WRK_GRP" EntityType="Self.TB_WRK_GRP" />
+    <EntitySet Name="TB_WRK_ORD" EntityType="Self.TB_WRK_ORD" />
+    <EntitySet Name="TB_DCPHRRPRT_TMPL" EntityType="Self.TB_DCPHRRPRT_TMPL" />
+    <EntitySet Name="TB_SYST_OPT" EntityType="Self.TB_SYST_OPT" />
+    <EntitySet Name="TB_TGT_PER_ORGINL_IMAGE" EntityType="Self.TB_TGT_PER_ORGINL_IMAGE" />
+    <EntitySet Name="TB_TGT_PER_PLCY" EntityType="Self.TB_TGT_PER_PLCY" />
+    <EntitySet Name="TB_USER_TGT_CTGR_PER_TGT" EntityType="Self.TB_USER_TGT_CTGR_PER_TGT" />
+    <AssociationSet Name="FK_TB_DCPHRIMAGE_LOCTN_TB_ADMINISTZONE" Association="Self.FK_TB_DCPHRIMAGE_LOCTN_TB_ADMINISTZONE">
+      <End Role="TB_ADMINISTZONE" EntitySet="TB_ADMINISTZONE" />
+      <End Role="TB_DCPHRIMAGE_LOCTN" EntitySet="TB_DCPHRIMAGE_LOCTN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_ANTT_TMPL_TB_USER" Association="Self.FK_TB_ANTT_TMPL_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_ANTT_TMPL" EntitySet="TB_ANTT_TMPL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_APPRV_CLPLN_SCENES_TB_APPRV_CLPLN" Association="Self.FK_TB_APPRV_CLPLN_SCENES_TB_APPRV_CLPLN">
+      <End Role="TB_APPRV_CLPLN" EntitySet="TB_APPRV_CLPLN" />
+      <End Role="TB_APPRV_CLPLN_SCENES" EntitySet="TB_APPRV_CLPLN_SCENES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_PRGM_TB_ATHRT_GRP" Association="Self.FK_TB_PRGM_TB_ATHRT_GRP">
+      <End Role="TB_ATHRT_GRP" EntitySet="TB_ATHRT_GRP" />
+      <End Role="TB_PRGM" EntitySet="TB_PRGM" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_USER_TB_ATHRT_GRP" Association="Self.FK_TB_USER_TB_ATHRT_GRP">
+      <End Role="TB_ATHRT_GRP" EntitySet="TB_ATHRT_GRP" />
+      <End Role="TB_USER" EntitySet="TB_USER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_CHG_DTCT_IMAGE_TB_ORGINL_IMAGE" Association="Self.FK_TB_CHG_DTCT_IMAGE_TB_ORGINL_IMAGE">
+      <End Role="TB_ORGINL_IMAGE" EntitySet="TB_ORGINL_IMAGE" />
+      <End Role="TB_CHG_DTCT_IMAGE" EntitySet="TB_CHG_DTCT_IMAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_CHG_DTCT_IMAGE_TB_ORGINL_IMAGE1" Association="Self.FK_TB_CHG_DTCT_IMAGE_TB_ORGINL_IMAGE1">
+      <End Role="TB_ORGINL_IMAGE" EntitySet="TB_ORGINL_IMAGE" />
+      <End Role="TB_CHG_DTCT_IMAGE" EntitySet="TB_CHG_DTCT_IMAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_ORGINL_IMAGE_TB_CLSLVCD" Association="Self.FK_TB_ORGINL_IMAGE_TB_CLSLVCD">
+      <End Role="TB_CLSLVCD" EntitySet="TB_CLSLVCD" />
+      <End Role="TB_ORGINL_IMAGE" EntitySet="TB_ORGINL_IMAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_IMAGE_PRCSS_KND_TB_CLTNSNSRKDCD" Association="Self.FK_TB_IMAGE_PRCSS_KND_TB_CLTNSNSRKDCD">
+      <End Role="TB_CLTNSNSRKDCD" EntitySet="TB_CLTNSNSRKDCD" />
+      <End Role="TB_IMAGE_PRCSS_KND" EntitySet="TB_IMAGE_PRCSS_KND" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_ORGINL_IMAGE_TB_CLTNSNSRKDCD" Association="Self.FK_TB_ORGINL_IMAGE_TB_CLTNSNSRKDCD">
+      <End Role="TB_CLTNSNSRKDCD" EntitySet="TB_CLTNSNSRKDCD" />
+      <End Role="TB_ORGINL_IMAGE" EntitySet="TB_ORGINL_IMAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_CRCTN_IMAGE_TB_USER" Association="Self.FK_TB_CRCTN_IMAGE_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_CRCTN_IMAGE" EntitySet="TB_CRCTN_IMAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DCPHRIMAGE_LOCTN_TB_DCPHRIMAGE" Association="Self.FK_TB_DCPHRIMAGE_LOCTN_TB_DCPHRIMAGE">
+      <End Role="TB_DCPHRIMAGE" EntitySet="TB_DCPHRIMAGE" />
+      <End Role="TB_DCPHRIMAGE_LOCTN" EntitySet="TB_DCPHRIMAGE_LOCTN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DCPHRIMAGE_TB_ORGINL_IMAGE" Association="Self.FK_TB_DCPHRIMAGE_TB_ORGINL_IMAGE">
+      <End Role="TB_ORGINL_IMAGE" EntitySet="TB_ORGINL_IMAGE" />
+      <End Role="TB_DCPHRIMAGE" EntitySet="TB_DCPHRIMAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DCPHRIMAGE_TB_TGT" Association="Self.FK_TB_DCPHRIMAGE_TB_TGT">
+      <End Role="TB_TGT" EntitySet="TB_TGT" />
+      <End Role="TB_DCPHRIMAGE" EntitySet="TB_DCPHRIMAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DCPHRIMAGE_TB_USER" Association="Self.FK_TB_DCPHRIMAGE_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_DCPHRIMAGE" EntitySet="TB_DCPHRIMAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DCPHRIMAGE_TB_USER1" Association="Self.FK_TB_DCPHRIMAGE_TB_USER1">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_DCPHRIMAGE" EntitySet="TB_DCPHRIMAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DCPHRIMAGE_TB_USER2" Association="Self.FK_TB_DCPHRIMAGE_TB_USER2">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_DCPHRIMAGE" EntitySet="TB_DCPHRIMAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_INFMTN_IDTF_CTNT_TB_DCPHRIMAGE" Association="Self.FK_TB_INFMTN_IDTF_CTNT_TB_DCPHRIMAGE">
+      <End Role="TB_DCPHRIMAGE" EntitySet="TB_DCPHRIMAGE" />
+      <End Role="TB_INFMTN_IDTF_CTNT" EntitySet="TB_INFMTN_IDTF_CTNT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_MSGTXT_MGT_RCDBK_TB_DCPHRIMAGE" Association="Self.FK_TB_MSGTXT_MGT_RCDBK_TB_DCPHRIMAGE">
+      <End Role="TB_DCPHRIMAGE" EntitySet="TB_DCPHRIMAGE" />
+      <End Role="TB_MSGTXT_MGT_RCDBK" EntitySet="TB_MSGTXT_MGT_RCDBK" />
+    </AssociationSet>
+    <AssociationSet Name="TB_DCPHRIMAGE_PER_DCPHRRPRT_TB_DCPHRIMAGE_DCPHRIMAGE_ID_fk" Association="Self.TB_DCPHRIMAGE_PER_DCPHRRPRT_TB_DCPHRIMAGE_DCPHRIMAGE_ID_fk">
+      <End Role="TB_DCPHRIMAGE" EntitySet="TB_DCPHRIMAGE" />
+      <End Role="TB_DCPHRIMAGE_PER_DCPHRRPRT" EntitySet="TB_DCPHRIMAGE_PER_DCPHRRPRT" />
+    </AssociationSet>
+    <AssociationSet Name="TB_DCPHRIMAGE_PER_DCPHRRPRT_TB_DCPHRRPRT_DCPHRRPRT_ID_fk" Association="Self.TB_DCPHRIMAGE_PER_DCPHRRPRT_TB_DCPHRRPRT_DCPHRRPRT_ID_fk">
+      <End Role="TB_DCPHRRPRT" EntitySet="TB_DCPHRRPRT" />
+      <End Role="TB_DCPHRIMAGE_PER_DCPHRRPRT" EntitySet="TB_DCPHRIMAGE_PER_DCPHRRPRT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DCPHRRPRT_TB_DCPHRRPRT" Association="Self.FK_TB_DCPHRRPRT_TB_DCPHRRPRT">
+      <End Role="TB_DCPHRRPRT_TYPE" EntitySet="TB_DCPHRRPRT_TYPE" />
+      <End Role="TB_DCPHRRPRT" EntitySet="TB_DCPHRRPRT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DCPHRRPRT_TB_USER" Association="Self.FK_TB_DCPHRRPRT_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_DCPHRRPRT" EntitySet="TB_DCPHRRPRT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DCPHRRPRT_TB_USER1" Association="Self.FK_TB_DCPHRRPRT_TB_USER1">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_DCPHRRPRT" EntitySet="TB_DCPHRRPRT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_DCPHRRPRT_TB_USER2" Association="Self.FK_TB_DCPHRRPRT_TB_USER2">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_DCPHRRPRT" EntitySet="TB_DCPHRRPRT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT_TB_DCPHRRPRT" Association="Self.FK_TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT_TB_DCPHRRPRT">
+      <End Role="TB_DCPHRRPRT" EntitySet="TB_DCPHRRPRT" />
+      <End Role="TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT" EntitySet="TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_ENMEQP_BASIC_IMAGE_TB_ENMEQP" Association="Self.FK_TB_ENMEQP_BASIC_IMAGE_TB_ENMEQP">
+      <End Role="TB_ENMEQP" EntitySet="TB_ENMEQP" />
+      <End Role="TB_ENMEQP_BASIC_IMAGE" EntitySet="TB_ENMEQP_BASIC_IMAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_ENMEQP_IMAGE_TB_ENMEQP" Association="Self.FK_TB_ENMEQP_IMAGE_TB_ENMEQP">
+      <End Role="TB_ENMEQP" EntitySet="TB_ENMEQP" />
+      <End Role="TB_ENMEQP_IMAGE" EntitySet="TB_ENMEQP_IMAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_ENMEQP_SPEC_TB_ENMEQP" Association="Self.FK_TB_ENMEQP_SPEC_TB_ENMEQP">
+      <End Role="TB_ENMEQP" EntitySet="TB_ENMEQP" />
+      <End Role="TB_ENMEQP_SPEC" EntitySet="TB_ENMEQP_SPEC" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JCS_TB_TGT_TB_ETASPCD" Association="Self.FK_JCS_TB_TGT_TB_ETASPCD">
+      <End Role="TB_ETASPCD" EntitySet="TB_ETASPCD" />
+      <End Role="TB_JCS_TGT" EntitySet="TB_JCS_TGT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_TGT_TB_ETASPCD" Association="Self.FK_TB_TGT_TB_ETASPCD">
+      <End Role="TB_ETASPCD" EntitySet="TB_ETASPCD" />
+      <End Role="TB_TGT" EntitySet="TB_TGT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_ORGINL_IMAGE_TB_ORGINL_IMAGE" Association="Self.FK_TB_ORGINL_IMAGE_TB_ORGINL_IMAGE">
+      <End Role="TB_IMAGE_PRCSS_KND" EntitySet="TB_IMAGE_PRCSS_KND" />
+      <End Role="TB_ORGINL_IMAGE" EntitySet="TB_ORGINL_IMAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_ORGINL_IMAGE_TB_IMGCLTSNKNCD" Association="Self.FK_TB_ORGINL_IMAGE_TB_IMGCLTSNKNCD">
+      <End Role="TB_IMGCLTSNKNCD" EntitySet="TB_IMGCLTSNKNCD" />
+      <End Role="TB_ORGINL_IMAGE" EntitySet="TB_ORGINL_IMAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_ORGINL_IMAGE_TB_INCLUNTDVCD" Association="Self.FK_TB_ORGINL_IMAGE_TB_INCLUNTDVCD">
+      <End Role="TB_INCLUNTDVCD" EntitySet="TB_INCLUNTDVCD" />
+      <End Role="TB_ORGINL_IMAGE" EntitySet="TB_ORGINL_IMAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_INFMTN_CLTN_EMPH_MATR_PER_TGT_TB_INFMTN_CLTN_EMPH_MATR" Association="Self.FK_TB_INFMTN_CLTN_EMPH_MATR_PER_TGT_TB_INFMTN_CLTN_EMPH_MATR">
+      <End Role="TB_INFMTN_CLTN_EMPH_MATR" EntitySet="TB_INFMTN_CLTN_EMPH_MATR" />
+      <End Role="TB_INFMTN_CLTN_EMPH_MATR_PER_TGT" EntitySet="TB_INFMTN_CLTN_EMPH_MATR_PER_TGT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_INFMTN_CLTN_EMPH_MATR_PER_TGT_TB_TGT" Association="Self.FK_TB_INFMTN_CLTN_EMPH_MATR_PER_TGT_TB_TGT">
+      <End Role="TB_TGT" EntitySet="TB_TGT" />
+      <End Role="TB_INFMTN_CLTN_EMPH_MATR_PER_TGT" EntitySet="TB_INFMTN_CLTN_EMPH_MATR_PER_TGT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_INFMTN_IDTF_CTNT_CHNG_LOG_TB_INFMTN_IDTF_CTNT" Association="Self.FK_TB_INFMTN_IDTF_CTNT_CHNG_LOG_TB_INFMTN_IDTF_CTNT">
+      <End Role="TB_INFMTN_IDTF_CTNT" EntitySet="TB_INFMTN_IDTF_CTNT" />
+      <End Role="TB_INFMTN_IDTF_CTNT_CHNG_LOG" EntitySet="TB_INFMTN_IDTF_CTNT_CHNG_LOG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT_TB_INFMTN_IDTF_CTNT" Association="Self.FK_TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT_TB_INFMTN_IDTF_CTNT">
+      <End Role="TB_INFMTN_IDTF_CTNT" EntitySet="TB_INFMTN_IDTF_CTNT" />
+      <End Role="TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT" EntitySet="TB_INFMTN_IDTF_CTNT_PER_DCPHRRPRT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_INFMTN_IDTF_CTNT_TB_ORGINL_IMAGE" Association="Self.FK_TB_INFMTN_IDTF_CTNT_TB_ORGINL_IMAGE">
+      <End Role="TB_ORGINL_IMAGE" EntitySet="TB_ORGINL_IMAGE" />
+      <End Role="TB_INFMTN_IDTF_CTNT" EntitySet="TB_INFMTN_IDTF_CTNT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_INFMTN_IDTF_CTNT_TB_TGT" Association="Self.FK_TB_INFMTN_IDTF_CTNT_TB_TGT">
+      <End Role="TB_TGT" EntitySet="TB_TGT" />
+      <End Role="TB_INFMTN_IDTF_CTNT" EntitySet="TB_INFMTN_IDTF_CTNT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_INFMTN_IDTF_CTNT_TB_USER" Association="Self.FK_TB_INFMTN_IDTF_CTNT_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_INFMTN_IDTF_CTNT" EntitySet="TB_INFMTN_IDTF_CTNT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_INFMTN_IDTF_CTNT_CHNG_LOG_TB_USER" Association="Self.FK_TB_INFMTN_IDTF_CTNT_CHNG_LOG_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_INFMTN_IDTF_CTNT_CHNG_LOG" EntitySet="TB_INFMTN_IDTF_CTNT_CHNG_LOG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_INFMTN_IDTF_CTNT_TMPL_TB_INFMTN_IDTF_CTNT_TMPL" Association="Self.FK_TB_INFMTN_IDTF_CTNT_TMPL_TB_INFMTN_IDTF_CTNT_TMPL">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_INFMTN_IDTF_CTNT_TMPL" EntitySet="TB_INFMTN_IDTF_CTNT_TMPL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_JCS_TGT_TB_MS2525CCMSCD" Association="Self.FK_TB_JCS_TGT_TB_MS2525CCMSCD">
+      <End Role="TB_MS2525CCMSCD" EntitySet="TB_MS2525CCMSCD" />
+      <End Role="TB_JCS_TGT" EntitySet="TB_JCS_TGT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_JCS_TGT_TB_USER" Association="Self.FK_TB_JCS_TGT_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_JCS_TGT" EntitySet="TB_JCS_TGT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_JCS_TGT_TB_WRK_GRP" Association="Self.FK_TB_JCS_TGT_TB_WRK_GRP">
+      <End Role="TB_WRK_GRP" EntitySet="TB_WRK_GRP" />
+      <End Role="TB_JCS_TGT" EntitySet="TB_JCS_TGT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_MSGTXT_MGT_RCDBK_TB_LKSTCD" Association="Self.FK_TB_MSGTXT_MGT_RCDBK_TB_LKSTCD">
+      <End Role="TB_LKSTCD" EntitySet="TB_LKSTCD" />
+      <End Role="TB_MSGTXT_MGT_RCDBK" EntitySet="TB_MSGTXT_MGT_RCDBK" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_SNDNG_SCRT_MGT_RCDBK_TB_LKSTCD" Association="Self.FK_TB_SNDNG_SCRT_MGT_RCDBK_TB_LKSTCD">
+      <End Role="TB_LKSTCD" EntitySet="TB_LKSTCD" />
+      <End Role="TB_SNDNG_SCRT_MGT_RCDBK" EntitySet="TB_SNDNG_SCRT_MGT_RCDBK" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_LOG_TB_USER" Association="Self.FK_TB_LOG_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_LOG" EntitySet="TB_LOG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_TGT_TB_MS2525CCMSCD" Association="Self.FK_TB_TGT_TB_MS2525CCMSCD">
+      <End Role="TB_MS2525CCMSCD" EntitySet="TB_MS2525CCMSCD" />
+      <End Role="TB_TGT" EntitySet="TB_TGT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_MSGTXT_MGT_RCDBK_TB_USER" Association="Self.FK_TB_MSGTXT_MGT_RCDBK_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_MSGTXT_MGT_RCDBK" EntitySet="TB_MSGTXT_MGT_RCDBK" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_ORGINL_IMAGE_TB_NCB" Association="Self.FK_TB_ORGINL_IMAGE_TB_NCB">
+      <End Role="TB_NCB" EntitySet="TB_NCB" />
+      <End Role="TB_ORGINL_IMAGE" EntitySet="TB_ORGINL_IMAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_USER_TB_RANK" Association="Self.FK_TB_USER_TB_RANK">
+      <End Role="TB_RANK" EntitySet="TB_RANK" />
+      <End Role="TB_USER" EntitySet="TB_USER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_RCP_SCRT_MGT_RCDBK_TB_USER" Association="Self.FK_TB_RCP_SCRT_MGT_RCDBK_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_RCP_SCRT_MGT_RCDBK" EntitySet="TB_RCP_SCRT_MGT_RCDBK" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_SCRT_HISTRY_CARD_TB_RCP_SCRT_MGT_RCDBK" Association="Self.FK_TB_SCRT_HISTRY_CARD_TB_RCP_SCRT_MGT_RCDBK">
+      <End Role="TB_RCP_SCRT_MGT_RCDBK" EntitySet="TB_RCP_SCRT_MGT_RCDBK" />
+      <End Role="TB_SCRT_HISTRY_CARD" EntitySet="TB_SCRT_HISTRY_CARD" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_RECVRY_DATA_TB_USER" Association="Self.FK_TB_RECVRY_DATA_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_RECVRY_DATA" EntitySet="TB_RECVRY_DATA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_SCRT_HISTRY_CARD_TB_USER" Association="Self.FK_TB_SCRT_HISTRY_CARD_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_SCRT_HISTRY_CARD" EntitySet="TB_SCRT_HISTRY_CARD" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_SNDNG_SCRT_MGT_RCDBK_TB_USER" Association="Self.FK_TB_SNDNG_SCRT_MGT_RCDBK_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_SNDNG_SCRT_MGT_RCDBK" EntitySet="TB_SNDNG_SCRT_MGT_RCDBK" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_TGT_PER_PLCY_TB_TGT" Association="Self.FK_TB_TGT_PER_PLCY_TB_TGT">
+      <End Role="TB_TGT" EntitySet="TB_TGT" />
+      <End Role="TB_TGT_PER_PLCY" EntitySet="TB_TGT_PER_PLCY" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_TGT_TB_USER" Association="Self.FK_TB_TGT_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_TGT" EntitySet="TB_TGT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_TGT_TB_WRK_GRP" Association="Self.FK_TB_TGT_TB_WRK_GRP">
+      <End Role="TB_WRK_GRP" EntitySet="TB_WRK_GRP" />
+      <End Role="TB_TGT" EntitySet="TB_TGT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_USER_TGT_CTGR_PER_TGT_TB_TGT" Association="Self.FK_TB_USER_TGT_CTGR_PER_TGT_TB_TGT">
+      <End Role="TB_TGT" EntitySet="TB_TGT" />
+      <End Role="TB_USER_TGT_CTGR_PER_TGT" EntitySet="TB_USER_TGT_CTGR_PER_TGT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_TGT_PER_WRK_GRP_TB_WRK_GRP1" Association="Self.FK_TB_TGT_PER_WRK_GRP_TB_WRK_GRP1">
+      <End Role="TB_WRK_GRP" EntitySet="TB_WRK_GRP" />
+      <End Role="TB_TGT_PER_WRK_GRP" EntitySet="TB_TGT_PER_WRK_GRP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_TRSMSSN_LOG_TB_USER" Association="Self.FK_TB_TRSMSSN_LOG_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_TRSMSSN_LOG" EntitySet="TB_TRSMSSN_LOG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_USER_BF_PW_TB_USER" Association="Self.FK_TB_USER_BF_PW_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_USER_BF_PW" EntitySet="TB_USER_BF_PW" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_USER_POI_TB_USER" Association="Self.FK_TB_USER_POI_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_USER_POI" EntitySet="TB_USER_POI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_USER_SMBL_TB_USER" Association="Self.FK_TB_USER_SMBL_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_USER_SMBL" EntitySet="TB_USER_SMBL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_USER_TB_WRK_GRP" Association="Self.FK_TB_USER_TB_WRK_GRP">
+      <End Role="TB_WRK_GRP" EntitySet="TB_WRK_GRP" />
+      <End Role="TB_USER" EntitySet="TB_USER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_USER_TGT_CTGR_TB_USER" Association="Self.FK_TB_USER_TGT_CTGR_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_USER_TGT_CTGR" EntitySet="TB_USER_TGT_CTGR" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_WRK_ORD_TB_USER" Association="Self.FK_TB_WRK_ORD_TB_USER">
+      <End Role="TB_USER" EntitySet="TB_USER" />
+      <End Role="TB_WRK_ORD" EntitySet="TB_WRK_ORD" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_USER_TGT_CTGR_PER_TGT_TB_USER_TGT_CTGR" Association="Self.FK_TB_USER_TGT_CTGR_PER_TGT_TB_USER_TGT_CTGR">
+      <End Role="TB_USER_TGT_CTGR" EntitySet="TB_USER_TGT_CTGR" />
+      <End Role="TB_USER_TGT_CTGR_PER_TGT" EntitySet="TB_USER_TGT_CTGR_PER_TGT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_TGT_PER_PLCY_TB_WRK_ALLTMT_PLCY" Association="Self.FK_TB_TGT_PER_PLCY_TB_WRK_ALLTMT_PLCY">
+      <End Role="TB_WRK_ALLTMT_PLCY" EntitySet="TB_WRK_ALLTMT_PLCY" />
+      <End Role="TB_TGT_PER_PLCY" EntitySet="TB_TGT_PER_PLCY" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_TGT_PER_WRK_GRP_TB_WRK_GRP" Association="Self.FK_TB_TGT_PER_WRK_GRP_TB_WRK_GRP">
+      <End Role="TB_WRK_GRP" EntitySet="TB_WRK_GRP" />
+      <End Role="TB_WRK_ALLTMT_PLCY" EntitySet="TB_WRK_ALLTMT_PLCY" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

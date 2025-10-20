@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_AddressModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--생성 중 오류 발생:
+경고 6002: 테이블/뷰 'DB_Address.dbo.DB_INFO'에 기본 키가 정의되지 않았습니다. 키가 유추되었고 읽기 전용 테이블/뷰로 정의되었습니다.-->
+  <EntityType Name="DB_INFO">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="PW" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PW" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Admin" Type="bit" />
+  </EntityType>
+  <EntityType Name="DB_TEST_Address">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NAME" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="USERNAME" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PASSWORD" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ADMIN" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="DB_AddressModelStoreContainer">
+    <EntitySet Name="DB_TEST_Address" EntityType="Self.DB_TEST_Address" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_INFO" EntityType="Self.DB_INFO" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [DB_INFO].[ID] AS [ID], 
+    [DB_INFO].[Name] AS [Name], 
+    [DB_INFO].[PW] AS [PW], 
+    [DB_INFO].[Admin] AS [Admin]
+    FROM [dbo].[DB_INFO] AS [DB_INFO]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

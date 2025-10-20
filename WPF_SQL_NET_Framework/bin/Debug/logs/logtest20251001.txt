@@ -1,0 +1,1307 @@
+2025-10-01 00:00:20.409 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 192.168.0.244, PORT: 1433
+2025-10-01 00:00:20.448 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-01 00:00:24.649 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-01 00:00:49.223 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 192.168.0.244, PORT: 1433, 결과: 불량]
+2025-10-01 00:00:49.226 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-01 00:00:49.242 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-01 00:00:49.244 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-01 00:00:49.254 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-01 00:00:49.271 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-01 00:00:49.272 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-01 00:00:52.995 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 시작
+2025-10-01 00:00:53.000 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 결과: 양호
+2025-10-01 00:00:53.001 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:00:53.001 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:00:53.002 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:00:53.002 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:00:53.003 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:00:53.003 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:00:53.004 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:00:53.005 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:00:53.005 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:00:53.006 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:00:53.006 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:00:53.007 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:00:56.224 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:00:56.227 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:00:56.228 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:00:56.228 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:00:56.229 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:00:56.230 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:00:56.231 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:00:56.231 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:00:56.232 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:00:56.233 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:00:56.233 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:00:56.234 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:00:56.235 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:00:56.235 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:00:56.236 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:00:56.237 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:00:56.237 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:00:56.240 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:00:56.241 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:00:56.242 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:00:56.243 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:00:56.244 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:00:56.245 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:00:56.246 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:00:56.246 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:00:56.247 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:00:56.248 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:00:56.248 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:00:56.249 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:00:56.250 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:00:56.250 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:00:56.251 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:00:56.252 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:00:56.252 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:00:56.253 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:00:56.255 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:00:56.256 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:00:56.257 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:00:56.257 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:00:56.258 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:00:59.347 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 시작
+2025-10-01 00:00:59.545 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 결과: 양호
+2025-10-01 00:01:00.757 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] Auto Check Timer STOP
+2025-10-01 00:16:13.113 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 192.168.0.244, PORT: 1433
+2025-10-01 00:16:13.152 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-01 00:16:16.619 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-01 00:16:41.707 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 192.168.0.244, PORT: 1433, 결과: 불량]
+2025-10-01 00:16:41.710 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-01 00:16:41.725 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-01 00:16:41.727 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-01 00:16:41.737 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-01 00:16:41.753 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-01 00:16:41.754 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-01 00:16:44.871 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 시작
+2025-10-01 00:16:44.876 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 결과: 양호
+2025-10-01 00:16:44.877 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:16:44.877 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:16:44.878 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:16:44.878 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:16:44.879 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:16:44.879 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:16:44.880 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:16:44.880 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:16:44.881 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:16:44.882 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:16:44.882 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:16:44.883 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:16:47.904 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:16:47.906 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:16:47.907 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:16:47.908 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:16:47.909 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:16:47.910 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:16:47.910 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:16:47.911 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:16:47.912 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:16:47.912 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:16:47.913 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:16:47.914 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:16:47.914 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:16:47.915 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:16:47.915 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:16:47.916 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:16:47.917 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:16:47.917 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:16:47.919 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:16:47.920 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:16:47.921 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:16:47.921 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:16:47.922 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:16:47.923 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:16:47.923 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:16:47.924 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:16:47.925 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:16:47.926 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:16:47.926 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:16:47.927 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:16:47.928 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:16:47.928 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:16:47.929 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:16:47.930 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:16:47.930 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:16:47.931 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:16:47.932 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:16:47.932 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:16:47.933 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:16:47.935 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:16:50.966 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 시작
+2025-10-01 00:16:51.771 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 결과: 양호
+2025-10-01 00:16:53.997 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 시작
+2025-10-01 00:16:53.998 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 결과: 양호
+2025-10-01 00:16:53.998 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:16:53.999 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:16:53.999 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:16:54.000 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:16:54.001 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:16:54.001 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:16:54.002 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:16:54.002 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:16:54.003 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:16:54.004 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:16:54.004 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:16:54.005 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:16:55.866 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] Auto Check Timer STOP
+2025-10-01 00:18:07.547 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 192.168.0.244, PORT: 1433
+2025-10-01 00:18:07.586 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-01 00:18:11.033 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-01 00:18:36.199 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 192.168.0.244, PORT: 1433, 결과: 불량]
+2025-10-01 00:18:36.202 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-01 00:18:36.217 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-01 00:18:36.219 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-01 00:18:36.228 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-01 00:18:36.247 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-01 00:18:36.247 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-01 00:18:39.394 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 시작
+2025-10-01 00:18:39.398 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 결과: 양호
+2025-10-01 00:18:39.399 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:18:39.399 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:18:39.400 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:18:39.400 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:18:39.401 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:18:39.402 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:18:39.402 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:18:39.403 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:18:39.404 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:18:39.405 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:18:39.405 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:18:39.406 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:18:42.480 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:18:42.482 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:18:42.482 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:18:42.483 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:18:42.484 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:18:42.485 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:18:42.486 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:18:42.486 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:18:42.487 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:18:42.488 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:18:42.488 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:18:42.489 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:18:42.489 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:18:42.490 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:18:42.491 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:18:42.491 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:18:42.492 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:18:42.493 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:18:42.493 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:18:42.494 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:18:42.495 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:18:42.496 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:18:42.496 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:18:42.497 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:18:42.498 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:18:42.498 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:18:42.499 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:18:42.500 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:18:42.500 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:18:42.503 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:18:42.503 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:18:42.504 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:18:42.505 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:18:42.506 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:18:42.506 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:18:42.507 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:18:42.508 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:18:42.508 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:18:42.509 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:18:42.510 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:18:45.548 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 시작
+2025-10-01 00:18:46.018 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 결과: 양호
+2025-10-01 00:18:49.349 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 시작
+2025-10-01 00:18:49.351 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 결과: 양호
+2025-10-01 00:18:49.352 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:18:49.353 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:18:49.353 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:18:49.354 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:18:49.354 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:18:49.355 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:18:49.356 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:18:49.356 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:18:49.357 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:18:49.358 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:18:49.358 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:18:49.359 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:18:49.766 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] Auto Check Timer STOP
+2025-10-01 00:21:01.546 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 192.168.0.244, PORT: 1433
+2025-10-01 00:21:01.586 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-01 00:21:05.201 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-01 00:21:30.191 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 192.168.0.244, PORT: 1433, 결과: 불량]
+2025-10-01 00:21:30.194 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-01 00:21:30.209 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-01 00:21:30.211 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-01 00:21:30.222 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-01 00:21:30.241 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-01 00:21:30.241 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-01 00:21:33.845 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 시작
+2025-10-01 00:21:33.851 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 결과: 양호
+2025-10-01 00:21:33.851 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:21:33.852 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:21:33.852 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:21:33.852 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:21:33.853 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:21:33.854 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:21:33.855 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:21:33.855 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:21:33.856 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:21:33.857 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:21:33.858 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:21:33.858 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:21:37.382 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:21:37.384 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:21:37.384 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:21:37.385 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:21:37.386 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:21:37.387 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:21:37.387 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:21:37.388 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:21:37.389 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:21:37.390 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:21:37.390 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:21:37.391 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:21:37.392 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:21:37.392 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:21:37.394 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:21:37.395 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:21:37.396 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:21:37.396 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:21:37.397 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:21:37.398 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:21:37.398 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:21:37.399 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:21:37.400 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:21:37.401 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:21:37.401 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:21:37.402 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:21:37.403 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:21:37.403 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:21:37.404 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:21:37.405 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:21:37.405 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:21:37.406 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:21:37.407 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:21:37.407 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:21:37.408 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:21:37.410 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:21:37.414 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:21:37.415 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:21:37.416 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:21:37.416 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:21:41.434 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 시작
+2025-10-01 00:21:41.520 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 결과: 양호
+2025-10-01 00:21:42.779 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] Auto Check Timer STOP
+2025-10-01 00:25:02.429 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 192.168.0.244, PORT: 1433
+2025-10-01 00:25:02.468 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-01 00:25:05.954 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-01 00:25:31.204 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 192.168.0.244, PORT: 1433, 결과: 불량]
+2025-10-01 00:25:31.207 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-01 00:25:31.222 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-01 00:25:31.225 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-01 00:25:31.235 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-01 00:25:31.253 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-01 00:25:31.253 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-01 00:25:34.925 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 시작
+2025-10-01 00:25:34.931 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 결과: 양호
+2025-10-01 00:25:34.931 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:25:34.932 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:25:34.932 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:25:34.933 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:25:34.933 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:25:34.934 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:25:34.936 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:25:34.936 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:25:34.937 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:25:34.937 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:25:34.938 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:25:34.939 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:25:38.152 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:25:38.153 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:38.153 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:25:38.154 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:38.155 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:25:38.156 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:38.156 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:25:38.157 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:38.158 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:25:38.158 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:38.159 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:25:38.160 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:38.160 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:25:38.161 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:38.162 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:25:38.162 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:38.163 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:25:38.164 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:38.164 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:25:38.165 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:38.168 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:25:38.169 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:38.170 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:25:38.170 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:38.171 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:25:38.172 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:38.172 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:25:38.173 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:38.174 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:25:38.175 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:38.175 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:25:38.176 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:38.177 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:25:38.177 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:38.178 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:25:38.179 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:38.179 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:25:38.180 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:38.181 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:25:38.181 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:41.498 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 시작
+2025-10-01 00:25:42.009 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 결과: 양호
+2025-10-01 00:25:45.042 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 시작
+2025-10-01 00:25:45.043 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 결과: 양호
+2025-10-01 00:25:45.044 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:25:45.045 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:25:45.045 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:25:45.046 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:25:45.046 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:25:45.047 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:25:45.048 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:25:45.048 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:25:45.049 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:25:45.049 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:25:45.050 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:25:45.051 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:25:48.233 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:25:48.235 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:48.236 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:25:48.236 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:48.237 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:25:48.238 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:48.238 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:25:48.239 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:48.240 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:25:48.240 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:48.241 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:25:48.242 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:48.243 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:25:48.243 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:48.244 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:25:48.245 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:48.245 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:25:48.246 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:48.247 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:25:48.247 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:48.248 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:25:48.250 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:48.251 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:25:48.252 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:48.252 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:25:48.253 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:48.254 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:25:48.254 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:48.255 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:25:48.256 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:48.256 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:25:48.257 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:48.258 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:25:48.258 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:48.259 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:25:48.260 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:48.260 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:25:48.261 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:48.262 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:25:48.262 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:51.403 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 시작
+2025-10-01 00:25:52.468 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 결과: 양호
+2025-10-01 00:25:54.877 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 시작
+2025-10-01 00:25:54.878 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 결과: 양호
+2025-10-01 00:25:54.878 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:25:54.879 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:25:54.880 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:25:54.880 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:25:54.881 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:25:54.882 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:25:54.882 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:25:54.883 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:25:54.884 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:25:54.884 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:25:54.885 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:25:54.885 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:25:58.140 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:25:58.142 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:58.143 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:25:58.143 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:58.144 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:25:58.145 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:58.146 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:25:58.146 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:58.147 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:25:58.148 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:58.148 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:25:58.149 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:58.150 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:25:58.150 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:58.152 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:25:58.152 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:58.153 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:25:58.154 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:58.154 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:25:58.156 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:58.157 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:25:58.158 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:58.158 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:25:58.159 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:58.160 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:25:58.161 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:58.161 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:25:58.162 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:58.163 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:25:58.163 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:58.164 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:25:58.165 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:58.165 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:25:58.166 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:58.167 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:25:58.167 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:58.168 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:25:58.169 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:25:58.169 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:25:58.170 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:26:01.463 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 시작
+2025-10-01 00:26:01.560 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 결과: 양호
+2025-10-01 00:26:02.666 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] Auto Check Timer STOP
+2025-10-01 00:36:10.293 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 192.168.0.244, PORT: 1433
+2025-10-01 00:36:10.332 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-01 00:36:13.800 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-01 00:36:39.211 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 192.168.0.244, PORT: 1433, 결과: 불량]
+2025-10-01 00:36:39.214 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-01 00:36:39.231 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-01 00:36:39.233 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-01 00:36:39.244 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-01 00:36:39.261 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-01 00:36:39.262 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-01 00:36:42.375 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 시작
+2025-10-01 00:36:42.379 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 결과: 양호
+2025-10-01 00:36:42.379 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:36:42.380 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:36:42.380 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:36:42.381 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:36:42.382 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:36:42.382 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:36:42.383 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:36:42.384 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:36:42.385 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:36:42.385 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:36:42.386 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:36:42.386 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:36:45.382 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:36:45.383 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:36:45.384 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:36:45.384 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:36:45.385 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:36:45.386 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:36:45.387 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:36:45.387 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:36:45.388 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:36:45.389 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:36:45.390 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:36:45.390 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:36:45.391 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:36:45.392 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:36:45.392 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:36:45.393 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:36:45.394 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:36:45.394 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:36:45.395 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:36:45.396 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:36:45.397 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:36:45.397 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:36:45.398 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:36:45.399 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:36:45.399 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:36:45.400 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:36:45.401 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:36:45.401 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:36:45.402 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:36:45.403 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:36:45.404 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:36:45.404 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:36:45.407 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:36:45.407 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:36:45.408 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:36:45.409 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:36:45.409 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:36:45.410 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:36:45.411 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:36:45.411 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:36:48.950 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 시작
+2025-10-01 00:36:49.044 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 결과: 양호
+2025-10-01 00:36:51.992 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 시작
+2025-10-01 00:36:51.994 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 결과: 양호
+2025-10-01 00:36:51.994 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:36:51.995 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:36:51.996 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:36:51.996 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:36:51.997 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:36:51.998 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:36:51.999 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:36:52.000 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:36:52.001 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:36:52.001 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:36:52.002 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:36:52.003 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:36:53.268 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] Auto Check Timer STOP
+2025-10-01 00:38:36.252 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 192.168.0.244, PORT: 1433
+2025-10-01 00:38:36.253 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-01 00:38:38.568 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-01 00:39:04.166 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 192.168.0.244, PORT: 1433, 결과: 불량]
+2025-10-01 00:39:04.167 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-01 00:39:04.167 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-01 00:39:04.168 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-01 00:39:04.174 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-01 00:39:04.184 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-01 00:39:04.192 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-01 00:39:07.429 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 시작
+2025-10-01 00:39:07.430 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 결과: 양호
+2025-10-01 00:39:07.430 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:39:07.431 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:39:07.431 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:39:07.432 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:39:07.433 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:39:07.433 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:39:07.434 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:39:07.435 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:39:07.435 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:39:07.436 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:39:07.437 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:39:07.437 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:39:10.731 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:39:10.733 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:10.734 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:39:10.735 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:10.735 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:39:10.736 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:10.737 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:39:10.737 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:10.749 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:39:10.750 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:10.751 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:39:10.751 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:10.752 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:39:10.753 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:10.753 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:39:10.754 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:10.755 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:39:10.755 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:10.757 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:39:10.757 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:10.758 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:39:10.759 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:10.759 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:39:10.760 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:10.761 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:39:10.761 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:10.764 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:39:10.765 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:10.766 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:39:10.767 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:10.768 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:39:10.769 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:10.769 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:39:10.770 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:10.771 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:39:10.771 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:10.772 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:39:10.773 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:10.773 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:39:10.774 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:14.334 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 시작
+2025-10-01 00:39:14.610 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 결과: 양호
+2025-10-01 00:39:17.833 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 시작
+2025-10-01 00:39:17.835 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 결과: 양호
+2025-10-01 00:39:17.836 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:39:17.836 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:39:17.837 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:39:17.837 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:39:17.838 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:39:17.839 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:39:17.839 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:39:17.840 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:39:17.841 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:39:17.841 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:39:17.842 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:39:17.842 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:39:21.273 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:39:21.274 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:21.275 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:39:21.275 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:21.276 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:39:21.277 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:21.277 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:39:21.278 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:21.278 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:39:21.279 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:21.280 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:39:21.282 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:21.283 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:39:21.283 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:21.284 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:39:21.285 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:21.285 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:39:21.286 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:21.287 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:39:21.288 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:21.288 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:39:21.289 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:21.290 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:39:21.291 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:21.291 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:39:21.292 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:21.293 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:39:21.293 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:21.294 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:39:21.295 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:21.297 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:39:21.298 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:21.299 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:39:21.300 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:21.300 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:39:21.301 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:21.302 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:39:21.303 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:21.303 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:39:21.304 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:24.361 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 시작
+2025-10-01 00:39:25.107 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 결과: 양호
+2025-10-01 00:39:27.419 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 시작
+2025-10-01 00:39:27.420 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 결과: 양호
+2025-10-01 00:39:27.421 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:39:27.421 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:39:27.422 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:39:27.423 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:39:27.423 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:39:27.424 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:39:27.424 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:39:27.425 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:39:27.426 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:39:27.426 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:39:27.427 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:39:27.427 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:39:30.726 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:39:30.728 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:30.728 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:39:30.729 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:30.729 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:39:30.730 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:30.731 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:39:30.731 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:30.732 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:39:30.733 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:30.734 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:39:30.735 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:30.736 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:39:30.736 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:30.737 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:39:30.738 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:30.738 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:39:30.739 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:30.740 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:39:30.741 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:30.741 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:39:30.742 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:30.743 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:39:30.743 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:30.744 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:39:30.745 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:30.745 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:39:30.746 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:30.747 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:39:30.747 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:30.748 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:39:30.750 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:30.751 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:39:30.752 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:30.752 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:39:30.753 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:30.754 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:39:30.754 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:30.755 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:39:30.755 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:39:34.254 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 시작
+2025-10-01 00:39:34.843 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 결과: 양호
+2025-10-01 00:39:37.266 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 시작
+2025-10-01 00:39:37.267 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 결과: 양호
+2025-10-01 00:39:37.268 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:39:37.269 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:39:37.269 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:39:37.270 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:39:37.270 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:39:37.271 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:39:37.271 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:39:37.272 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:39:37.272 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:39:37.273 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:39:37.274 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:39:37.274 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:39:37.931 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] Auto Check Timer STOP
+2025-10-01 00:41:37.457 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 시작
+2025-10-01 00:41:37.462 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 결과: 양호
+2025-10-01 00:41:51.548 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:41:51.549 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:47:13.411 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 192.168.0.244, PORT: 1433
+2025-10-01 00:47:13.413 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-01 00:47:15.746 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-01 00:47:41.146 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 192.168.0.244, PORT: 1433, 결과: 불량]
+2025-10-01 00:47:41.147 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-01 00:47:41.148 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-01 00:47:41.148 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-01 00:47:41.150 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-01 00:47:41.169 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-01 00:47:41.170 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-01 00:48:41.330 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 시작
+2025-10-01 00:48:43.990 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 결과: 양호
+2025-10-01 00:48:45.193 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:48:46.214 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:48:47.287 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:48:48.127 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:48:48.993 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:48:49.928 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:48:50.960 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:48:51.855 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:48:52.705 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:48:53.569 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:48:54.522 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:49:00.408 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:49:03.580 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:49:03.580 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:49:03.581 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:49:03.581 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:49:03.582 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:49:03.583 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:49:03.583 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:49:03.584 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:49:03.584 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:49:03.585 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:49:03.585 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:49:03.586 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:49:03.586 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:49:03.587 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:49:03.587 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:49:03.588 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:49:03.588 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:49:03.589 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:49:03.589 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:49:03.590 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:49:03.590 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:49:03.591 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:49:03.591 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:49:03.592 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:49:03.592 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:49:03.593 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:49:03.593 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:49:03.595 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:49:03.595 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:49:03.596 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:49:03.596 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:49:03.597 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:49:03.597 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:49:03.598 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:49:03.599 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:49:03.599 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:49:03.600 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:49:03.600 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:49:03.601 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:49:03.601 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:49:04.117 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] Auto Check Timer STOP
+2025-10-01 00:49:54.797 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 192.168.0.244, PORT: 1433
+2025-10-01 00:49:54.837 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-01 00:49:58.269 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-01 00:50:23.700 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 192.168.0.244, PORT: 1433, 결과: 불량]
+2025-10-01 00:50:23.703 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-01 00:50:23.718 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-01 00:50:23.720 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-01 00:50:23.730 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-01 00:50:23.747 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-01 00:50:23.748 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-01 00:50:29.197 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 시작
+2025-10-01 00:50:29.203 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 결과: 양호
+2025-10-01 00:50:29.203 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:50:29.204 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:50:29.204 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:50:29.204 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:50:29.205 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:50:29.206 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:50:29.206 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:50:29.207 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:50:29.208 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:50:29.208 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:50:29.210 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:50:29.211 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:50:32.322 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:50:32.322 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:32.324 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:50:32.324 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:32.326 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:50:32.327 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:32.328 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:50:32.328 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:32.329 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:50:32.330 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:32.331 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:50:32.332 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:32.332 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:50:32.333 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:32.334 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:50:32.335 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:32.336 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:50:32.336 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:32.337 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:50:32.338 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:32.339 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:50:32.340 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:32.340 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:50:32.341 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:32.342 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:50:32.342 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:32.343 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:50:32.344 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:32.347 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:50:32.347 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:32.349 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:50:32.350 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:32.351 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:50:32.351 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:32.352 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:50:32.353 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:32.354 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:50:32.355 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:32.356 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:50:32.356 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:35.427 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 시작
+2025-10-01 00:50:35.966 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 결과: 양호
+2025-10-01 00:50:38.515 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 시작
+2025-10-01 00:50:38.516 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 결과: 양호
+2025-10-01 00:50:38.516 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:50:38.517 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:50:38.517 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:50:38.518 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:50:38.519 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:50:38.520 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:50:38.521 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:50:38.521 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:50:38.522 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:50:38.522 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:50:38.523 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:50:38.524 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:50:41.546 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:50:41.547 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:41.548 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:50:41.548 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:41.549 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:50:41.550 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:41.550 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:50:41.551 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:41.551 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:50:41.552 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:41.553 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:50:41.553 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:41.554 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:50:41.555 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:41.555 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:50:41.556 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:41.557 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:50:41.557 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:41.558 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:50:41.559 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:41.559 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:50:41.560 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:41.562 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:50:41.563 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:41.564 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:50:41.564 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:41.565 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:50:41.566 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:41.566 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:50:41.567 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:41.568 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:50:41.568 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:41.569 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:50:41.570 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:41.570 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:50:41.571 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:41.572 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:50:41.572 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:41.573 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:50:41.574 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:50:44.581 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 시작
+2025-10-01 00:50:44.737 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 결과: 양호
+2025-10-01 00:51:06.149 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 192.168.0.244, PORT: 1433
+2025-10-01 00:51:06.189 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 1433
+2025-10-01 00:51:11.769 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 1433, 결과: 불량]
+2025-10-01 00:51:34.694 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 192.168.0.244, PORT: 1433, 결과: 불량]
+2025-10-01 00:52:27.791 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 192.168.0.244, PORT: 1433
+2025-10-01 00:52:27.792 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-01 00:52:30.045 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-01 00:52:55.658 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 192.168.0.244, PORT: 1433, 결과: 불량]
+2025-10-01 00:52:55.661 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-01 00:52:55.677 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-01 00:52:55.678 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-01 00:52:55.689 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-01 00:52:55.708 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-01 00:52:55.709 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-01 00:52:58.771 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 시작
+2025-10-01 00:52:58.777 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 결과: 양호
+2025-10-01 00:52:58.778 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:52:58.778 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:52:58.779 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:52:58.779 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:52:58.781 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:52:58.782 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:52:58.782 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:52:58.783 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:52:58.783 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:52:58.784 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:52:58.785 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:52:58.785 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:53:02.102 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:02.103 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:02.104 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:02.104 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:02.105 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:02.106 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:02.106 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:02.107 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:02.108 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:02.109 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:02.109 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:02.110 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:02.111 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:02.111 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:02.112 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:02.113 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:02.113 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:02.114 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:02.115 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:02.115 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:02.118 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:02.118 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:02.119 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:02.120 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:02.120 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:02.121 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:02.122 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:02.122 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:02.123 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:02.124 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:02.124 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:02.125 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:02.126 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:02.127 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:02.128 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:02.128 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:02.129 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:02.130 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:02.130 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:02.131 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:05.257 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 시작
+2025-10-01 00:53:05.937 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 결과: 양호
+2025-10-01 00:53:08.323 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 시작
+2025-10-01 00:53:08.324 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 결과: 양호
+2025-10-01 00:53:08.325 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:53:08.325 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:53:08.326 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:53:08.326 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:53:08.327 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:53:08.328 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:53:08.328 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:53:08.329 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:53:08.329 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:53:08.330 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:53:08.331 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:53:08.331 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:53:11.918 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:11.918 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:11.919 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:11.920 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:11.920 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:11.921 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:11.922 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:11.923 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:11.924 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:11.924 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:11.925 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:11.926 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:11.926 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:11.927 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:11.928 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:11.928 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:11.929 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:11.929 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:11.930 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:11.931 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:11.931 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:11.932 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:11.934 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:11.935 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:11.936 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:11.936 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:11.937 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:11.938 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:11.938 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:11.939 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:11.940 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:11.940 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:11.941 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:11.942 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:11.943 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:11.943 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:11.944 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:11.945 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:11.945 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:11.946 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:15.197 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 시작
+2025-10-01 00:53:15.305 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 결과: 양호
+2025-10-01 00:53:18.944 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 시작
+2025-10-01 00:53:18.945 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 결과: 양호
+2025-10-01 00:53:18.947 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:53:18.947 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:53:18.948 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:53:18.949 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:53:18.949 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:53:18.950 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:53:18.950 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:53:18.951 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:53:18.952 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:53:18.952 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:53:18.953 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:53:18.953 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:53:22.194 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:22.197 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:22.197 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:22.198 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:22.199 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:22.199 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:22.200 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:22.201 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:22.201 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:22.202 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:22.203 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:22.203 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:22.204 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:22.205 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:22.207 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:22.207 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:22.210 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:22.210 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:22.211 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:22.212 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:22.212 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:22.213 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:22.214 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:22.214 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:22.215 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:22.216 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:22.216 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:22.217 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:22.218 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:22.218 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:22.219 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:22.220 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:22.220 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:22.221 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:22.222 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:22.224 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:22.225 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:22.225 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:22.226 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:22.227 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:25.310 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 시작
+2025-10-01 00:53:25.710 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 결과: 양호
+2025-10-01 00:53:28.630 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 시작
+2025-10-01 00:53:28.633 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 결과: 양호
+2025-10-01 00:53:28.633 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:53:28.634 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:53:28.634 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:53:28.635 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:53:28.636 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:53:28.636 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:53:28.637 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:53:28.637 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:53:28.638 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:53:28.638 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:53:28.639 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:53:28.640 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:53:32.209 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:32.210 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:32.210 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:32.211 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:32.212 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:32.212 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:32.213 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:32.214 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:32.214 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:32.215 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:32.216 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:32.216 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:32.217 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:32.218 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:32.218 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:32.219 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:32.220 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:32.221 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:32.221 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:32.222 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:32.223 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:32.223 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:32.225 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:32.226 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:32.227 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:32.227 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:32.228 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:32.229 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:32.229 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:32.230 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:32.231 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:32.231 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:32.232 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:32.233 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:32.234 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:32.234 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:32.235 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:53:32.236 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:32.236 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:53:32.237 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:53:36.501 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 시작
+2025-10-01 00:53:36.810 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 결과: 양호
+2025-10-01 00:53:40.651 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 시작
+2025-10-01 00:53:40.652 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 결과: 양호
+2025-10-01 00:53:40.653 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:53:40.654 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:53:40.654 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:53:40.655 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:53:40.655 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:53:40.656 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:53:40.657 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:53:40.657 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:53:40.658 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:53:40.658 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:53:40.659 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:53:40.660 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:54:36.341 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 192.168.0.244, PORT: 1433
+2025-10-01 00:54:36.380 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-01 00:54:39.839 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-01 00:55:05.204 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 192.168.0.244, PORT: 1433, 결과: 불량]
+2025-10-01 00:55:05.207 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-01 00:55:05.222 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-01 00:55:05.224 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-01 00:55:05.235 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-01 00:55:05.252 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-01 00:55:05.252 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-01 00:55:08.816 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 시작
+2025-10-01 00:55:08.821 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 결과: 양호
+2025-10-01 00:55:08.822 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:55:08.822 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:55:08.823 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:55:08.823 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:55:08.824 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:55:08.824 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:55:08.825 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:55:08.826 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:55:08.826 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:55:08.827 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:55:08.827 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:55:08.829 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:56:15.643 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 192.168.0.244, PORT: 1433
+2025-10-01 00:56:15.678 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-01 00:56:19.171 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-01 00:56:44.201 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 192.168.0.244, PORT: 1433, 결과: 불량]
+2025-10-01 00:56:44.204 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-01 00:56:44.219 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-01 00:56:44.221 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-01 00:56:44.274 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-01 00:56:44.275 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 불량]
+2025-10-01 00:56:44.275 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-01 00:56:51.797 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 192.168.0.244, PORT: 1433
+2025-10-01 00:56:51.798 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-01 00:56:53.939 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호]
+2025-10-01 00:57:19.667 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [PowerShell] 통신 확인 종료 - Server IP: 192.168.0.244, PORT: 1433, 결과: 불량]
+2025-10-01 00:57:19.668 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-01 00:57:19.669 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-01 00:57:19.670 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-01 00:57:19.674 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-01 00:57:19.683 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-01 00:57:19.691 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-01 00:57:23.970 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 시작
+2025-10-01 00:57:23.975 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 결과: 양호
+2025-10-01 00:57:23.976 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:57:23.976 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:57:23.977 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:57:23.977 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:57:23.978 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:57:23.979 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:57:23.979 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:57:23.980 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:57:23.982 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:57:23.982 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:57:23.983 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:57:23.983 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:57:28.323 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:57:28.324 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:57:28.325 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:57:28.326 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:57:28.327 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:57:28.328 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:57:28.329 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:57:28.329 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:57:28.330 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:57:28.331 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:57:28.331 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:57:28.332 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:57:28.333 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:57:28.333 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:57:28.334 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:57:28.335 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:57:28.335 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:57:28.336 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:57:28.337 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:57:28.338 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:57:28.338 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:57:28.340 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:57:28.341 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:57:28.342 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:57:28.342 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:57:28.343 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:57:28.344 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:57:28.344 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:57:28.345 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:57:28.346 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:57:28.346 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:57:28.347 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:57:28.348 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:57:28.348 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:57:28.349 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:57:28.350 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:57:28.350 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 시작
+2025-10-01 00:57:28.351 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: GS425_IEE_DB - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:57:28.352 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 시작
+2025-10-01 00:57:28.353 [WRN] [WPF_SQL_NET_Framework.Logger.csLogerTest] [WARNING] DB Name: IEE_TERRAIN - SQL Client Connection 확인 결과: 불량
+2025-10-01 00:57:31.450 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 시작
+2025-10-01 00:57:31.556 [ERR] [WPF_SQL_NET_Framework.Logger.csLogerTest] [ERROR] Server [IP: 127.0.0.1, PORT: 8000] - Network cmd 통신 결과: 양호
+2025-10-01 00:57:34.721 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 시작
+2025-10-01 00:57:34.723 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: DB_Address - PING 통신 결과: 양호
+2025-10-01 00:57:34.723 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:57:34.724 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:57:34.724 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:57:34.725 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:57:34.726 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:57:34.726 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:57:34.727 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:57:34.727 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:57:34.728 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 시작
+2025-10-01 00:57:34.728 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: GS425_IEE_DB - PING 통신 결과: 불량
+2025-10-01 00:57:34.729 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 시작
+2025-10-01 00:57:34.730 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] [BASE] DB Name: IEE_TERRAIN - PING 통신 결과: 불량
+2025-10-01 00:57:36.104 [INF] [WPF_SQL_NET_Framework.Logger.csLogerTest] Auto Check Timer STOP

@@ -1,0 +1,135 @@
+﻿<UserControl x:Class="WPF_SQL_NET_Framework.View.UC_DBControl"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm ="clr-namespace:WPF_SQL_NET_Framework.ViewModel"
+        xmlns:local="clr-namespace:WPF_SQL_NET_Framework"
+        mc:Ignorable="d"
+        d:DesignHeight="500" d:DesignWidth="1000">
+
+    <UserControl.DataContext>
+        <vm:VM_DBControl/>
+    </UserControl.DataContext>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="350"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <TabControl Margin="5" ItemsSource="{Binding Server_List}" SelectedIndex="{Binding Index_ServerList}">
+                <TabControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding TabName}"/>
+                    </DataTemplate>
+                </TabControl.ItemTemplate>
+                <TabControl.ContentTemplate>
+                    <DataTemplate>
+                        <Grid Background="#FFE5E5E5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="2*"/>
+                                <RowDefinition Height="2*"/>
+                            </Grid.RowDefinitions>
+
+                            <Grid Grid.Row="0">
+                                <GroupBox Header="DB Status Check" Margin="5">
+                                    <Grid Margin="5">
+                                        <ItemsControl ItemsSource="{Binding DB_List}">
+                                            <ItemsControl.ItemsPanel>
+                                                <ItemsPanelTemplate>
+                                                    <StackPanel/>
+                                                </ItemsPanelTemplate>
+                                            </ItemsControl.ItemsPanel>
+                                            <ItemsControl.ItemTemplate>
+                                                <DataTemplate>
+                                                    <Grid Margin="2">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="100"/>
+                                                            <ColumnDefinition Width="2*"/>
+                                                            <ColumnDefinition Width="2*"/>
+                                                        </Grid.ColumnDefinitions>
+
+                                                        <Label Grid.Column="0" Margin="2">
+                                                            <TextBlock Text="{Binding DBName}"/>
+                                                        </Label>
+                                                        <Button Grid.Column="1" Margin="2" Content="{Binding DB_StepState}" Command="{Binding DataContext.DB_SelectRetry, RelativeSource={RelativeSource AncestorType=UserControl}}" CommandParameter="{Binding}"/>
+                                                        <Border Grid.Column="2" Margin="2" Background="{Binding DBBrush, UpdateSourceTrigger=PropertyChanged}" Width="20" Height="20" CornerRadius="10"/>
+                                                    </Grid>
+                                                </DataTemplate>
+                                            </ItemsControl.ItemTemplate>
+                                        </ItemsControl>
+                                    </Grid>
+                                </GroupBox>
+                            </Grid>
+                        </Grid>
+                    </DataTemplate>
+                </TabControl.ContentTemplate>
+            </TabControl>
+
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                
+                <CheckBox Grid.Column="0" IsChecked="{Binding ALL_Log}" Content="모든 로그" Width="auto" Margin="10"/>
+                <CheckBox Grid.Column="1" IsChecked="{Binding INF_Log}" Content="정보 로그" Width="auto" Margin="10"/>
+                <CheckBox Grid.Column="2" IsChecked="{Binding WAR_Log}" Content="경고 로그" Width="auto" Margin="10"/>
+                <CheckBox Grid.Column="3" IsChecked="{Binding ERR_Log}" Content="오류 로그" Width="auto" Margin="10"/>
+                <CheckBox Grid.Column="4" IsChecked="{Binding FTL_Log}" Content="치명적 로그" Width="auto" Margin="10"/>
+                <TextBox Grid.Column="5" Text="{Binding Search_Txt}" Width="100" Margin="5"/>
+                <Button Grid.Column="6" Command="{Binding Search_Btn}" Content="검색" Width="50" Margin="5"/>
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <!--<GroupBox Header="Text Log">
+                    <ListBox x:Name="LB_LOG" ItemsSource="{Binding Log_List}" Margin="2" Loaded="LB_LOG_Loaded" />
+                </GroupBox>-->
+                <DataGrid x:Name="DG_Log" ItemsSource="{Binding Logevent}" AutoGenerateColumns="True" LoadingRow="DataGrid_LoadingRow" CurrentCellChanged="DG_Log_CurrentCellChanged" Loaded="DG_Log_Loaded" IsReadOnly="True"/>
+            </Grid>
+
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="4*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="3">
+                    <CheckBox Content="Auto Communication" HorizontalAlignment="Right" Margin="10" IsChecked="{Binding AutoCheck, Mode=TwoWay}"/>
+                </Grid>
+
+                <Grid Grid.Column="2">
+                    <Button Content="TEST" Margin="5" Command="{Binding DB_Test}" IsEnabled="True"/>
+                </Grid>
+
+                <Grid Grid.Column="1">
+                    <Button Content="DB Check IP, PORT" Margin="5" Command="{Binding DB_PowerShell}"/>
+                </Grid>
+
+                <Grid Grid.Column="0">
+                    <Button Content="DB ReConnect" Margin="5" Command="{Binding DB_Reconnect}"/>
+                </Grid>
+
+            </Grid>
+        </Grid>
+
+    </Grid>
+</UserControl>

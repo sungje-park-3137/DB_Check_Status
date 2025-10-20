@@ -1,0 +1,198 @@
+2025-10-16 00:13:59.657 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-16 00:14:03.422 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호
+2025-10-16 00:14:03.425 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-16 00:14:03.445 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-16 00:14:03.448 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-16 00:14:03.459 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-16 00:14:03.476 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-16 00:14:03.485 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-16 00:14:04.771 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] Auto Check Timer STOP
+2025-10-16 00:15:37.502 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-16 00:15:41.226 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호
+2025-10-16 00:15:41.229 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-16 00:15:41.246 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-16 00:15:41.248 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-16 00:15:41.258 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-16 00:15:41.273 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-16 00:15:41.284 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-16 00:15:43.076 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] Auto Check Timer STOP
+2025-10-16 00:22:33.103 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-16 00:22:36.855 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호
+2025-10-16 00:22:36.858 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-16 00:22:36.875 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-16 00:22:36.877 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-16 00:22:36.888 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-16 00:22:36.912 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-16 00:22:36.914 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-16 00:22:38.574 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] Auto Check Timer STOP
+2025-10-16 00:31:32.941 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-16 00:31:36.693 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호
+2025-10-16 00:31:36.697 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-16 00:31:36.714 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-16 00:31:36.717 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-16 00:31:36.729 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-16 00:31:36.772 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-16 00:31:36.773 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-16 00:31:38.341 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] Auto Check Timer STOP
+2025-10-16 00:56:06.226 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-16 00:56:09.956 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호
+2025-10-16 00:56:09.959 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-16 00:56:09.977 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-16 00:56:09.979 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-16 00:56:09.989 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-16 00:56:10.004 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-16 00:56:10.017 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-16 00:56:11.763 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] Auto Check Timer STOP
+2025-10-16 00:58:46.525 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-16 00:58:51.181 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호
+2025-10-16 00:58:51.184 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-16 00:58:51.201 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-16 00:58:51.205 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-16 00:58:51.214 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-16 00:58:51.237 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-16 00:58:51.239 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-16 00:58:52.742 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] Auto Check Timer STOP
+2025-10-16 01:02:51.934 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-16 01:02:55.712 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호
+2025-10-16 01:02:55.715 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-16 01:02:55.732 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-16 01:02:55.736 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-16 01:02:55.749 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-16 01:02:55.783 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-16 01:02:55.785 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-16 01:02:57.049 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] Auto Check Timer STOP
+2025-10-16 01:07:36.600 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-16 01:07:40.374 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호
+2025-10-16 01:07:40.378 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-16 01:07:40.395 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-16 01:07:40.398 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-16 01:07:40.407 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-16 01:07:40.449 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-16 01:07:40.449 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-16 01:07:42.027 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] Auto Check Timer STOP
+2025-10-16 01:11:30.045 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-16 01:11:33.788 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호
+2025-10-16 01:11:33.791 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-16 01:11:33.810 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-16 01:11:33.813 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-16 01:11:33.823 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-16 01:11:33.838 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-16 01:11:33.850 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-16 01:11:35.412 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] Auto Check Timer STOP
+2025-10-16 01:13:26.698 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-16 01:13:30.483 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호
+2025-10-16 01:13:30.487 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-16 01:13:30.504 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-16 01:13:30.507 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-16 01:13:30.518 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-16 01:13:30.532 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-16 01:13:30.542 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-16 01:13:32.840 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] Auto Check Timer STOP
+2025-10-16 01:37:13.655 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-16 01:37:17.473 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호
+2025-10-16 01:37:17.476 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-16 01:37:17.493 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-16 01:37:17.495 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-16 01:37:17.507 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-16 01:37:17.521 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-16 01:37:17.531 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-16 01:37:19.098 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] Auto Check Timer STOP
+2025-10-16 01:52:41.243 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-16 01:52:44.977 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호
+2025-10-16 01:52:44.980 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-16 01:52:44.997 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-16 01:52:44.999 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-16 01:52:45.011 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-16 01:52:45.026 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-16 01:52:45.036 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-16 01:52:46.175 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] Auto Check Timer STOP
+2025-10-16 01:53:58.457 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-16 01:54:02.192 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호
+2025-10-16 01:54:02.194 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-16 01:54:02.212 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-16 01:54:02.215 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-16 01:54:02.226 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-16 01:54:02.239 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-16 01:54:02.251 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-16 01:54:03.475 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] Auto Check Timer STOP
+2025-10-16 02:19:32.588 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-16 02:19:37.141 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호
+2025-10-16 02:19:37.145 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-16 02:19:37.163 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-16 02:19:37.165 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-16 02:19:37.177 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-16 02:19:37.200 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-16 02:19:37.200 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-16 02:19:38.910 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] Auto Check Timer STOP
+2025-10-16 02:22:00.720 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-16 02:22:04.461 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호
+2025-10-16 02:22:04.465 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-16 02:22:04.482 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-16 02:22:04.484 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-16 02:22:04.494 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-16 02:22:04.516 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-16 02:22:04.517 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-16 02:22:05.629 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] Auto Check Timer STOP
+2025-10-16 02:24:43.033 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-16 02:24:46.810 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호
+2025-10-16 02:24:46.813 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-16 02:24:46.831 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-16 02:24:46.833 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-16 02:24:46.845 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-16 02:24:46.866 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-16 02:24:46.867 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-16 02:24:48.958 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] Auto Check Timer STOP
+2025-10-16 02:31:02.672 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-16 02:31:06.450 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호
+2025-10-16 02:31:06.453 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-16 02:31:06.470 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-16 02:31:06.472 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-16 02:31:06.483 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-16 02:31:06.504 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-16 02:31:06.505 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-16 02:31:07.783 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] Auto Check Timer STOP
+2025-10-16 02:39:54.820 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-16 02:39:58.637 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호
+2025-10-16 02:39:58.640 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-16 02:39:58.656 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-16 02:39:58.658 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-16 02:39:58.670 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-16 02:39:58.684 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-16 02:39:58.696 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-16 02:39:59.828 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] Auto Check Timer STOP
+2025-10-16 02:41:22.857 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-16 02:41:26.587 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호
+2025-10-16 02:41:26.591 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-16 02:41:26.608 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-16 02:41:26.610 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-16 02:41:26.622 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-16 02:41:26.635 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-16 02:41:26.644 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-16 02:41:28.312 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] Auto Check Timer STOP
+2025-10-16 02:53:41.720 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-16 02:53:45.438 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호
+2025-10-16 02:53:45.442 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-16 02:53:45.458 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-16 02:53:45.461 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-16 02:53:45.472 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-16 02:53:45.494 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-16 02:53:45.496 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-16 02:53:47.006 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] Auto Check Timer STOP
+2025-10-16 02:57:09.659 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-16 02:57:13.479 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호
+2025-10-16 02:57:13.482 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-16 02:57:13.499 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-16 02:57:13.501 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-16 02:57:13.512 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-16 02:57:13.526 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-16 02:57:13.537 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-16 02:57:16.211 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] Auto Check Timer STOP
+2025-10-16 03:00:39.439 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 시작 - Server IP: 127.0.0.1, PORT: 8000
+2025-10-16 03:00:43.207 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [PowerShell] 통신 확인 종료 - Server IP: 127.0.0.1, PORT: 8000, 결과: 양호
+2025-10-16 03:00:43.210 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: DB_Address
+2025-10-16 03:00:43.227 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: GS425_IEE_DB
+2025-10-16 03:00:43.229 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 시작 - DB Name: IEE_TERRAIN
+2025-10-16 03:00:43.240 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: DB_Address, 결과: 양호]
+2025-10-16 03:00:43.255 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: GS425_IEE_DB, 결과: 불량]
+2025-10-16 03:00:43.265 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] [SQL Client] 통신 확인 종료 - DB Name: IEE_TERRAIN, 결과: 불량]
+2025-10-16 03:00:44.844 [INF] [WPF_SQL_NET_Framework.SingleTon.csLogger] Auto Check Timer STOP
