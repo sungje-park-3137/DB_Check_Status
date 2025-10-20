@@ -4,16 +4,16 @@
 exe
 C#
 .cs
-D:\C#\C#_DBG\MG6\DB_Check_Status\WPF_SQL_NET_Framework\obj\Debug\
+D:\C#\C#_DBG\DB_Check_Status\WPF_SQL_NET_Framework\obj\Debug\
 WPF_SQL_NET_Framework
 none
 false
 DEBUG;TRACE
-D:\C#\C#_DBG\MG6\DB_Check_Status\WPF_SQL_NET_Framework\App.xaml
+D:\C#\C#_DBG\DB_Check_Status\WPF_SQL_NET_Framework\App.xaml
 6334656298
 1761456277
 36529495733
-1691225389861
+1691327968805
 View\EF\EF_Conn.xaml;View\Main\MainWindow.xaml;View\UserControl\UC_DBControl.xaml;View\LogIN\DB_LogIN.xaml;View\UserControl\UC_DBQuery.xaml;View\UserControl\UC_ProcessControl.xaml;
 
 False

@@ -75,3 +75,5 @@ STEP 4: [CRITICAL]
 1. 현재 내 PC의 응용 프로그램 리소스 확인
 STEP 1: 전체 응용 프로그램 CheckList로 뿌린다.
 STEP 2: Check된 응용프로그램(최대 3개), cpu,메모리 사용량 LOG(그래프)
+
+// git 확인용 테스트
