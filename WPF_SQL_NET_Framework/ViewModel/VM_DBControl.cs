@@ -16,6 +16,8 @@ using WPF_SQL_NET_Framework.View;
 
 namespace WPF_SQL_NET_Framework.ViewModel
 {
+    public class RealGITEST { }
+
     public class VM_DBControl : NotifyProperty
     {
         #region [Instance]
