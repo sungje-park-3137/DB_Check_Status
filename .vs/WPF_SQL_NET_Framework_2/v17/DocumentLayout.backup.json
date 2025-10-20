@@ -1,9 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\C#\\C#_DBG\\MG6\\DB_Check_Status\\",
+  "WorkspaceRootPath": "D:\\C#\\C#_DBG\\DB_Check_Status\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A8319596-733A-4EA4-80D0-1997D4420116}|WPF_SQL_NET_Framework\\WPF_SQL_NET_Framework_2.csproj|d:\\c#\\c#_dbg\\mg6\\db_check_status\\wpf_sql_net_framework\\viewmodel\\vm_dbcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A8319596-733A-4EA4-80D0-1997D4420116}|WPF_SQL_NET_Framework\\WPF_SQL_NET_Framework_2.csproj|d:\\c#\\c#_dbg\\db_check_status\\wpf_sql_net_framework\\dbg_memo.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A8319596-733A-4EA4-80D0-1997D4420116}|WPF_SQL_NET_Framework\\WPF_SQL_NET_Framework_2.csproj|solutionrelative:wpf_sql_net_framework\\dbg_memo.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8319596-733A-4EA4-80D0-1997D4420116}|WPF_SQL_NET_Framework\\WPF_SQL_NET_Framework_2.csproj|d:\\c#\\c#_dbg\\db_check_status\\wpf_sql_net_framework\\viewmodel\\vm_dbcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8319596-733A-4EA4-80D0-1997D4420116}|WPF_SQL_NET_Framework\\WPF_SQL_NET_Framework_2.csproj|solutionrelative:wpf_sql_net_framework\\viewmodel\\vm_dbcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -23,10 +27,23 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DBG_Memo.txt",
+              "DocumentMoniker": "D:\\C#\\C#_DBG\\DB_Check_Status\\WPF_SQL_NET_Framework\\DBG_Memo.txt",
+              "RelativeDocumentMoniker": "WPF_SQL_NET_Framework\\DBG_Memo.txt",
+              "ToolTip": "D:\\C#\\C#_DBG\\DB_Check_Status\\WPF_SQL_NET_Framework\\DBG_Memo.txt*",
+              "RelativeToolTip": "WPF_SQL_NET_Framework\\DBG_Memo.txt*",
+              "ViewState": "AgIAADkAAAAAAAAAAADwv04AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-10-20T14:03:50.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "VM_DBControl.cs",
-              "DocumentMoniker": "D:\\C#\\C#_DBG\\MG6\\DB_Check_Status\\WPF_SQL_NET_Framework\\ViewModel\\VM_DBControl.cs",
+              "DocumentMoniker": "D:\\C#\\C#_DBG\\DB_Check_Status\\WPF_SQL_NET_Framework\\ViewModel\\VM_DBControl.cs",
               "RelativeDocumentMoniker": "WPF_SQL_NET_Framework\\ViewModel\\VM_DBControl.cs",
-              "ToolTip": "D:\\C#\\C#_DBG\\MG6\\DB_Check_Status\\WPF_SQL_NET_Framework\\ViewModel\\VM_DBControl.cs",
+              "ToolTip": "D:\\C#\\C#_DBG\\DB_Check_Status\\WPF_SQL_NET_Framework\\ViewModel\\VM_DBControl.cs",
               "RelativeToolTip": "WPF_SQL_NET_Framework\\ViewModel\\VM_DBControl.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
